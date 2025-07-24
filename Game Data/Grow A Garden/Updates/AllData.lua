@@ -27,7 +27,7 @@ local function formatTable(name, data)
             table.insert(items, '    "'..item..'"')
         end
     elseif name == "PetsM" then
-        for item in pairs(data.PetMutationRegistry) do
+        for item in pairs(data.PetMutationRegistry.PetMutationRegistry) do
             table.insert(items, '    "'..item..'"')
         end
     else
@@ -42,5 +42,4 @@ local output = ""
 for name, data in pairs(Data) do
     output = output .. formatTable(name, data) .. "\n\n"
 end
-setclipboard(output)
-print(output)
+return output

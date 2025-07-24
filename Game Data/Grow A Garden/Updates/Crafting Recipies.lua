@@ -43,5 +43,4 @@ local function formatTable(t, indent)
     return result
 end
 local CraftingRecipie = "return " .. formatTable(recipes)
-setclipboard(CraftingRecipie)
 return CraftingRecipie
