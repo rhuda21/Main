@@ -130,53 +130,6 @@ local Seeds = {
     "Pumpkin"
 }
 
-local Gears = {
-    "Medium Bowl",
-    "Small Treat",
-    "Friendship Pot",
-    "Harvest Tool",
-    "Mutation Spray Chilled",
-    "Small Toy",
-    "Favorite Tool",
-    "Lightning Rod",
-    "Godly Sprinkler",
-    "Medium Toy",
-    "Cleaning Spray",
-    "Magnifying Glass",
-    "Mutation Spray Burnt",
-    "Mutation Spray Choc",
-    "Basic Sprinkler",
-    "Sweet Soaker Sprinkler",
-    "Trowel",
-    "Stalk Sprout Sprinkler",
-    "Mutation Spray Amber",
-    "Tranquil Radar",
-    "Mutation Spray Cloudtouched",
-    "Mutation Spray Disco",
-    "Levelup Lollipop",
-    "Small Bowl",
-    "Flower Froster Sprinkler",
-    "Reclaimer",
-    "Mutation Spray Pollinated",
-    "Berry Blusher Sprinkler",
-    "Advanced Sprinkler",
-    "Tanning Mirror",
-    "Master Sprinkler",
-    "Spice Spritzer Sprinkler",
-    "Medium Treat",
-    "Mutation Spray Wet",
-    "Tropical Mist Sprinkler",
-    "Firework",
-    "Pet Shard Tranquil",
-    "Logbook",
-    "Mutation Spray Verdant",
-    "Recall Wrench",
-    "Watering Can",
-    "Mutation Spray Windstruck",
-    "Plant Booster",
-    "Mutation Spray Shocked"
-}
-
 local Sprinkler = {
     "Advanced Sprinkler",
     "Spice Spritzer Sprinkler",
@@ -255,14 +208,6 @@ local Cosmetics = {
     "Large Path Tile",
     "Wood Fence",
     "Medium Path Tile"
-}
-
-local PetsM = {
-    "EnumToPetMutation",
-    "MachineMutationTypes",
-    "RollRandomMutation",
-    "PetMutationToEnum",
-    "PetMutationRegistry"
 }
 
 local Event1 = {
