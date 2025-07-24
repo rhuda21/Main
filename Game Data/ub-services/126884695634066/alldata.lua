@@ -26,11 +26,16 @@ local function formatTable(name, data)
         for item in pairs(data.SprinklerBoxSizes) do
             table.insert(items, '    "'..item..'"')
         end
+    elseif name == "PetsM" then
+        for item in pairs(data.PetMutationRegistry.PetMutationRegistry) do
+            table.insert(items, '    "'..item..'"')
+        end
     else
         for item in pairs(data) do
             table.insert(items, '    "'..item..'"')
         end
     end
+    
     return "local "..name.." = {\n"..table.concat(items, ",\n").."\n}"
 end
 local output = ""
