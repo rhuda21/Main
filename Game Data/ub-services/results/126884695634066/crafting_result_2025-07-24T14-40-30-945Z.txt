@@ -1,4 +1,0 @@
-Execution failed at 2025-07-24T14:40:30.945Z
-
-Error:
-[string "=crafting"]:1: attempt to index nil with 'Name'
