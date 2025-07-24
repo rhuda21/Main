@@ -49,4 +49,4 @@ for name, data in pairs(mutationsData) do
     clipboardText = clipboardText .. '    },\n'
 end
 clipboardText = clipboardText .. "}"
-setclipboard(clipboardText)
+return clipboardText
