@@ -1,15 +1,4 @@
-RequireWeak = loadstring(game:HttpGet("https://gitlab.com/r_soft/main/-/raw/main/Others/Require.lua",true))()
-local function SafeRequire(script)
-    local success, result = pcall(function()
-        return require(script)
-    end)
-    if success then
-        return result
-    else
-        return RequireWeak.GetScript(script)
-    end
-end
-local mutationModule = SafeRequire(game:GetService("ReplicatedStorage").Modules.MutationHandler)
+local mutationModule = require(game:GetService("ReplicatedStorage").Modules.MutationHandler)
 local mutationNames = {}
 for name, _ in pairs(mutationModule.MutationNames) do
     table.insert(mutationNames, name)
