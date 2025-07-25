@@ -14,3 +14,4 @@ for i, name in ipairs(mutations) do
     clipboardText = clipboardText .. "\n"
 end
 clipboardText = clipboardText .. "}\n\nreturn PetsM"
+return clipboardText
