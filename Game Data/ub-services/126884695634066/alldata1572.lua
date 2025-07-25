@@ -130,21 +130,6 @@ local Seeds = {
     "Pumpkin"
 }
 
-local Sprinkler = {
-    "Advanced Sprinkler",
-    "Spice Spritzer Sprinkler",
-    "Master Sprinkler",
-    "Stalk Sprout Sprinkler",
-    "Honey Sprinkler",
-    "Berry Blusher Sprinkler",
-    "Flower Froster Sprinkler",
-    "Chocolate Sprinkler",
-    "Basic Sprinkler",
-    "Sweet Soaker Sprinkler",
-    "Tropical Mist Sprinkler",
-    "Godly Sprinkler"
-}
-
 local Cosmetics = {
     "Brown Bench",
     "Tiki Bar",
