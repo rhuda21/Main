@@ -37,4 +37,18 @@ local output = ""
 for name, data in pairs(Data) do
     output = output .. formatTable(name, data) .. "\n\n"
 end
+
+output = output .. [[
+return {
+    Seeds = Seeds,
+    Eggs = Eggs,
+    Gears = Gears,
+    Cosmetics = Cosmetics,
+    Pets = Pets,
+    Event1 = Event1,
+    Variants = variant,
+    Merchant = Merchant,
+    sprinklerNames = sprinklerNames,
+    PetMutations = PetMutations
+}]]
 return output
