@@ -430,3 +430,15 @@ local Eggs = {
     "Paradise Egg"
 }
 
+return {
+    Seeds = Seeds,
+    Eggs = Eggs,
+    Gears = Gears,
+    Cosmetics = Cosmetics,
+    Pets = Pets,
+    Event1 = Event1,
+    Variants = variant,
+    Merchant = Merchant,
+    sprinklerNames = sprinklerNames,
+    PetMutations = PetMutations
+}
