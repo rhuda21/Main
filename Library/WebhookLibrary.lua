@@ -1,5 +1,6 @@
+local WebhookLib = {}
 local http = game:GetService("HttpService")
-local function SendMessageEMBED(url, embed, mention)
+local function WebhookLib.SendMessageEMBED(url, embed, mention)
     local payload = {
         content = mention and ("<@" .. mention .. ">") or "",
         embeds = {{
@@ -27,4 +28,4 @@ local function SendMessageEMBED(url, embed, mention)
         warn("Failed to send webhook:", response)
     end
 end
-return SendMessageEMBED
+return WebhookLib
