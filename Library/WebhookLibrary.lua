@@ -1,6 +1,6 @@
 local WebhookLib = {}
 local http = game:GetService("HttpService")
-local function WebhookLib.SendMessageEMBED(url, embed, mention)
+function WebhookLib.SendMessageEMBED(url, embed, mention)
     local payload = {
         content = mention and ("<@" .. mention .. ">") or "",
         embeds = {{
