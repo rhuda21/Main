@@ -59,7 +59,10 @@ end
 
 function FileLib:IsFolder(path)
     pcall(function()
-        return _isfolder(path)
+        if not _isfolder(path) then
+            _makefolder(path)
+        end
+        return true
     end)
     return false
 end
