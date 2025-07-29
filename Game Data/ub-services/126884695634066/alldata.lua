@@ -1,4 +1,3 @@
-local RequireWeak = loadstring(game:HttpGet("https://gitlab.com/r_soft/main/-/raw/main/Others/Require.lua"))()
 local function SafeRequire(script)
     local success, result = pcall(function()
         return require(script)
