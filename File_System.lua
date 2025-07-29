@@ -13,88 +13,90 @@ local _isfile = isfile or (debug and debug.isfile) or function() end
 local FileLib = {}
 
 function FileLib:ListFiles(path)
-    pcall(function()
-        return _listfiles(path)
-    end)
+    local success, result = pcall(_listfiles, path)
+    if success then
+        return result
+    end
     return {}
 end
 
 function FileLib:DeleteFolder(path)
-    pcall(function()
-        return _delfolder(path)
-    end)
+    local success, result = pcall(_delfolder, path)
+    if success then
+        return result
+    end
     return false
 end
 
 function FileLib:DeleteFile(path)
-    pcall(function()
-        return _delfile(path)
-    end)
+    local success, result = pcall(_delfile, path)
+    if success then
+        return result
+    end
     return false
 end
 
 function FileLib:ReadFile(path)
-    pcall(function()
-        return _readfile(path)
-    end)
+    local success, result = pcall(_readfile, path)
+    if success then
+        return result
+    end
     return ""
 end
 
 function FileLib:WriteFile(path, data)
-    pcall(function()
-        if not self:IsFolder(path) then
-            self:MakeFolder(path)
-        end
-        return _writefile(path, data)
-    end)
+    local success, result = pcall(_writefile, path, data)
+    if success then
+        return result
+    end
     return false
 end
 
 function FileLib:MakeFolder(path)
-    pcall(function()
-        return _makefolder(path)
-    end)
+    local success, result = pcall(_makefolder, path)
+    if success then
+        return result
+    end
     return false
 end
 
 function FileLib:IsFolder(path)
-    pcall(function()
-        if not _isfolder(path) then
-            _makefolder(path)
-        end
-        return true
-    end)
+    local success, result = pcall(_isfolder, path)
+    if success then
+        return result
+    end
     return false
 end
 
 function FileLib:IsFile(path)
-    pcall(function()
-        return _isfile(path)
-    end)
+    local success, result = pcall(_isfile, path)
+    if success then
+        return result
+    end
     return false
 end
 
 function FileLib:AppendFile(path, data)
-    pcall(function()
-        if not self:IsFolder(path) then
-            self:MakeFolder(path)
-        end
-        return _appendfile(path, data)
-    end)
+    local success, result = pcall(_appendfile, path, data)
+    if success then
+        return result
+    end
     return false
 end
 
 function FileLib:LoadFile(path)
-    pcall(function()
-        return _loadfile(path)
-    end)
+    local success, result = pcall(_loadfile, path)
+    if success then
+        return result
+    end
     return false
 end
 
 function FileLib:DoFile(path)
-    pcall(function()
-        return _dofile(path)
-    end)
+    local success, result = pcall(_dofile, path)
+    if success then
+        return result
+    end
     return false
 end
 
