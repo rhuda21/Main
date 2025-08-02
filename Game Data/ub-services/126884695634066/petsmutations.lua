@@ -5,13 +5,13 @@ for name, data in pairs(PetMutationRegistry.PetMutationRegistry) do
 end
 table.sort(mutationNames)
 local mutations = mutationNames
-local clipboardText = "local PetsM = {\n"
+local petsmutation = "local PetsM = {\n"
 for i, name in ipairs(mutations) do
-    clipboardText = clipboardText .. '    "' .. name .. '"'
+    petsmutation = petsmutation .. '    "' .. name .. '"'
     if i < #mutations then
-        clipboardText = clipboardText .. ","
+        petsmutation = petsmutation .. ","
     end
-    clipboardText = clipboardText .. "\n"
+    petsmutation = petsmutation .. "\n"
 end
-clipboardText = clipboardText .. "}\n\nreturn PetsM"
-return clipboardText
+petsmutation = petsmutation .. "}\n\nreturn PetsM"
+return petsmutation
