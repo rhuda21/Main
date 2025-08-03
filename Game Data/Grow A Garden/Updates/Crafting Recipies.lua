@@ -1,15 +1,5 @@
-local function SafeRequire(script)
-    local success, result = pcall(function()
-        return require(script)
-    end)
-    if success then
-        return result
-    else
-        return RequireWeak.GetScript(script)
-    end
-end
 local HttpService = game:GetService("HttpService")
-local craftingData = SafeRequire(game:GetService("ReplicatedStorage").Data.CraftingData.CraftingRecipeRegistry)
+local craftingData = require(game:GetService("ReplicatedStorage").Data.CraftingData.CraftingRecipeRegistry)
 local recipes = {}
 for recipeName, recipeData in pairs(craftingData.ItemRecipes) do
     local recipe = {

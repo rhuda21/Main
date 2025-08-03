@@ -1,23 +1,13 @@
-local function SafeRequire(script)
-    local success, result = pcall(function()
-        return require(script)
-    end)
-    if success then
-        return result
-    else
-        return RequireWeak.GetScript(script)
-    end
-end
 local Data = {
-    Seeds = SafeRequire(game:GetService("ReplicatedStorage").Data.SeedData),
-    Eggs = SafeRequire(game:GetService("ReplicatedStorage").Data.PetEggData),
-    Gears = SafeRequire(game:GetService("ReplicatedStorage").Data.GearData),
-    Cosmetics = SafeRequire(game:GetService("ReplicatedStorage").Data.CosmeticItemShopData),
-    Pets = SafeRequire(game:GetService("ReplicatedStorage").Data.PetRegistry.PetList),
-    Event1 = SafeRequire(game:GetService("ReplicatedStorage").Data.EventShopData),
-    Merchant = SafeRequire(game:GetService("ReplicatedStorage").Data.TravelingMerchant.TravelingMerchantData.GnomeMerchantShopData),
-    Sprinkler = SafeRequire(game:GetService("ReplicatedStorage").Data.SprinklerData),
-    PetsM = SafeRequire(game:GetService("ReplicatedStorage").Data.PetRegistry.PetMutationRegistry)
+    Seeds = require(game:GetService("ReplicatedStorage").Data.SeedData),
+    Eggs = require(game:GetService("ReplicatedStorage").Data.PetEggData),
+    Gears = require(game:GetService("ReplicatedStorage").Data.GearData),
+    Cosmetics = require(game:GetService("ReplicatedStorage").Data.CosmeticItemShopData),
+    Pets = require(game:GetService("ReplicatedStorage").Data.PetRegistry.PetList),
+    Event1 = require(game:GetService("ReplicatedStorage").Data.EventShopData),
+    Merchant = require(game:GetService("ReplicatedStorage").Data.TravelingMerchant.TravelingMerchantData.GnomeMerchantShopData),
+    Sprinkler = require(game:GetService("ReplicatedStorage").Data.SprinklerData),
+    PetsM = require(game:GetService("ReplicatedStorage").Data.PetRegistry.PetMutationRegistry)
 }
 local function formatTable(name, data)
     local items = {}
