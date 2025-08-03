@@ -1,30 +1,57 @@
-local crate = "return {\n"
-for crateName, crateData in pairs(require(game:GetService("ReplicatedStorage").Data.CosmeticCrateRegistry.CosmeticCrates)) do
-    crate = crate .. string.format('    ["%s"] = {\n', crateName)
-    crate = crate .. string.format('        ["Name"] = "%s",\n', crateName)
-    if crateData.Color then
-        local r, g, b = math.floor(crateData.Color.R * 255), math.floor(crateData.Color.G * 255), math.floor(crateData.Color.B * 255)
-        crate = crate .. string.format('        ["Color"] = Color3.fromRGB(%d, %d, %d),\n', r, g, b)
-    else
-        crate = crate .. '        ["Color"] = nil,\n'
-    end
-    crate = crate .. string.format('        ["OpenTime"] = %d,\n', crateData.OpenTime or 1800)
-    if crateData.Icon and crateData.Icon ~= "" then
-        crate = crate .. string.format('        ["Icon"] = "%s",\n', crateData.Icon)
-    else
-        crate = crate .. '        ["Icon"] = nil,\n'
-    end
-    if crateData.CosmeticRolls and crateData.CosmeticRolls.Items then
-        crate = crate .. '        ["Items"] = {\n'
-        for itemName, itemData in pairs(crateData.CosmeticRolls.Items) do
-            crate = crate .. string.format('            ["%s"] = {\n', itemName)
-            crate = crate .. string.format('                ["Name"] = "%s",\n', itemData.Name)
-            crate = crate .. string.format('                ["ItemOdd"] = %d,\n', itemData.ItemOdd)
-            crate = crate .. '            },\n'
+local HttpService = game:GetService("HttpService")
+local function prettyPrintJson(jsonString)
+    local result = ""
+    local indentLevel = 0
+    local inString = false  
+    for i = 1, #jsonString do
+        local char = jsonString:sub(i,i)
+        if char == '"' and jsonString:sub(i-1,i-1) ~= "\\" then
+            inString = not inString
         end
-        crate = crate .. '        },\n'
+        if not inString then
+            if char == "{" or char == "[" then
+                result = result .. char .. "\n" .. string.rep("  ", indentLevel + 1)
+                indentLevel = indentLevel + 1
+            elseif char == "}" or char == "]" then
+                indentLevel = indentLevel - 1
+                result = result .. "\n" .. string.rep("  ", indentLevel) .. char
+            elseif char == "," then
+                result = result .. char .. "\n" .. string.rep("  ", indentLevel)
+            elseif char == ":" then
+                result = result .. char .. " "
+            else
+                result = result .. char
+            end
+        else
+            result = result .. char
+        end
     end
-    crate = crate .. '    },\n'
+    return result
 end
-crate = crate .. "}"
+local crateData = {}
+local cosmeticCrates = require(game:GetService("ReplicatedStorage").Data.CosmeticCrateRegistry.CosmeticCrates)
+for crateName, data in pairs(cosmeticCrates) do
+    local crateEntry = {
+        Name = crateName,
+        Color = data.Color and {
+            R = math.floor(data.Color.R * 255),
+            G = math.floor(data.Color.G * 255),
+            B = math.floor(data.Color.B * 255)
+        } or nil,
+        OpenTime = data.OpenTime or 1800,
+        Items = {}
+    }
+    if data.CosmeticRolls and data.CosmeticRolls.Items then
+        for itemName, itemData in pairs(data.CosmeticRolls.Items) do
+            crateEntry.Items[itemName] = {
+                Name = itemData.Name,
+                ItemOdd = itemData.ItemOdd
+            }
+        end
+    end
+    
+    crateData[crateName] = crateEntry
+end
+local crate = prettyPrintJson(HttpService:JSONEncode(crateData))
+--setclipboard(crate)
 return crate
