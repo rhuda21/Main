@@ -1,53 +1,67 @@
-local function SafeRequire(script)
-    local success, result = pcall(function()
-        return require(script)
-    end)
-    if success then
-        return result
-    else
-        return RequireWeak.GetScript(script)
-    end
-end
+local HttpService = game:GetService("HttpService")
 local Data = {
-    Seeds = SafeRequire(game:GetService("ReplicatedStorage").Data.SeedData),
-    Eggs = SafeRequire(game:GetService("ReplicatedStorage").Data.PetEggData),
-    Gears = SafeRequire(game:GetService("ReplicatedStorage").Data.GearData),
-    Cosmetics = SafeRequire(game:GetService("ReplicatedStorage").Data.CosmeticItemShopData),
-    Pets = SafeRequire(game:GetService("ReplicatedStorage").Data.PetRegistry.PetList),
-    Event1 = SafeRequire(game:GetService("ReplicatedStorage").Data.EventShopData),
-    Merchant = SafeRequire(game:GetService("ReplicatedStorage").Data.TravelingMerchant.TravelingMerchantData.GnomeMerchantShopData),
-    Sprinkler = SafeRequire(game:GetService("ReplicatedStorage").Data.SprinklerData),
-    PetsM = SafeRequire(game:GetService("ReplicatedStorage").Data.PetRegistry.PetMutationRegistry)
+    Seeds = require(game:GetService("ReplicatedStorage").Data.SeedData),
+    Eggs = require(game:GetService("ReplicatedStorage").Data.PetEggData),
+    Gears = require(game:GetService("ReplicatedStorage").Data.GearData),
+    Cosmetics = require(game:GetService("ReplicatedStorage").Data.CosmeticItemShopData),
+    Pets = require(game:GetService("ReplicatedStorage").Data.PetRegistry.PetList),
+    Event1 = require(game:GetService("ReplicatedStorage").Data.EventShopData),
+    Merchant = require(game:GetService("ReplicatedStorage").Data.TravelingMerchant.TravelingMerchantData.GnomeMerchantShopData),
+    Sprinkler = require(game:GetService("ReplicatedStorage").Data.SprinklerData),
+    PetsM = require(game:GetService("ReplicatedStorage").Data.PetRegistry.PetMutationRegistry)
 }
-local function formatTable(name, data)
+local function prettyPrintJson(jsonString)
+    local result = ""
+    local indentLevel = 0
+    local inString = false  
+    for i = 1, #jsonString do
+        local char = jsonString:sub(i,i)
+        if char == '"' and jsonString:sub(i-1,i-1) ~= "\\" then
+            inString = not inString
+        end
+        if not inString then
+            if char == "{" or char == "[" then
+                result = result .. char .. "\n" .. string.rep("  ", indentLevel + 1)
+                indentLevel = indentLevel + 1
+            elseif char == "}" or char == "]" then
+                indentLevel = indentLevel - 1
+                result = result .. "\n" .. string.rep("  ", indentLevel) .. char
+            elseif char == "," then
+                result = result .. char .. "\n" .. string.rep("  ", indentLevel)
+            elseif char == ":" then
+                result = result .. char .. " "
+            else
+                result = result .. char
+            end
+        else
+            result = result .. char
+        end
+    end
+    return result
+end
+local function tableToJson(name, data)
     local items = {}
     if name == "Sprinkler" then
         for item in pairs(data.SprinklerBoxSizes) do
-            table.insert(items, '    "'..item..'"')
+            table.insert(items, item)
         end
     else
         for item in pairs(data) do
-            table.insert(items, '    "'..item..'"')
+            table.insert(items, item)
         end
     end
-    return "local "..name.." = {\n"..table.concat(items, ",\n").."\n}"
+    return HttpService:JSONEncode({
+        [name] = items
+    })
 end
-local output = ""
+local DataOutput = "{"
 for name, data in pairs(Data) do
-    output = output .. formatTable(name, data) .. "\n\n"
+    if DataOutput ~= "{" then
+        DataOutput = DataOutput .. ","
+    end
+    DataOutput = DataOutput .. tableToJson(name, data):sub(2, -2)
 end
-
-output = output .. [[
-return {
-    Seeds = Seeds,
-    Eggs = Eggs,
-    Gears = Gears,
-    Cosmetics = Cosmetics,
-    Pets = Pets,
-    Event1 = Event1,
-    Variants = variant,
-    Merchant = Merchant,
-    sprinklerNames = sprinklerNames,
-    PetMutations = PetMutations
-}]]
-return output
+DataOutput = DataOutput .. "}"
+local alldata = prettyPrintJson(DataOutput)
+--setclipboard(alldata)
+return alldata
