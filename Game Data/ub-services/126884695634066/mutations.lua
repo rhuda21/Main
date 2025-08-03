@@ -1,3 +1,33 @@
+local HttpService = game:GetService("HttpService")
+local function prettyPrintJson(jsonString)
+    local result = ""
+    local indentLevel = 0
+    local inString = false  
+    for i = 1, #jsonString do
+        local char = jsonString:sub(i,i)
+        if char == '"' and jsonString:sub(i-1,i-1) ~= "\\" then
+            inString = not inString
+        end
+        if not inString then
+            if char == "{" or char == "[" then
+                result = result .. char .. "\n" .. string.rep("  ", indentLevel + 1)
+                indentLevel = indentLevel + 1
+            elseif char == "}" or char == "]" then
+                indentLevel = indentLevel - 1
+                result = result .. "\n" .. string.rep("  ", indentLevel) .. char
+            elseif char == "," then
+                result = result .. char .. "\n" .. string.rep("  ", indentLevel)
+            elseif char == ":" then
+                result = result .. char .. " "
+            else
+                result = result .. char
+            end
+        else
+            result = result .. char
+        end
+    end
+    return result
+end
 local mutationModule = require(game:GetService("ReplicatedStorage").Modules.MutationHandler)
 local mutationNames = {}
 for name, _ in pairs(mutationModule.MutationNames) do
@@ -5,37 +35,29 @@ for name, _ in pairs(mutationModule.MutationNames) do
 end
 table.sort(mutationNames)
 local mutationsData = {}
+local mutationsData = {}
 for _, name in ipairs(mutationNames) do
     local mutationData = mutationModule:GetMutations()[name]
     if mutationData then
-        mutationsData[name] = {
+        local entry = {
             Name = mutationData.Name,
             Id = mutationData.Id,
-            Color = mutationData.Color,
             ValueMulti = mutationData.ValueMulti,
-            TimeData = mutationData.TimeData
+            TimeData = mutationData.TimeData and {
+                TimeToChange = mutationData.TimeData.TimeToChange,
+                AddMutationName = mutationData.TimeData.AddMutationName
+            } or nil
         }
+        if mutationData.Color then
+            entry.Color = {
+                R = math.floor(mutationData.Color.R * 255),
+                G = math.floor(mutationData.Color.G * 255),
+                B = math.floor(mutationData.Color.B * 255)
+            }
+        end
+        mutationsData[name] = entry
     end
 end
-local mutations = "return {\n"
-for name, data in pairs(mutationsData) do
-    mutations = mutations .. string.format('    ["%s"] = {\n', name)
-    mutations = mutations .. string.format('        ["Name"] = "%s",\n', data.Name)
-    mutations = mutations .. string.format('        ["Id"] = "%s",\n', data.Id)
-    if data.Color then
-        local r, g, b = math.floor(data.Color.R * 255), math.floor(data.Color.G * 255), math.floor(data.Color.B * 255)
-        mutations = mutations .. string.format('        ["Color"] = Color3.fromRGB(%d, %d, %d),\n', r, g, b)
-    else
-        mutations = mutations .. '        ["Color"] = nil,\n'
-    end
-    mutations = mutations .. string.format('        ["ValueMulti"] = %d,\n', data.ValueMulti)
-    if data.TimeData then
-        mutations = mutations .. '        ["TimeData"] = {\n'
-        mutations = mutations .. string.format('            ["TimeToChange"] = %d,\n', data.TimeData.TimeToChange)
-        mutations = mutations .. string.format('            ["AddMutationName"] = "%s"\n', data.TimeData.AddMutationName)
-        mutations = mutations .. '        },\n'
-    end
-    mutations = mutations .. '    },\n'
-end
-mutations = mutations .. "}"
+mutations = prettyPrintJson(HttpService:JSONEncode(mutationsData))
+--setclipboard(mutations)
 return mutations
