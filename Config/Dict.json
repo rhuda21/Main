@@ -11,7 +11,7 @@
         {
           "name": "Test1",
           "source": "url",
-          "path": "https://rhuda21.github.io/Cloud%20Configs/Baseplate/Test.json"
+          "path": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Config/Baseplate/Test.json"
         },
         {
           "name": "Community Config",
