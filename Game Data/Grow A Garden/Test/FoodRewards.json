@@ -1,0 +1,303 @@
+{
+  "PigChefRewards": [
+    {
+      "RewardValueRequirement": 0,
+      "ItemName": "Sheckles",
+      "ItemType": "Currency",
+      "Chance": 75,
+      "ItemAmount": 500,
+      "RewardDialogue": "Chris P. seems to have a sad look on his eyes before taking a bite."
+    },
+    {
+      "RewardValueRequirement": 1,
+      "ItemName": "Mutation Spray Burnt",
+      "ItemType": "SprayBottle",
+      "Chance": 60,
+      "ItemAmount": 1,
+      "RewardDialogue": "Chris P. nods approvingly, though not overly impressed."
+    },
+    {
+      "RewardValueRequirement": 1,
+      "ItemName": "Watering Can",
+      "ItemType": "Gear",
+      "Chance": 50,
+      "ItemAmount": 5,
+      "RewardDialogue": "Chris P. nods approvingly, though not overly impressed."
+    },
+    {
+      "RewardValueRequirement": 1,
+      "ItemName": "Fork Fence",
+      "ItemType": "Cosmetic",
+      "Chance": 50,
+      "ItemAmount": 1,
+      "RewardDialogue": "Chris P. nods approvingly, though not overly impressed."
+    },
+    {
+      "RewardValueRequirement": 2,
+      "ItemName": "Food Crate",
+      "ItemType": "Crate",
+      "Chance": 30,
+      "ItemAmount": 1,
+      "RewardDialogue": "Chris P. is pleasantly surprised with your dish!"
+    },
+    {
+      "RewardValueRequirement": 2,
+      "ItemName": "Reclaimer",
+      "ItemType": "Gear",
+      "Chance": 30,
+      "ItemAmount": 1,
+      "RewardDialogue": "Chris P. is pleasantly surprised with your dish!"
+    },
+    {
+      "RewardValueRequirement": 2,
+      "ItemName": "Corn",
+      "ItemType": "Seed",
+      "Chance": 30,
+      "ItemAmount": 3,
+      "RewardDialogue": "Chris P. is pleasantly surprised with your dish!"
+    },
+    {
+      "RewardValueRequirement": 3,
+      "ItemName": "Gourmet Seed Pack",
+      "ItemType": "Seed Pack",
+      "Chance": 20,
+      "ItemAmount": 1,
+      "RewardDialogue": "Chris P. is greatly impressed by your creation!"
+    },
+    {
+      "RewardValueRequirement": 3,
+      "ItemName": "Artichoke",
+      "ItemType": "Seed",
+      "Chance": 15,
+      "ItemAmount": 1,
+      "RewardDialogue": "Chris P. is greatly impressed by your creation!"
+    },
+    {
+      "RewardValueRequirement": 3,
+      "ItemName": "Advanced Sprinkler",
+      "ItemType": "Gear",
+      "Chance": 15,
+      "ItemAmount": 1,
+      "RewardDialogue": "Chris P. nods approvingly, `though not overly impressed."
+    },
+    {
+      "RewardValueRequirement": 4,
+      "ItemName": "Small Toy",
+      "ItemType": "Gear",
+      "Chance": 10,
+      "ItemAmount": 2,
+      "RewardDialogue": "Chris P. is astonished beyond words at your creation!"
+    },
+    {
+      "RewardValueRequirement": 4,
+      "ItemName": "Gourmet Egg",
+      "ItemType": "Egg",
+      "Chance": 10,
+      "ItemAmount": 1,
+      "RewardDialogue": "Chris P. claps in delight at your remarkable dish!"
+    },
+    {
+      "RewardValueRequirement": 4,
+      "ItemName": "Mutation Spray HoneyGlazed",
+      "ItemType": "SprayBottle",
+      "Chance": 10,
+      "ItemAmount": 2,
+      "RewardDialogue": "Chris P. is in awe of your culinary expertise!"
+    },
+    {
+      "RewardValueRequirement": 5,
+      "ItemName": "Pretzel Cart",
+      "ItemType": "Cosmetic",
+      "Chance": 8,
+      "ItemAmount": 1,
+      "RewardDialogue": "Chris P. is astonished beyond words at your creation!"
+    },
+    {
+      "RewardValueRequirement": 5,
+      "ItemName": "Gourmet Seed Pack",
+      "ItemType": "Seed Pack",
+      "Chance": 8,
+      "ItemAmount": 2,
+      "RewardDialogue": "Chris P. is greatly impressed by your creation!"
+    },
+    {
+      "RewardValueRequirement": 5,
+      "ItemName": "Medium Toy",
+      "ItemType": "Gear",
+      "Chance": 8,
+      "ItemAmount": 1,
+      "RewardDialogue": "Chris P. is astonished beyond words at your creation!"
+    },
+    {
+      "RewardValueRequirement": 6,
+      "ItemName": "Mochi Mouse",
+      "ItemType": "Pet",
+      "Chance": 4,
+      "ItemAmount": 1,
+      "RewardDialogue": "Chris P. bows in respect to your divine culinary masterpiece!"
+    },
+    {
+      "RewardValueRequirement": 6,
+      "ItemName": "Mutation Spray Fried",
+      "ItemType": "SprayBottle",
+      "Chance": 4,
+      "ItemAmount": 3,
+      "RewardDialogue": "Chris P. bows in respect to your divine culinary masterpiece!"
+    },
+    {
+      "RewardValueRequirement": 6,
+      "ItemName": "Food Crate",
+      "ItemType": "Crate",
+      "Chance": 4,
+      "ItemAmount": 2,
+      "RewardDialogue": "Chris P. bows in respect to your divine culinary masterpiece!"
+    },
+    {
+      "RewardValueRequirement": 6,
+      "ItemName": "Pet Shard Fried",
+      "ItemType": "Gear",
+      "Chance": 1,
+      "ItemAmount": 1,
+      "RewardDialogue": "Chris P. bows in respect to your divine culinary masterpiece!"
+    },
+    {
+      "RewardValueRequirement": 7,
+      "ItemName": "Taco Fern",
+      "ItemType": "Seed",
+      "Chance": 3,
+      "ItemAmount": 1,
+      "RewardDialogue": "Chris P. worships your unparalleled creation!"
+    },
+    {
+      "RewardValueRequirement": 7,
+      "ItemName": "Gourmet Egg",
+      "ItemType": "Egg",
+      "Chance": 3,
+      "ItemAmount": 3,
+      "RewardDialogue": "Chris P. worships your unparalleled creation!"
+    },
+    {
+      "RewardValueRequirement": 7,
+      "ItemName": "Gourmet Seed Pack",
+      "ItemType": "Seed Pack",
+      "Chance": 3,
+      "ItemAmount": 4,
+      "RewardDialogue": "Chris P. worships your unparalleled creation!"
+    },
+    {
+      "RewardValueRequirement": 8,
+      "ItemName": "Pancake Stack",
+      "ItemType": "Cosmetic",
+      "Chance": 5,
+      "ItemAmount": 1,
+      "RewardDialogue": "Chris P. worships your unparalleled creation!"
+    }
+  ],
+  "RatChefRewards": [
+    {
+      "RewardValueRequirement": 0,
+      "ItemName": "Culinarian Chest",
+      "ItemType": "Seed Pack",
+      "Chance": 40,
+      "ItemAmount": 1
+    },
+    {
+      "RewardValueRequirement": 0,
+      "ItemName": "Gourmet Seed Pack",
+      "ItemType": "Seed Pack",
+      "Chance": 50,
+      "ItemAmount": 1
+    },
+    {
+      "RewardValueRequirement": 0,
+      "ItemName": "Butternut Squash",
+      "ItemType": "Seed",
+      "Chance": 8,
+      "ItemAmount": 1
+    },
+    {
+      "RewardValueRequirement": 0,
+      "ItemName": "Spring Onion",
+      "ItemType": "Seed",
+      "Chance": 30,
+      "ItemAmount": 1
+    },
+    {
+      "RewardValueRequirement": 0,
+      "ItemName": "Pricklefruit",
+      "ItemType": "Seed",
+      "Chance": 5,
+      "ItemAmount": 1
+    },
+    {
+      "RewardValueRequirement": 0,
+      "ItemName": "Bitter Melon",
+      "ItemType": "Seed",
+      "Chance": 3,
+      "ItemAmount": 1
+    },
+    {
+      "RewardValueRequirement": 0,
+      "ItemName": "Kitchen Crate",
+      "ItemType": "Crate",
+      "Chance": 50,
+      "ItemAmount": 1
+    },
+    {
+      "RewardValueRequirement": 0,
+      "ItemName": "Pet Shard Aromatic",
+      "ItemType": "Gear",
+      "Chance": 20,
+      "ItemAmount": 1
+    },
+    {
+      "RewardValueRequirement": 0,
+      "ItemName": "Sunny-Side Chicken",
+      "ItemType": "Pet",
+      "Chance": 30,
+      "ItemAmount": 1
+    },
+    {
+      "RewardValueRequirement": 0,
+      "ItemName": "Gorilla Chef",
+      "ItemType": "Pet",
+      "Chance": 5,
+      "ItemAmount": 1
+    },
+    {
+      "RewardValueRequirement": 0,
+      "ItemName": "Cooking Cauldron",
+      "ItemType": "Cosmetic",
+      "Chance": 30,
+      "ItemAmount": 1
+    },
+    {
+      "RewardValueRequirement": 0,
+      "ItemName": "Smoothie Fountain",
+      "ItemType": "Cosmetic",
+      "Chance": 15,
+      "ItemAmount": 1
+    },
+    {
+      "RewardValueRequirement": 0,
+      "ItemName": "Kitchen Flooring",
+      "ItemType": "Cosmetic",
+      "Chance": 30,
+      "ItemAmount": 1
+    },
+    {
+      "RewardValueRequirement": 0,
+      "ItemName": "Kitchen Cart",
+      "ItemType": "Cosmetic",
+      "Chance": 20,
+      "ItemAmount": 1
+    },
+    {
+      "RewardValueRequirement": 0,
+      "ItemName": "Gourmet Egg",
+      "ItemType": "Egg",
+      "Chance": 50,
+      "ItemAmount": 1
+    }
+  ]
+}
