@@ -4,7 +4,6 @@ local recipes = {}
 for recipeName, recipeData in pairs(recipesData.Recipes) do
     local recipe = {
         Id = recipeData.Id,
-        ImageId = recipeData.ImageId,
         Priority = recipeData.Priority,
         Requires = {
             Count = recipeData.Requires.Count,

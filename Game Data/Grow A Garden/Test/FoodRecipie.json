@@ -38,10 +38,9 @@
         ]
       }
     },
-    "BaseWeight": 0.7,
     "Id": "v",
     "Priority": 10,
-    "ImageId": "rbxassetid://98794672893031",
+    "BaseWeight": 0.7,
     "Results": [
       "CandyApple"
     ]
@@ -54,10 +53,9 @@
         
       ]
     },
-    "BaseWeight": 0.5,
     "Id": "d",
     "Priority": 0,
-    "ImageId": "rbxassetid://122580735203073",
+    "BaseWeight": 0.5,
     "Results": [
       "Soup"
     ]
@@ -101,10 +99,9 @@
         ]
       }
     },
-    "BaseWeight": 1.2,
     "Id": "j",
     "Priority": 6,
-    "ImageId": "rbxassetid://112367385396275",
+    "BaseWeight": 1.2,
     "Results": [
       "Waffle"
     ]
@@ -175,10 +172,9 @@
         ]
       }
     },
-    "BaseWeight": 2,
     "Id": "m",
     "Priority": 9,
-    "ImageId": "rbxassetid://103702025640123",
+    "BaseWeight": 2,
     "Results": [
       "Donut"
     ]
@@ -235,10 +231,9 @@
         ]
       }
     },
-    "BaseWeight": 3,
     "Id": "i",
     "Priority": 8,
-    "ImageId": "rbxassetid://126935428774858",
+    "BaseWeight": 3,
     "Results": [
       "Pie"
     ]
@@ -291,10 +286,9 @@
         ]
       }
     },
-    "BaseWeight": 1.2,
     "Id": "p",
     "Priority": 10,
-    "ImageId": "rbxassetid://99520717630343",
+    "BaseWeight": 1.2,
     "Results": [
       "Smoothie"
     ]
@@ -369,10 +363,9 @@
         ]
       }
     },
-    "BaseWeight": 2,
     "Id": "l",
     "Priority": 20,
-    "ImageId": "rbxassetid://124413058833848",
+    "BaseWeight": 2,
     "Results": [
       "Sushi"
     ]
@@ -473,10 +466,9 @@
         ]
       }
     },
-    "BaseWeight": 2,
     "Id": "k",
     "Priority": 7,
-    "ImageId": "rbxassetid://99865068747737",
+    "BaseWeight": 2,
     "Results": [
       "Pizza"
     ]
@@ -512,10 +504,9 @@
         ]
       }
     },
-    "BaseWeight": 1,
     "Id": "f",
     "Priority": 3,
-    "ImageId": "rbxassetid://139763254124497",
+    "BaseWeight": 1,
     "Results": [
       "Sandwich"
     ]
@@ -568,10 +559,9 @@
         ]
       }
     },
-    "BaseWeight": 0.2,
     "Id": "g",
     "Priority": 2,
-    "ImageId": "rbxassetid://96781873740831",
+    "BaseWeight": 0.2,
     "Results": [
       "Salad"
     ]
@@ -635,10 +625,9 @@
         ]
       }
     },
-    "BaseWeight": 2.5,
     "Id": "t",
     "Priority": 6,
-    "ImageId": "rbxassetid://118816141566924",
+    "BaseWeight": 2.5,
     "Results": [
       "Spaghetti"
     ]
@@ -720,10 +709,9 @@
         ]
       }
     },
-    "BaseWeight": 0.5,
     "Id": "y",
     "Priority": 4,
-    "ImageId": "rbxassetid://114245564378378",
+    "BaseWeight": 0.5,
     "Results": [
       "SweetTea"
     ]
@@ -755,10 +743,9 @@
         ]
       }
     },
-    "BaseWeight": 1.5,
     "Id": "e",
     "Priority": 5,
-    "ImageId": "rbxassetid://136455657586960",
+    "BaseWeight": 1.5,
     "Results": [
       "HotDog"
     ]
@@ -870,10 +857,9 @@
         ]
       }
     },
-    "BaseWeight": 2,
     "Id": "o",
     "Priority": 10,
-    "ImageId": "rbxassetid://133935704392240",
+    "BaseWeight": 2,
     "Results": [
       "Cake"
     ]
@@ -918,10 +904,9 @@
         ]
       }
     },
-    "BaseWeight": 2,
     "Id": "c",
     "Priority": 10,
-    "ImageId": "rbxassetid://100029889334054",
+    "BaseWeight": 2,
     "Results": [
       "Burger"
     ]
@@ -988,10 +973,9 @@
         ]
       }
     },
-    "BaseWeight": 2,
     "Id": "r",
     "Priority": 3,
-    "ImageId": "rbxassetid://121467388211046",
+    "BaseWeight": 2,
     "Results": [
       "Porridge"
     ]
@@ -1036,10 +1020,9 @@
         ]
       }
     },
-    "BaseWeight": 2,
     "Id": "n",
     "Priority": 10,
-    "ImageId": "rbxassetid://80440750183765",
+    "BaseWeight": 2,
     "Results": [
       "IceCream"
     ]
