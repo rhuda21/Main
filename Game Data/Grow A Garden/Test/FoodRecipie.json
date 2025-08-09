@@ -1,0 +1,1047 @@
+{
+  "CandyApple": {
+    "BaseTime": 200,
+    "Requires": {
+      "Count": 2,
+      "Ingredients": {
+        "Apple": [
+          "Apple",
+          "Green Apple",
+          "Sugar Apple",
+          "Maple Apple"
+        ],
+        "CandyCoating": [
+          "Banana",
+          "Blue Lollipop",
+          "Blueberry",
+          "Candy Blossom",
+          "Candy Sunflower",
+          "Chocolate Carrot",
+          "Easter Egg",
+          "Grape",
+          "Mango",
+          "Peach",
+          "Pear",
+          "Pineapple",
+          "Raspberry",
+          "Red Lollipop",
+          "Strawberry",
+          "Watermelon",
+          "Starfruit",
+          "Nectar Thorn",
+          "Sugar Apple",
+          "Moon Melon",
+          "Spiked Mango",
+          "Sugarglaze",
+          "Crown Melon",
+          "Sugarglaze"
+        ]
+      }
+    },
+    "BaseWeight": 0.7,
+    "Id": "v",
+    "Priority": 10,
+    "ImageId": "rbxassetid://98794672893031",
+    "Results": [
+      "CandyApple"
+    ]
+  },
+  "Soup": {
+    "BaseTime": 300,
+    "Requires": {
+      "Count": 1,
+      "Ingredients": [
+        
+      ]
+    },
+    "BaseWeight": 0.5,
+    "Id": "d",
+    "Priority": 0,
+    "ImageId": "rbxassetid://122580735203073",
+    "Results": [
+      "Soup"
+    ]
+  },
+  "Waffle": {
+    "BaseTime": 350,
+    "Requires": {
+      "Count": 2,
+      "Ingredients": {
+        "Pastry": [
+          "Coconut",
+          "Pumpkin",
+          "Crown Melon",
+          "Sugarglaze"
+        ],
+        "Sweet": [
+          "Banana",
+          "Blue Lollipop",
+          "Blueberry",
+          "Candy Blossom",
+          "Candy Sunflower",
+          "Chocolate Carrot",
+          "Easter Egg",
+          "Grape",
+          "Mango",
+          "Peach",
+          "Pear",
+          "Pineapple",
+          "Raspberry",
+          "Red Lollipop",
+          "Strawberry",
+          "Watermelon",
+          "Starfruit",
+          "Nectar Thorn",
+          "Sugar Apple",
+          "Moon Melon",
+          "Spiked Mango",
+          "Sugarglaze",
+          "Crown Melon",
+          "Sugarglaze"
+        ]
+      }
+    },
+    "BaseWeight": 1.2,
+    "Id": "j",
+    "Priority": 6,
+    "ImageId": "rbxassetid://112367385396275",
+    "Results": [
+      "Waffle"
+    ]
+  },
+  "Donut": {
+    "BaseTime": 200,
+    "Requires": {
+      "Count": 3,
+      "Ingredients": {
+        "Icing": [
+          "Banana",
+          "Blue Lollipop",
+          "Blueberry",
+          "Candy Blossom",
+          "Candy Sunflower",
+          "Chocolate Carrot",
+          "Easter Egg",
+          "Grape",
+          "Mango",
+          "Peach",
+          "Pear",
+          "Pineapple",
+          "Raspberry",
+          "Red Lollipop",
+          "Strawberry",
+          "Watermelon",
+          "Starfruit",
+          "Nectar Thorn",
+          "Sugar Apple",
+          "Moon Melon",
+          "Spiked Mango",
+          "Sugarglaze",
+          "Crown Melon",
+          "Sugarglaze"
+        ],
+        "Bread": [
+          "Corn",
+          "Violet Corn",
+          "Cauliflower",
+          "Banana",
+          "Sugarglaze"
+        ],
+        "Sprinkles": [
+          "Banana",
+          "Blue Lollipop",
+          "Blueberry",
+          "Candy Blossom",
+          "Candy Sunflower",
+          "Chocolate Carrot",
+          "Easter Egg",
+          "Grape",
+          "Mango",
+          "Peach",
+          "Pear",
+          "Pineapple",
+          "Raspberry",
+          "Red Lollipop",
+          "Strawberry",
+          "Watermelon",
+          "Starfruit",
+          "Nectar Thorn",
+          "Sugar Apple",
+          "Moon Melon",
+          "Spiked Mango",
+          "Sugarglaze",
+          "Crown Melon",
+          "Sugarglaze"
+        ]
+      }
+    },
+    "BaseWeight": 2,
+    "Id": "m",
+    "Priority": 9,
+    "ImageId": "rbxassetid://103702025640123",
+    "Results": [
+      "Donut"
+    ]
+  },
+  "Pie": {
+    "BaseTime": 400,
+    "Requires": {
+      "Count": 2,
+      "Ingredients": {
+        "Pastry": [
+          "Coconut",
+          "Pumpkin",
+          "Crown Melon",
+          "Sugarglaze"
+        ],
+        "Filling": [
+          "Carrot",
+          "Wild Carrot",
+          "Chocolate Carrot",
+          "Corn",
+          "Violet Corn",
+          "Eggplant",
+          "Pepper",
+          "Pumpkin",
+          "Purple Cabbage",
+          "Tomato",
+          "Beanstalk",
+          "Mint",
+          "Dragon Pepper",
+          "Cauliflower",
+          "Bell Pepper",
+          "Taro Flower",
+          "Artichoke",
+          "Onion",
+          "Jalapeno",
+          "Tall Asparagus",
+          "Grand Tomato",
+          "Log Pumpkin",
+          "Badlands Pepper",
+          "Rhubarb",
+          "King Cabbage",
+          "Bitter Melon",
+          "Pepper",
+          "Bell Pepper",
+          "Ember Lily",
+          "Cactus",
+          "Mushroom",
+          "Eggplant",
+          "Venus Flytrap",
+          "Glowshroom",
+          "Bone Blossom",
+          "Tall Asparagus",
+          "Taco Fern"
+        ]
+      }
+    },
+    "BaseWeight": 3,
+    "Id": "i",
+    "Priority": 8,
+    "ImageId": "rbxassetid://126935428774858",
+    "Results": [
+      "Pie"
+    ]
+  },
+  "Smoothie": {
+    "BaseTime": 400,
+    "Requires": {
+      "Count": 2,
+      "Ingredients": {
+        "Fruit": [
+          "Apple",
+          "Avocado",
+          "Banana",
+          "Blueberry",
+          "Coconut",
+          "Cranberry",
+          "Dragon Fruit",
+          "Durian",
+          "Grape",
+          "Lemon",
+          "Lime",
+          "Mango",
+          "Papaya",
+          "Passionfruit",
+          "Peach",
+          "Pear",
+          "Pineapple",
+          "Raspberry",
+          "Strawberry",
+          "Watermelon",
+          "Starfruit",
+          "Blood Banana",
+          "Moon Melon",
+          "Celestiberry",
+          "Moon Mango",
+          "Nectarine",
+          "Hive Fruit",
+          "Green Apple",
+          "Sugar Apple",
+          "Traveler's Fruit",
+          "Loquat",
+          "Kiwi",
+          "White Mullberry",
+          "Lingonberry",
+          "Maple Apple",
+          "Spiked Mango",
+          "Crown Melon",
+          "Grand Tomato",
+          "Pricklefruit"
+        ]
+      }
+    },
+    "BaseWeight": 1.2,
+    "Id": "p",
+    "Priority": 10,
+    "ImageId": "rbxassetid://99520717630343",
+    "Results": [
+      "Smoothie"
+    ]
+  },
+  "Sushi": {
+    "BaseTime": 300,
+    "Requires": {
+      "Count": 3,
+      "Ingredients": {
+        "Bamboo": [
+          "Bamboo"
+        ],
+        "Wrap": [
+          "Tomato",
+          "Bamboo",
+          "Taro Flower",
+          "Sunflower",
+          "Avocado",
+          "Pineapple",
+          "Bell Pepper",
+          "Onion",
+          "Jalapeno",
+          "Grand Tomato",
+          "Artichoke"
+        ],
+        "Main": [
+          "Pepper",
+          "Bell Pepper",
+          "Ember Lily",
+          "Cactus",
+          "Mushroom",
+          "Eggplant",
+          "Venus Flytrap",
+          "Glowshroom",
+          "Bone Blossom",
+          "Tall Asparagus",
+          "Taco Fern",
+          "Carrot",
+          "Wild Carrot",
+          "Chocolate Carrot",
+          "Corn",
+          "Violet Corn",
+          "Eggplant",
+          "Pepper",
+          "Pumpkin",
+          "Purple Cabbage",
+          "Tomato",
+          "Beanstalk",
+          "Mint",
+          "Dragon Pepper",
+          "Cauliflower",
+          "Bell Pepper",
+          "Taro Flower",
+          "Artichoke",
+          "Onion",
+          "Jalapeno",
+          "Tall Asparagus",
+          "Grand Tomato",
+          "Log Pumpkin",
+          "Badlands Pepper",
+          "Rhubarb",
+          "King Cabbage",
+          "Bitter Melon"
+        ],
+        "Rice": [
+          "Corn",
+          "Violet Corn",
+          "Cauliflower",
+          "Banana",
+          "Sugarglaze",
+          "Coconut"
+        ]
+      }
+    },
+    "BaseWeight": 2,
+    "Id": "l",
+    "Priority": 20,
+    "ImageId": "rbxassetid://124413058833848",
+    "Results": [
+      "Sushi"
+    ]
+  },
+  "Pizza": {
+    "BaseTime": 500,
+    "Requires": {
+      "Count": 3,
+      "Ingredients": {
+        "Vegetable": [
+          "Carrot",
+          "Wild Carrot",
+          "Chocolate Carrot",
+          "Corn",
+          "Violet Corn",
+          "Eggplant",
+          "Pepper",
+          "Pumpkin",
+          "Purple Cabbage",
+          "Tomato",
+          "Beanstalk",
+          "Mint",
+          "Dragon Pepper",
+          "Cauliflower",
+          "Bell Pepper",
+          "Taro Flower",
+          "Artichoke",
+          "Onion",
+          "Jalapeno",
+          "Tall Asparagus",
+          "Grand Tomato",
+          "Log Pumpkin",
+          "Badlands Pepper",
+          "Rhubarb",
+          "King Cabbage",
+          "Bitter Melon"
+        ],
+        "Bread": [
+          "Corn",
+          "Violet Corn",
+          "Cauliflower",
+          "Banana",
+          "Sugarglaze"
+        ],
+        "Meat": [
+          "Pepper",
+          "Bell Pepper",
+          "Ember Lily",
+          "Cactus",
+          "Mushroom",
+          "Eggplant",
+          "Venus Flytrap",
+          "Glowshroom",
+          "Bone Blossom",
+          "Tall Asparagus",
+          "Taco Fern"
+        ],
+        "Sauce": [
+          "Apple",
+          "Avocado",
+          "Banana",
+          "Blueberry",
+          "Coconut",
+          "Cranberry",
+          "Dragon Fruit",
+          "Durian",
+          "Grape",
+          "Lemon",
+          "Lime",
+          "Mango",
+          "Papaya",
+          "Passionfruit",
+          "Peach",
+          "Pear",
+          "Pineapple",
+          "Raspberry",
+          "Strawberry",
+          "Watermelon",
+          "Starfruit",
+          "Blood Banana",
+          "Moon Melon",
+          "Celestiberry",
+          "Moon Mango",
+          "Nectarine",
+          "Hive Fruit",
+          "Green Apple",
+          "Sugar Apple",
+          "Traveler's Fruit",
+          "Loquat",
+          "Kiwi",
+          "White Mullberry",
+          "Lingonberry",
+          "Maple Apple",
+          "Spiked Mango",
+          "Crown Melon",
+          "Grand Tomato",
+          "Pricklefruit"
+        ]
+      }
+    },
+    "BaseWeight": 2,
+    "Id": "k",
+    "Priority": 7,
+    "ImageId": "rbxassetid://99865068747737",
+    "Results": [
+      "Pizza"
+    ]
+  },
+  "Sandwich": {
+    "BaseTime": 350,
+    "Requires": {
+      "Count": 3,
+      "Ingredients": {
+        "Bread": [
+          "Corn",
+          "Violet Corn",
+          "Cauliflower",
+          "Banana",
+          "Sugarglaze"
+        ],
+        "Leafy": [
+          "Tomato",
+          "Bamboo",
+          "Taro Flower",
+          "Sunflower",
+          "Avocado",
+          "Pineapple",
+          "Bell Pepper",
+          "Onion",
+          "Jalapeno",
+          "Grand Tomato",
+          "Artichoke"
+        ],
+        "Tomato": [
+          "Tomato",
+          "Grand Tomato"
+        ]
+      }
+    },
+    "BaseWeight": 1,
+    "Id": "f",
+    "Priority": 3,
+    "ImageId": "rbxassetid://139763254124497",
+    "Results": [
+      "Sandwich"
+    ]
+  },
+  "Salad": {
+    "BaseTime": 350,
+    "Requires": {
+      "Count": 2,
+      "Ingredients": {
+        "Leafy": [
+          "Tomato",
+          "Bamboo",
+          "Taro Flower",
+          "Sunflower",
+          "Avocado",
+          "Pineapple",
+          "Bell Pepper",
+          "Onion",
+          "Jalapeno",
+          "Grand Tomato",
+          "Artichoke"
+        ],
+        "Vegetable": [
+          "Carrot",
+          "Wild Carrot",
+          "Chocolate Carrot",
+          "Corn",
+          "Violet Corn",
+          "Eggplant",
+          "Pepper",
+          "Pumpkin",
+          "Purple Cabbage",
+          "Tomato",
+          "Beanstalk",
+          "Mint",
+          "Dragon Pepper",
+          "Cauliflower",
+          "Bell Pepper",
+          "Taro Flower",
+          "Artichoke",
+          "Onion",
+          "Jalapeno",
+          "Tall Asparagus",
+          "Grand Tomato",
+          "Log Pumpkin",
+          "Badlands Pepper",
+          "Rhubarb",
+          "King Cabbage",
+          "Bitter Melon"
+        ]
+      }
+    },
+    "BaseWeight": 0.2,
+    "Id": "g",
+    "Priority": 2,
+    "ImageId": "rbxassetid://96781873740831",
+    "Results": [
+      "Salad"
+    ]
+  },
+  "Spaghetti": {
+    "BaseTime": 350,
+    "Requires": {
+      "Count": 4,
+      "Ingredients": {
+        "Sauce": [
+          "Tomato",
+          "Grand Tomato"
+        ],
+        "Pasta": [
+          "Corn",
+          "Violet Corn",
+          "Cauliflower",
+          "Banana",
+          "Sugarglaze"
+        ],
+        "Meat": [
+          "Pepper",
+          "Bell Pepper",
+          "Ember Lily",
+          "Cactus",
+          "Mushroom",
+          "Eggplant",
+          "Venus Flytrap",
+          "Glowshroom",
+          "Bone Blossom",
+          "Tall Asparagus",
+          "Taco Fern"
+        ],
+        "Vegetables": [
+          "Carrot",
+          "Wild Carrot",
+          "Chocolate Carrot",
+          "Corn",
+          "Violet Corn",
+          "Eggplant",
+          "Pepper",
+          "Pumpkin",
+          "Purple Cabbage",
+          "Tomato",
+          "Beanstalk",
+          "Mint",
+          "Dragon Pepper",
+          "Cauliflower",
+          "Bell Pepper",
+          "Taro Flower",
+          "Artichoke",
+          "Onion",
+          "Jalapeno",
+          "Tall Asparagus",
+          "Grand Tomato",
+          "Log Pumpkin",
+          "Badlands Pepper",
+          "Rhubarb",
+          "King Cabbage",
+          "Bitter Melon"
+        ]
+      }
+    },
+    "BaseWeight": 2.5,
+    "Id": "t",
+    "Priority": 6,
+    "ImageId": "rbxassetid://118816141566924",
+    "Results": [
+      "Spaghetti"
+    ]
+  },
+  "SweetTea": {
+    "BaseTime": 270,
+    "Requires": {
+      "Count": 2,
+      "Ingredients": {
+        "HerbalBase": [
+          "Candy Blossom",
+          "Candy Sunflower",
+          "Cherry Blossom",
+          "Crocus",
+          "Daffodil",
+          "Lotus",
+          "Orange Tulip",
+          "Pink Tulip",
+          "Moonflower",
+          "Moon Blossom",
+          "Rose",
+          "Lilac",
+          "Pink Lily",
+          "Purple Dahlia",
+          "Sunflower",
+          "Lavender",
+          "Honeysuckle",
+          "Manuka Flower",
+          "Ember Lily",
+          "Noble Flower",
+          "Bee Balm",
+          "Succulent",
+          "Parasol Flower",
+          "Rosy Delight",
+          "Lily of the Valley",
+          "Burning Bud",
+          "Rafflesia",
+          "Stonebite",
+          "Liberty Lily",
+          "Firework Flower",
+          "Grand Volcania",
+          "Serenity",
+          "Monoblooma",
+          "Soft Sunshine",
+          "Hinomai",
+          "Taro Flower",
+          "Zenflare",
+          "Soft Sunshine",
+          "Dezen",
+          "Artichoke",
+          "Veinpetal",
+          "Mint"
+        ],
+        "Sweetener": [
+          "Banana",
+          "Blue Lollipop",
+          "Blueberry",
+          "Candy Blossom",
+          "Candy Sunflower",
+          "Chocolate Carrot",
+          "Easter Egg",
+          "Grape",
+          "Mango",
+          "Peach",
+          "Pear",
+          "Pineapple",
+          "Raspberry",
+          "Red Lollipop",
+          "Strawberry",
+          "Watermelon",
+          "Starfruit",
+          "Nectar Thorn",
+          "Sugar Apple",
+          "Moon Melon",
+          "Spiked Mango",
+          "Sugarglaze",
+          "Crown Melon",
+          "Sugarglaze"
+        ]
+      }
+    },
+    "BaseWeight": 0.5,
+    "Id": "y",
+    "Priority": 4,
+    "ImageId": "rbxassetid://114245564378378",
+    "Results": [
+      "SweetTea"
+    ]
+  },
+  "HotDog": {
+    "BaseTime": 400,
+    "Requires": {
+      "Count": 2,
+      "Ingredients": {
+        "Meat": [
+          "Pepper",
+          "Bell Pepper",
+          "Ember Lily",
+          "Cactus",
+          "Mushroom",
+          "Eggplant",
+          "Venus Flytrap",
+          "Glowshroom",
+          "Bone Blossom",
+          "Tall Asparagus",
+          "Taco Fern"
+        ],
+        "Bread": [
+          "Corn",
+          "Violet Corn",
+          "Cauliflower",
+          "Banana",
+          "Sugarglaze"
+        ]
+      }
+    },
+    "BaseWeight": 1.5,
+    "Id": "e",
+    "Priority": 5,
+    "ImageId": "rbxassetid://136455657586960",
+    "Results": [
+      "HotDog"
+    ]
+  },
+  "Cake": {
+    "BaseTime": 350,
+    "Requires": {
+      "Count": 4,
+      "Ingredients": {
+        "Icing": [
+          "Banana",
+          "Blue Lollipop",
+          "Blueberry",
+          "Candy Blossom",
+          "Candy Sunflower",
+          "Chocolate Carrot",
+          "Easter Egg",
+          "Grape",
+          "Mango",
+          "Peach",
+          "Pear",
+          "Pineapple",
+          "Raspberry",
+          "Red Lollipop",
+          "Strawberry",
+          "Watermelon",
+          "Starfruit",
+          "Nectar Thorn",
+          "Sugar Apple",
+          "Moon Melon",
+          "Spiked Mango",
+          "Sugarglaze",
+          "Crown Melon",
+          "Sugarglaze"
+        ],
+        "Bread": [
+          "Corn",
+          "Violet Corn",
+          "Cauliflower",
+          "Banana",
+          "Sugarglaze"
+        ],
+        "Filling": [
+          "Banana",
+          "Blue Lollipop",
+          "Blueberry",
+          "Candy Blossom",
+          "Candy Sunflower",
+          "Chocolate Carrot",
+          "Easter Egg",
+          "Grape",
+          "Mango",
+          "Peach",
+          "Pear",
+          "Pineapple",
+          "Raspberry",
+          "Red Lollipop",
+          "Strawberry",
+          "Watermelon",
+          "Starfruit",
+          "Nectar Thorn",
+          "Sugar Apple",
+          "Moon Melon",
+          "Spiked Mango",
+          "Sugarglaze",
+          "Crown Melon",
+          "Sugarglaze"
+        ],
+        "Fruit": [
+          "Apple",
+          "Avocado",
+          "Banana",
+          "Blueberry",
+          "Coconut",
+          "Cranberry",
+          "Dragon Fruit",
+          "Durian",
+          "Grape",
+          "Lemon",
+          "Lime",
+          "Mango",
+          "Papaya",
+          "Passionfruit",
+          "Peach",
+          "Pear",
+          "Pineapple",
+          "Raspberry",
+          "Strawberry",
+          "Watermelon",
+          "Starfruit",
+          "Blood Banana",
+          "Moon Melon",
+          "Celestiberry",
+          "Moon Mango",
+          "Nectarine",
+          "Hive Fruit",
+          "Green Apple",
+          "Sugar Apple",
+          "Traveler's Fruit",
+          "Loquat",
+          "Kiwi",
+          "White Mullberry",
+          "Lingonberry",
+          "Maple Apple",
+          "Spiked Mango",
+          "Crown Melon",
+          "Grand Tomato",
+          "Pricklefruit"
+        ]
+      }
+    },
+    "BaseWeight": 2,
+    "Id": "o",
+    "Priority": 10,
+    "ImageId": "rbxassetid://133935704392240",
+    "Results": [
+      "Cake"
+    ]
+  },
+  "Burger": {
+    "BaseTime": 400,
+    "Requires": {
+      "Count": 3,
+      "Ingredients": {
+        "Bread": [
+          "Corn",
+          "Violet Corn",
+          "Cauliflower",
+          "Banana",
+          "Sugarglaze"
+        ],
+        "Meat": [
+          "Pepper",
+          "Bell Pepper",
+          "Ember Lily",
+          "Cactus",
+          "Mushroom",
+          "Eggplant",
+          "Venus Flytrap",
+          "Glowshroom",
+          "Bone Blossom",
+          "Tall Asparagus",
+          "Taco Fern"
+        ],
+        "Leafy": [
+          "Tomato",
+          "Bamboo",
+          "Taro Flower",
+          "Sunflower",
+          "Avocado",
+          "Pineapple",
+          "Bell Pepper",
+          "Onion",
+          "Jalapeno",
+          "Grand Tomato",
+          "Artichoke"
+        ]
+      }
+    },
+    "BaseWeight": 2,
+    "Id": "c",
+    "Priority": 10,
+    "ImageId": "rbxassetid://100029889334054",
+    "Results": [
+      "Burger"
+    ]
+  },
+  "Porridge": {
+    "BaseTime": 250,
+    "Requires": {
+      "Count": 3,
+      "Ingredients": {
+        "Cream": [
+          "Corn",
+          "Violet Corn",
+          "Cauliflower",
+          "Banana",
+          "Sugarglaze"
+        ],
+        "Base": [
+          "Corn",
+          "Violet Corn",
+          "Cauliflower",
+          "Banana",
+          "Sugarglaze"
+        ],
+        "Fruit": [
+          "Apple",
+          "Avocado",
+          "Banana",
+          "Blueberry",
+          "Coconut",
+          "Cranberry",
+          "Dragon Fruit",
+          "Durian",
+          "Grape",
+          "Lemon",
+          "Lime",
+          "Mango",
+          "Papaya",
+          "Passionfruit",
+          "Peach",
+          "Pear",
+          "Pineapple",
+          "Raspberry",
+          "Strawberry",
+          "Watermelon",
+          "Starfruit",
+          "Blood Banana",
+          "Moon Melon",
+          "Celestiberry",
+          "Moon Mango",
+          "Nectarine",
+          "Hive Fruit",
+          "Green Apple",
+          "Sugar Apple",
+          "Traveler's Fruit",
+          "Loquat",
+          "Kiwi",
+          "White Mullberry",
+          "Lingonberry",
+          "Maple Apple",
+          "Spiked Mango",
+          "Crown Melon",
+          "Grand Tomato",
+          "Pricklefruit"
+        ]
+      }
+    },
+    "BaseWeight": 2,
+    "Id": "r",
+    "Priority": 3,
+    "ImageId": "rbxassetid://121467388211046",
+    "Results": [
+      "Porridge"
+    ]
+  },
+  "IceCream": {
+    "BaseTime": 300,
+    "Requires": {
+      "Count": 2,
+      "Ingredients": {
+        "Cone": [
+          "Corn",
+          "Violet Corn",
+          "Cauliflower",
+          "Banana",
+          "Sugarglaze"
+        ],
+        "Cream": [
+          "Banana",
+          "Blue Lollipop",
+          "Blueberry",
+          "Candy Blossom",
+          "Candy Sunflower",
+          "Chocolate Carrot",
+          "Easter Egg",
+          "Grape",
+          "Mango",
+          "Peach",
+          "Pear",
+          "Pineapple",
+          "Raspberry",
+          "Red Lollipop",
+          "Strawberry",
+          "Watermelon",
+          "Starfruit",
+          "Nectar Thorn",
+          "Sugar Apple",
+          "Moon Melon",
+          "Spiked Mango",
+          "Sugarglaze",
+          "Crown Melon",
+          "Sugarglaze"
+        ]
+      }
+    },
+    "BaseWeight": 2,
+    "Id": "n",
+    "Priority": 10,
+    "ImageId": "rbxassetid://80440750183765",
+    "Results": [
+      "IceCream"
+    ]
+  }
+}
