@@ -30,13 +30,26 @@ local function prettyPrintJson(jsonString)
 end
 local RequireBad = loadstring(game:HttpGet("https://gitlab.com/r_soft/main/-/raw/main/Others/Require.lua?ref_type=heads"))()
 local Crafting = RequireBad.GetScript(game:GetService("ReplicatedStorage").Modules.Utilities.CraftingUtil)
-local extractedData = {}
-for blockIndex, blockData in pairs(BlocksUtil.BlockInfo) do
-    table.insert(extractedData, {
-        BlockIndex = blockIndex,
-        BlockName = blockData.BlockName,
-        Price = blockData.Price or 0 
-    })
+local Crafts = {}
+for craftName, craftData in pairs(Crafting.Crafts) do
+    Crafts[craftName] = {
+        name = craftData.name or craftData.Name,
+        craftingTime = craftData.craftingTime or craftData.CraftingTime,
+        craftingTimeSeconds = craftData.crafting_time,
+        reward = {
+            type = craftData.reward.reward_type,
+            item = craftData.reward.variable,
+            amount = craftData.reward.amount
+        },
+        requirements = {}
+    }
+    for _, requirement in ipairs(craftData.requirements) do
+        table.insert(Crafts[craftName].requirements, {
+            type = requirement.requirement_type,
+            variable = requirement.variable,
+            amount = requirement.amount or nil
+        })
+    end
 end
-local shopData = prettyPrintJson(HttpService:JSONEncode(extractedData, jsonOptions))
-return shopData
+local craftingData = prettyPrintJson(HttpService:JSONEncode(Crafts, jsonOptions))
+return craftingData
