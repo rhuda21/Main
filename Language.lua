@@ -1,36 +1,36 @@
 local Languages = {
-    {Name = "English", Code = "en"},
-    {Name = "Español", Code = "es"},
-    {Name = "Français", Code = "fr"},
-    {Name = "Deutsch", Code = "de"},
-    {Name = "中文 (简体)", Code = "zh-CN"},  -- Simplified Chinese
-    {Name = "中文 (繁體)", Code = "zh-TW"},  -- Traditional Chinese
-    {Name = "日本語", Code = "ja"},
-    {Name = "한국어", Code = "ko"},         -- Korean
-    {Name = "Русский", Code = "ru"},       -- Russian
-    {Name = "Português", Code = "pt"},     -- Portuguese
-    {Name = "Italiano", Code = "it"},      -- Italian
-    {Name = "Nederlands", Code = "nl"},    -- Dutch
-    {Name = "Polski", Code = "pl"},        -- Polish
-    {Name = "Türkçe", Code = "tr"},        -- Turkish
-    {Name = "Tiếng Việt", Code = "vi"},    -- Vietnamese
-    {Name = "ภาษาไทย", Code = "th"},       -- Thai
-    {Name = "हिन्दी", Code = "hi"},        -- Hindi
-    {Name = "বাংলা", Code = "bn"},         -- Bengali
-    {Name = "العربية", Code = "ar"},       -- Arabic
-    {Name = "فارسی", Code = "fa"},         -- Persian
-    {Name = "עברית", Code = "he"},         -- Hebrew
-    {Name = "Ελληνικά", Code = "el"},      -- Greek
-    {Name = "Svenska", Code = "sv"},       -- Swedish
-    {Name = "Dansk", Code = "da"},         -- Danish
-    {Name = "Suomi", Code = "fi"},         -- Finnish
-    {Name = "Norsk", Code = "no"},         -- Norwegian
-    {Name = "Čeština", Code = "cs"},       -- Czech
-    {Name = "Magyar", Code = "hu"},        -- Hungarian
-    {Name = "Română", Code = "ro"},        -- Romanian
-    {Name = "Bahasa Indonesia", Code = "id"}, -- Indonesian
-    {Name = "Bahasa Melayu", Code = "ms"}, -- Malay
-    {Name = "Filipino", Code = "tl"},      -- Filipino
-    {Name = "Українська", Code = "uk"}     -- Ukrainian
+    {Name = "English", Code = "en", MapCode = "en"},
+    {Name = "Español", Code = "es", MapCode = "es"},
+    {Name = "Français", Code = "fr", MapCode = "fr"},
+    {Name = "Deutsch", Code = "de", MapCode = "de"},
+    {Name = "中文 (简体)", Code = "zh-CN", MapCode = "zh-cn"},
+    {Name = "中文 (繁體)", Code = "zh-TW", MapCode = "zh-tw"},
+    {Name = "日本語", Code = "ja", MapCode = "ja"},
+    {Name = "한국어", Code = "ko", MapCode = "ko"},
+    {Name = "Русский", Code = "ru", MapCode = "ru"},
+    {Name = "Português", Code = "pt", MapCode = "pt"},
+    {Name = "Italiano", Code = "it", MapCode = "it"},
+    {Name = "Nederlands", Code = "nl", MapCode = "nl"},
+    {Name = "Polski", Code = "pl", MapCode = "pl"},
+    {Name = "Türkçe", Code = "tr", MapCode = "tr"},
+    {Name = "Tiếng Việt", Code = "vi", MapCode = "vi"},
+    {Name = "ภาษาไทย", Code = "th", MapCode = "th"},
+    {Name = "हिन्दी", Code = "hi", MapCode = "hi"},
+    {Name = "বাংলা", Code = "bn", MapCode = "bn"},
+    {Name = "العربية", Code = "ar", MapCode = "ar"},
+    {Name = "فارسی", Code = "fa", MapCode = "fa"},
+    {Name = "עברית", Code = "he", MapCode = "he"},
+    {Name = "Ελληνικά", Code = "el", MapCode = "el"},
+    {Name = "Svenska", Code = "sv", MapCode = "sv"},
+    {Name = "Dansk", Code = "da", MapCode = "da"},
+    {Name = "Suomi", Code = "fi", MapCode = "fi"},
+    {Name = "Norsk", Code = "no", MapCode = "no"},
+    {Name = "Čeština", Code = "cs", MapCode = "cs"},
+    {Name = "Magyar", Code = "hu", MapCode = "hu"},
+    {Name = "Română", Code = "ro", MapCode = "ro"},
+    {Name = "Bahasa Indonesia", Code = "id", MapCode = "id"},
+    {Name = "Bahasa Melayu", Code = "ms", MapCode = "ms"},
+    {Name = "Filipino", Code = "tl", MapCode = "tl"},
+    {Name = "Українська", Code = "uk", MapCode = "uk"}
 }
 return Languages
