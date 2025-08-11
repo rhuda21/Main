@@ -29,7 +29,7 @@ local function prettyPrintJson(jsonString)
     return result
 end
 local RequireBad = loadstring(game:HttpGet("https://gitlab.com/r_soft/main/-/raw/main/Others/Require.lua?ref_type=heads"))()
-local Crafting = RequireBad.GetScript(game:GetService("ReplicatedStorage").Modules.Utilities.CraftingUtil)
+local BlocksUtil = RequireBad.GetScript(game:GetService("ReplicatedStorage").Modules.Utilities.BlocksUtil)
 local extractedData = {}
 for blockIndex, blockData in pairs(BlocksUtil.BlockInfo) do
     table.insert(extractedData, {
@@ -39,4 +39,5 @@ for blockIndex, blockData in pairs(BlocksUtil.BlockInfo) do
     })
 end
 local shopData = prettyPrintJson(HttpService:JSONEncode(extractedData, jsonOptions))
+setclipboard(shopData)
 return shopData
