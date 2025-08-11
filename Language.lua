@@ -1,4 +1,4 @@
-Languages = {
+local Languages = {
     {Name = "English", Code = "en"},
     {Name = "Español", Code = "es"},
     {Name = "Français", Code = "fr"},
