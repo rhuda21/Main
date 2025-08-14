@@ -60,4 +60,5 @@ for key, value in pairs(fishData) do
     processedData[key] = processValue(value)
 end
 local Fish = prettyPrintJson(HttpService:JSONEncode(processedData))
+setclipboard(Fish)
 return Fish
