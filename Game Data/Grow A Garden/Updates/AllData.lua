@@ -1,6 +1,6 @@
 local Data = {
     Seeds = require(game:GetService("ReplicatedStorage").Data.SeedData),
-    Eggs = require(game:GetService("ReplicatedStorage").Data.PetEggData),
+    Eggs = require(game:GetService("ReplicatedStorage").Data.PetRegistry.PetEggs),
     Gears = require(game:GetService("ReplicatedStorage").Data.GearData),
     Cosmetics = require(game:GetService("ReplicatedStorage").Data.CosmeticItemShopData),
     Pets = require(game:GetService("ReplicatedStorage").Data.PetRegistry.PetList),
