@@ -1,0 +1,2994 @@
+[
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 43,
+    "SellPrice": 19,
+    "ModulePath": "ReplicatedStorage.Items.Reef Chromis",
+    "Name": "Reef Chromis",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 0.699999988079071,
+        "Max": 0.800000011920929
+      },
+      "Big": {
+        "Min": 1,
+        "Max": 1.2999999523162842
+      }
+    },
+    "ModuleName": "Reef Chromis",
+    "Icon": "rbxassetid://130761855658346",
+    "Probability": 0.5
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 15,
+    "SellPrice": 40500,
+    "ModulePath": "ReplicatedStorage.Items.Abyss Seahorse",
+    "Name": "Abyss Seahorse",
+    "Tier": 5,
+    "Weight": {
+      "Default": {
+        "Min": 0.699999988079071,
+        "Max": 0.800000011920929
+      },
+      "Big": {
+        "Min": 1,
+        "Max": 1.2999999523162842
+      }
+    },
+    "ModuleName": "Abyss Seahorse",
+    "Icon": "rbxassetid://140212951494890",
+    "Probability": 0.000010526315789473685
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 20,
+    "SellPrice": 19,
+    "ModulePath": "ReplicatedStorage.Items.Ash Basslet",
+    "Name": "Ash Basslet",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 1.100000023841858,
+        "Max": 1.2999999523162842
+      },
+      "Big": {
+        "Min": 1.7000000476837159,
+        "Max": 2.0999999046325685
+      }
+    },
+    "ModuleName": "Ash Basslet",
+    "Icon": "rbxassetid://89467763428838",
+    "Probability": 0.5
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 17,
+    "SellPrice": 1633,
+    "ModulePath": "ReplicatedStorage.Items.Astra Damsel",
+    "Name": "Astra Damsel",
+    "Tier": 4,
+    "Weight": {
+      "Default": {
+        "Min": 33.29999923706055,
+        "Max": 40.5
+      },
+      "Big": {
+        "Min": 52,
+        "Max": 72.5
+      }
+    },
+    "ModuleName": "Astra Damsel",
+    "Icon": "rbxassetid://80597542368624",
+    "Probability": 0.0005
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 66,
+    "SellPrice": 22,
+    "ModulePath": "ReplicatedStorage.Items.Azure Damsel",
+    "Name": "Azure Damsel",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 0.5,
+        "Max": 0.6000000238418579
+      },
+      "Big": {
+        "Min": 0.800000011920929,
+        "Max": 1
+      }
+    },
+    "ModuleName": "Azure Damsel",
+    "Icon": "rbxassetid://82037285284063",
+    "Probability": 0.25
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 44,
+    "SellPrice": 153,
+    "ModulePath": "ReplicatedStorage.Items.Banded Butterfly",
+    "Name": "Banded Butterfly",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 2,
+        "Max": 2.4000000953674318
+      },
+      "Big": {
+        "Min": 3.200000047683716,
+        "Max": 4
+      }
+    },
+    "ModuleName": "Banded Butterfly",
+    "Icon": "rbxassetid://108599906664305",
+    "Probability": 0.008
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 22,
+    "SellPrice": 11355,
+    "ModulePath": "ReplicatedStorage.Items.Blue Lobster",
+    "Name": "Blue Lobster",
+    "Tier": 4,
+    "Weight": {
+      "Default": {
+        "Min": 1.7999999523162842,
+        "Max": 2.0999999046325685
+      },
+      "Big": {
+        "Min": 2.799999952316284,
+        "Max": 3.5
+      }
+    },
+    "ModuleName": "Blue Lobster",
+    "Icon": "rbxassetid://79569787883962",
+    "Probability": 0.00004
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 47,
+    "SellPrice": 45000,
+    "ModulePath": "ReplicatedStorage.Items.Blueflame Ray",
+    "Name": "Blueflame Ray",
+    "Tier": 5,
+    "Weight": {
+      "Default": {
+        "Min": 73.5999984741211,
+        "Max": 97.19999694824219
+      },
+      "Big": {
+        "Min": 117.19999694824219,
+        "Max": 146.8000030517578
+      }
+    },
+    "ModuleName": "Blueflame Ray",
+    "Icon": "rbxassetid://113303332536600",
+    "Probability": 0.00001075268817204301
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 45,
+    "SellPrice": 22,
+    "ModulePath": "ReplicatedStorage.Items.Boa Angelfish",
+    "Name": "Boa Angelfish",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 1,
+        "Max": 1.2000000476837159
+      },
+      "Big": {
+        "Min": 1.600000023841858,
+        "Max": 2
+      }
+    },
+    "ModuleName": "Boa Angelfish",
+    "Icon": "rbxassetid://132840818442941",
+    "Probability": 0.06666666666666667
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 37,
+    "SellPrice": 3225,
+    "ModulePath": "ReplicatedStorage.Items.Bumblebee Grouper",
+    "Name": "Bumblebee Grouper",
+    "Tier": 4,
+    "Weight": {
+      "Default": {
+        "Min": 1.2999999523162842,
+        "Max": 1.5
+      },
+      "Big": {
+        "Min": 2,
+        "Max": 2.5
+      }
+    },
+    "ModuleName": "Bumblebee Grouper",
+    "Icon": "rbxassetid://138718017852833",
+    "Probability": 0.0002
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 59,
+    "SellPrice": 419,
+    "ModulePath": "ReplicatedStorage.Items.Candy Butterfly",
+    "Name": "Candy Butterfly",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 1.5,
+        "Max": 1.7999999523162842
+      },
+      "Big": {
+        "Min": 2.4000000953674318,
+        "Max": 3
+      }
+    },
+    "ModuleName": "Candy Butterfly",
+    "Icon": "rbxassetid://118627817589849",
+    "Probability": 0.0026666666666666667
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 18,
+    "SellPrice": 393,
+    "ModulePath": "ReplicatedStorage.Items.Charmed Tang",
+    "Name": "Charmed Tang",
+    "Tier": 3,
+    "Weight": {
+      "Default": {
+        "Min": 1.5,
+        "Max": 1.7999999523162842
+      },
+      "Big": {
+        "Min": 2.4000000953674318,
+        "Max": 3
+      }
+    },
+    "ModuleName": "Charmed Tang",
+    "Icon": "rbxassetid://115703943090504",
+    "Probability": 0.003076923076923077
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 53,
+    "SellPrice": 4050,
+    "ModulePath": "ReplicatedStorage.Items.Chrome Tuna",
+    "Name": "Chrome Tuna",
+    "Tier": 4,
+    "Weight": {
+      "Default": {
+        "Min": 54.5,
+        "Max": 95.4000015258789
+      },
+      "Big": {
+        "Min": 83.19999694824219,
+        "Max": 154.60000610351563
+      }
+    },
+    "ModuleName": "Chrome Tuna",
+    "Icon": "rbxassetid://103021560011734",
+    "Probability": 0.00011111111111111112
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 64,
+    "SellPrice": 19,
+    "ModulePath": "ReplicatedStorage.Items.Clownfish",
+    "Name": "Clownfish",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 0.5,
+        "Max": 0.6000000238418579
+      },
+      "Big": {
+        "Min": 0.800000011920929,
+        "Max": 1
+      }
+    },
+    "ModuleName": "Clownfish",
+    "Icon": "rbxassetid://98117815811053",
+    "Probability": 0.5
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 19,
+    "SellPrice": 74,
+    "ModulePath": "ReplicatedStorage.Items.Coal Tang",
+    "Name": "Coal Tang",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 0.8999999761581421,
+        "Max": 1
+      },
+      "Big": {
+        "Min": 1.2999999523162842,
+        "Max": 1.7000000476837159
+      }
+    },
+    "ModuleName": "Coal Tang",
+    "Icon": "rbxassetid://92488575546885",
+    "Probability": 0.02
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 67,
+    "SellPrice": 76,
+    "ModulePath": "ReplicatedStorage.Items.Copperband Butterfly",
+    "Name": "Copperband Butterfly",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 1.2999999523162842,
+        "Max": 1.5
+      },
+      "Big": {
+        "Min": 2,
+        "Max": 2.5
+      }
+    },
+    "ModuleName": "Copperband Butterfly",
+    "Icon": "rbxassetid://79518413256091",
+    "Probability": 0.05
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 31,
+    "SellPrice": 19,
+    "ModulePath": "ReplicatedStorage.Items.Corazon Damsel",
+    "Name": "Corazon Damsel",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 1,
+        "Max": 1.2000000476837159
+      },
+      "Big": {
+        "Min": 1.600000023841858,
+        "Max": 2
+      }
+    },
+    "ModuleName": "Corazon Damsel",
+    "Icon": "rbxassetid://117026260439113",
+    "Probability": 0.5
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 57,
+    "SellPrice": 1044,
+    "ModulePath": "ReplicatedStorage.Items.Cow Clownfish",
+    "Name": "Cow Clownfish",
+    "Tier": 4,
+    "Weight": {
+      "Default": {
+        "Min": 0.6000000238418579,
+        "Max": 0.699999988079071
+      },
+      "Big": {
+        "Min": 0.8999999761581421,
+        "Max": 1.100000023841858
+      }
+    },
+    "ModuleName": "Cow Clownfish",
+    "Icon": "rbxassetid://88952725333000",
+    "Probability": 0.001
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 71,
+    "SellPrice": 869,
+    "ModulePath": "ReplicatedStorage.Items.Darwin Clownfish",
+    "Name": "Darwin Clownfish",
+    "Tier": 3,
+    "Weight": {
+      "Default": {
+        "Min": 0.6000000238418579,
+        "Max": 0.699999988079071
+      },
+      "Big": {
+        "Min": 0.8999999761581421,
+        "Max": 1.100000023841858
+      }
+    },
+    "ModuleName": "Darwin Clownfish",
+    "Icon": "rbxassetid://109996187340520",
+    "Probability": 0.0013333333333333333
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 26,
+    "SellPrice": 1444,
+    "ModulePath": "ReplicatedStorage.Items.Domino Damsel",
+    "Name": "Domino Damsel",
+    "Tier": 4,
+    "Weight": {
+      "Default": {
+        "Min": 1.100000023841858,
+        "Max": 1.2999999523162842
+      },
+      "Big": {
+        "Min": 1.7000000476837159,
+        "Max": 2.0999999046325685
+      }
+    },
+    "ModuleName": "Domino Damsel",
+    "Icon": "rbxassetid://100965955122629",
+    "Probability": 0.0006666666666666666
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 70,
+    "SellPrice": 1044,
+    "ModulePath": "ReplicatedStorage.Items.Dorhey Tang",
+    "Name": "Dorhey Tang",
+    "Tier": 4,
+    "Weight": {
+      "Default": {
+        "Min": 1.100000023841858,
+        "Max": 1.2999999523162842
+      },
+      "Big": {
+        "Min": 1.7000000476837159,
+        "Max": 2.0999999046325685
+      }
+    },
+    "ModuleName": "Dorhey Tang",
+    "Icon": "rbxassetid://136891625122640",
+    "Probability": 0.001
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 75,
+    "SellPrice": 31500,
+    "ModulePath": "ReplicatedStorage.Items.Dotted Stingray",
+    "Name": "Dotted Stingray",
+    "Tier": 5,
+    "Weight": {
+      "Default": {
+        "Min": 65.0999984741211,
+        "Max": 79.5
+      },
+      "Big": {
+        "Min": 110.30000305175781,
+        "Max": 120.0999984741211
+      }
+    },
+    "ModuleName": "Dotted Stingray",
+    "Icon": "rbxassetid://132465838670740",
+    "Probability": 0.000010989010989010989
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 14,
+    "SellPrice": 4200,
+    "ModulePath": "ReplicatedStorage.Items.Enchanted Angelfish",
+    "Name": "Enchanted Angelfish",
+    "Tier": 4,
+    "Weight": {
+      "Default": {
+        "Min": 34.79999923706055,
+        "Max": 40.5
+      },
+      "Big": {
+        "Min": 60,
+        "Max": 70.5
+      }
+    },
+    "ModuleName": "Enchanted Angelfish",
+    "Icon": "rbxassetid://108347802265821",
+    "Probability": 0.0002
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 41,
+    "SellPrice": 347,
+    "ModulePath": "ReplicatedStorage.Items.Fire Goby",
+    "Name": "Fire Goby",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 0.30000001192092898,
+        "Max": 0.4000000059604645
+      },
+      "Big": {
+        "Min": 0.6000000238418579,
+        "Max": 0.800000011920929
+      }
+    },
+    "ModuleName": "Fire Goby",
+    "Icon": "rbxassetid://94533805203782",
+    "Probability": 0.004
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 49,
+    "SellPrice": 1044,
+    "ModulePath": "ReplicatedStorage.Items.Firecoal Damsel",
+    "Name": "Firecoal Damsel",
+    "Tier": 4,
+    "Weight": {
+      "Default": {
+        "Min": 3.5999999046325685,
+        "Max": 4.300000190734863
+      },
+      "Big": {
+        "Min": 5.699999809265137,
+        "Max": 7.099999904632568
+      }
+    },
+    "ModuleName": "Firecoal Damsel",
+    "Icon": "rbxassetid://108870635586928",
+    "Probability": 0.0004
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 68,
+    "SellPrice": 135,
+    "ModulePath": "ReplicatedStorage.Items.Flame Angelfish",
+    "Name": "Flame Angelfish",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 1.399999976158142,
+        "Max": 1.600000023841858
+      },
+      "Big": {
+        "Min": 2.0999999046325685,
+        "Max": 2.700000047683716
+      }
+    },
+    "ModuleName": "Flame Angelfish",
+    "Icon": "rbxassetid://128385926161840",
+    "Probability": 0.01
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 25,
+    "SellPrice": 5732,
+    "ModulePath": "ReplicatedStorage.Items.Greenbee Grouper",
+    "Name": "Greenbee Grouper",
+    "Tier": 4,
+    "Weight": {
+      "Default": {
+        "Min": 1.2999999523162842,
+        "Max": 1.5
+      },
+      "Big": {
+        "Min": 2,
+        "Max": 2.5
+      }
+    },
+    "ModuleName": "Greenbee Grouper",
+    "Icon": "rbxassetid://79015880866732",
+    "Probability": 0.00016666666666666666
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 52,
+    "SellPrice": 49500,
+    "ModulePath": "ReplicatedStorage.Items.Hammerhead Shark",
+    "Name": "Hammerhead Shark",
+    "Tier": 5,
+    "Weight": {
+      "Default": {
+        "Min": 310.6000061035156,
+        "Max": 390.8999938964844
+      },
+      "Big": {
+        "Min": 418.5,
+        "Max": 653.0999755859375
+      }
+    },
+    "ModuleName": "Hammerhead Shark",
+    "Icon": "rbxassetid://91373020648344",
+    "Probability": 0.00001000010000100001
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 21,
+    "SellPrice": 40500,
+    "ModulePath": "ReplicatedStorage.Items.Hawks Turtle",
+    "Name": "Hawks Turtle",
+    "Tier": 5,
+    "Weight": {
+      "Default": {
+        "Min": 190.60000610351563,
+        "Max": 230.89999389648438
+      },
+      "Big": {
+        "Min": 380.5,
+        "Max": 430.1000061035156
+      }
+    },
+    "ModuleName": "Hawks Turtle",
+    "Icon": "rbxassetid://129453304232199",
+    "Probability": 0.000013333333333333334
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 24,
+    "SellPrice": 4200,
+    "ModulePath": "ReplicatedStorage.Items.Starjam Tang",
+    "Name": "Starjam Tang",
+    "Tier": 4,
+    "Weight": {
+      "Default": {
+        "Min": 1.7000000476837159,
+        "Max": 2
+      },
+      "Big": {
+        "Min": 2.5999999046325685,
+        "Max": 3.299999952316284
+      }
+    },
+    "ModuleName": "Starjam Tang",
+    "Icon": "rbxassetid://129447526017878",
+    "Probability": 0.0002
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 46,
+    "SellPrice": 19,
+    "ModulePath": "ReplicatedStorage.Items.Jennifer Dottyback",
+    "Name": "Jennifer Dottyback",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 0.800000011920929,
+        "Max": 0.8999999761581421
+      },
+      "Big": {
+        "Min": 1.2000000476837159,
+        "Max": 1.5
+      }
+    },
+    "ModuleName": "Jennifer Dottyback",
+    "Icon": "rbxassetid://82888113748973",
+    "Probability": 0.5
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 60,
+    "SellPrice": 347,
+    "ModulePath": "ReplicatedStorage.Items.Jewel Tang",
+    "Name": "Jewel Tang",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 1.399999976158142,
+        "Max": 1.600000023841858
+      },
+      "Big": {
+        "Min": 2.0999999046325685,
+        "Max": 2.700000047683716
+      }
+    },
+    "ModuleName": "Jewel Tang",
+    "Icon": "rbxassetid://130344776739450",
+    "Probability": 0.004
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 40,
+    "SellPrice": 869,
+    "ModulePath": "ReplicatedStorage.Items.Kau Cardinal",
+    "Name": "Kau Cardinal",
+    "Tier": 3,
+    "Weight": {
+      "Default": {
+        "Min": 1.2999999523162842,
+        "Max": 1.5
+      },
+      "Big": {
+        "Min": 2,
+        "Max": 2.5
+      }
+    },
+    "ModuleName": "Kau Cardinal",
+    "Icon": "rbxassetid://120735400809864",
+    "Probability": 0.0013333333333333333
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 72,
+    "SellPrice": 391,
+    "ModulePath": "ReplicatedStorage.Items.Korean Angelfish",
+    "Name": "Korean Angelfish",
+    "Tier": 3,
+    "Weight": {
+      "Default": {
+        "Min": 2.5,
+        "Max": 3
+      },
+      "Big": {
+        "Min": 4,
+        "Max": 5
+      }
+    },
+    "ModuleName": "Korean Angelfish",
+    "Icon": "rbxassetid://134484917450451",
+    "Probability": 0.002857142857142857
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 48,
+    "SellPrice": 4500,
+    "ModulePath": "ReplicatedStorage.Items.Lavafin Tuna",
+    "Name": "Lavafin Tuna",
+    "Tier": 4,
+    "Weight": {
+      "Default": {
+        "Min": 54.70000076293945,
+        "Max": 79.19999694824219
+      },
+      "Big": {
+        "Min": 120.19999694824219,
+        "Max": 144.3000030517578
+      }
+    },
+    "ModuleName": "Lavafin Tuna",
+    "Icon": "rbxassetid://96111934641941",
+    "Probability": 0.00010001000100010001
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 36,
+    "SellPrice": 15750,
+    "ModulePath": "ReplicatedStorage.Items.Lobster",
+    "Name": "Lobster",
+    "Tier": 4,
+    "Weight": {
+      "Default": {
+        "Min": 1.5,
+        "Max": 1.7999999523162842
+      },
+      "Big": {
+        "Min": 2.4000000953674318,
+        "Max": 3
+      }
+    },
+    "ModuleName": "Lobster",
+    "Icon": "rbxassetid://106973499045957",
+    "Probability": 0.00004
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 34,
+    "SellPrice": 27000,
+    "ModulePath": "ReplicatedStorage.Items.Loggerhead Turtle",
+    "Name": "Loggerhead Turtle",
+    "Tier": 5,
+    "Weight": {
+      "Default": {
+        "Min": 170.8000030517578,
+        "Max": 220.89999389648438
+      },
+      "Big": {
+        "Min": 250.1999969482422,
+        "Max": 320.5
+      }
+    },
+    "ModuleName": "Loggerhead Turtle",
+    "Icon": "rbxassetid://91953712080535",
+    "Probability": 0.000018181818181818183
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 38,
+    "SellPrice": 1575,
+    "ModulePath": "ReplicatedStorage.Items.Longnose Butterfly",
+    "Name": "Longnose Butterfly",
+    "Tier": 4,
+    "Weight": {
+      "Default": {
+        "Min": 0.699999988079071,
+        "Max": 0.800000011920929
+      },
+      "Big": {
+        "Min": 1,
+        "Max": 1.2999999523162842
+      }
+    },
+    "ModuleName": "Longnose Butterfly",
+    "Icon": "rbxassetid://78488362036598",
+    "Probability": 0.0006666666666666666
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 16,
+    "SellPrice": 4500,
+    "ModulePath": "ReplicatedStorage.Items.Magic Tang",
+    "Name": "Magic Tang",
+    "Tier": 4,
+    "Weight": {
+      "Default": {
+        "Min": 54.29999923706055,
+        "Max": 71.30000305175781
+      },
+      "Big": {
+        "Min": 84.4000015258789,
+        "Max": 130.5
+      }
+    },
+    "ModuleName": "Magic Tang",
+    "Icon": "rbxassetid://88573644059627",
+    "Probability": 0.00013333333333333334
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 50,
+    "SellPrice": 135,
+    "ModulePath": "ReplicatedStorage.Items.Magma Goby",
+    "Name": "Magma Goby",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 1.7000000476837159,
+        "Max": 2
+      },
+      "Big": {
+        "Min": 2.5999999046325685,
+        "Max": 3.299999952316284
+      }
+    },
+    "ModuleName": "Magma Goby",
+    "Icon": "rbxassetid://136836819813966",
+    "Probability": 0.01818181818181818
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 54,
+    "SellPrice": 24750,
+    "ModulePath": "ReplicatedStorage.Items.Manta Ray",
+    "Name": "Manta Ray",
+    "Tier": 5,
+    "Weight": {
+      "Default": {
+        "Min": 86.30000305175781,
+        "Max": 110.0999984741211
+      },
+      "Big": {
+        "Min": 120.80000305175781,
+        "Max": 160.5
+      }
+    },
+    "ModuleName": "Manta Ray",
+    "Icon": "rbxassetid://88385941559907",
+    "Probability": 0.00002
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 56,
+    "SellPrice": 1044,
+    "ModulePath": "ReplicatedStorage.Items.Maroon Butterfly",
+    "Name": "Maroon Butterfly",
+    "Tier": 4,
+    "Weight": {
+      "Default": {
+        "Min": 1.7000000476837159,
+        "Max": 2
+      },
+      "Big": {
+        "Min": 2.5999999046325685,
+        "Max": 3.299999952316284
+      }
+    },
+    "ModuleName": "Maroon Butterfly",
+    "Icon": "rbxassetid://0",
+    "Probability": 0.001
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 23,
+    "SellPrice": 153,
+    "ModulePath": "ReplicatedStorage.Items.Maze Angelfish",
+    "Name": "Maze Angelfish",
+    "Tier": 3,
+    "Weight": {
+      "Default": {
+        "Min": 1.600000023841858,
+        "Max": 1.899999976158142
+      },
+      "Big": {
+        "Min": 2.5,
+        "Max": 3.0999999046325685
+      }
+    },
+    "ModuleName": "Maze Angelfish",
+    "Icon": "rbxassetid://133123622412997",
+    "Probability": 0.008
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 55,
+    "SellPrice": 2700,
+    "ModulePath": "ReplicatedStorage.Items.Moorish Idol",
+    "Name": "Moorish Idol",
+    "Tier": 4,
+    "Weight": {
+      "Default": {
+        "Min": 0.8999999761581421,
+        "Max": 1
+      },
+      "Big": {
+        "Min": 1.2999999523162842,
+        "Max": 1.7000000476837159
+      }
+    },
+    "ModuleName": "Moorish Idol",
+    "Icon": "rbxassetid://99527607304877",
+    "Probability": 0.00030003000300030005
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 117,
+    "SellPrice": 105,
+    "ModulePath": "ReplicatedStorage.Items.Bandit Angelfish",
+    "Name": "Bandit Angelfish",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 2.259999990463257,
+        "Max": 3.390000104904175
+      },
+      "Big": {
+        "Min": 5.090000152587891,
+        "Max": 5.71999979019165
+      }
+    },
+    "ModuleName": "Bandit Angelfish",
+    "Icon": "rbxassetid://86776001616210",
+    "Probability": 0.015384615384615386
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 116,
+    "SellPrice": 28,
+    "ModulePath": "ReplicatedStorage.Items.Zoster Butterfly",
+    "Name": "Zoster Butterfly",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 1.7799999713897706,
+        "Max": 2.6700000762939455
+      },
+      "Big": {
+        "Min": 4.010000228881836,
+        "Max": 4.289999961853027
+      }
+    },
+    "ModuleName": "Zoster Butterfly",
+    "Icon": "rbxassetid://80869011808607",
+    "Probability": 0.125
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 32,
+    "SellPrice": 36,
+    "ModulePath": "ReplicatedStorage.Items.Orangy Goby",
+    "Name": "Orangy Goby",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 0.699999988079071,
+        "Max": 0.800000011920929
+      },
+      "Big": {
+        "Min": 1,
+        "Max": 1.2999999523162842
+      }
+    },
+    "ModuleName": "Orangy Goby",
+    "Icon": "rbxassetid://80870534603019",
+    "Probability": 0.14285714285714286
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 27,
+    "SellPrice": 1044,
+    "ModulePath": "ReplicatedStorage.Items.Panther Grouper",
+    "Name": "Panther Grouper",
+    "Tier": 4,
+    "Weight": {
+      "Default": {
+        "Min": 5.199999809265137,
+        "Max": 6.199999809265137
+      },
+      "Big": {
+        "Min": 8.199999809265137,
+        "Max": 10.300000190734864
+      }
+    },
+    "ModuleName": "Panther Grouper",
+    "Icon": "rbxassetid://110559683316227",
+    "Probability": 0.001
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 35,
+    "SellPrice": 29250,
+    "ModulePath": "ReplicatedStorage.Items.Prismy Seahorse",
+    "Name": "Prismy Seahorse",
+    "Tier": 5,
+    "Weight": {
+      "Default": {
+        "Min": 5.400000095367432,
+        "Max": 6.400000095367432
+      },
+      "Big": {
+        "Min": 8.5,
+        "Max": 10.699999809265137
+      }
+    },
+    "ModuleName": "Prismy Seahorse",
+    "Icon": "rbxassetid://105300029672501",
+    "Probability": 0.000011363636363636363
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 29,
+    "SellPrice": 369,
+    "ModulePath": "ReplicatedStorage.Items.Scissortail Dartfish",
+    "Name": "Scissortail Dartfish",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 0.4000000059604645,
+        "Max": 0.5
+      },
+      "Big": {
+        "Min": 0.699999988079071,
+        "Max": 0.8999999761581421
+      }
+    },
+    "ModuleName": "Scissortail Dartfish",
+    "Icon": "rbxassetid://90918658215983",
+    "Probability": 0.0033333333333333337
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 42,
+    "SellPrice": 90,
+    "ModulePath": "ReplicatedStorage.Items.Shrimp Goby",
+    "Name": "Shrimp Goby",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 0.800000011920929,
+        "Max": 0.8999999761581421
+      },
+      "Big": {
+        "Min": 1.2000000476837159,
+        "Max": 1.5
+      }
+    },
+    "ModuleName": "Shrimp Goby",
+    "Icon": "rbxassetid://79722493639079",
+    "Probability": 0.02
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 63,
+    "SellPrice": 36,
+    "ModulePath": "ReplicatedStorage.Items.Skunk Tilefish",
+    "Name": "Skunk Tilefish",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 0.6000000238418579,
+        "Max": 0.699999988079071
+      },
+      "Big": {
+        "Min": 0.8999999761581421,
+        "Max": 1.100000023841858
+      }
+    },
+    "ModuleName": "Skunk Tilefish",
+    "Icon": "rbxassetid://117649671337741",
+    "Probability": 0.14285714285714286
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 33,
+    "SellPrice": 19,
+    "ModulePath": "ReplicatedStorage.Items.Specked Butterfly",
+    "Name": "Specked Butterfly",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 1.7999999523162842,
+        "Max": 2.0999999046325685
+      },
+      "Big": {
+        "Min": 2.799999952316284,
+        "Max": 3.5
+      }
+    },
+    "ModuleName": "Specked Butterfly",
+    "Icon": "rbxassetid://116155560772333",
+    "Probability": 0.5
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 65,
+    "SellPrice": 27,
+    "ModulePath": "ReplicatedStorage.Items.Strawberry Dotty",
+    "Name": "Strawberry Dotty",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 0.699999988079071,
+        "Max": 0.800000011920929
+      },
+      "Big": {
+        "Min": 1,
+        "Max": 1.2999999523162842
+      }
+    },
+    "ModuleName": "Strawberry Dotty",
+    "Icon": "rbxassetid://113189737934915",
+    "Probability": 0.05
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 39,
+    "SellPrice": 1282,
+    "ModulePath": "ReplicatedStorage.Items.Sushi Cardinal",
+    "Name": "Sushi Cardinal",
+    "Tier": 4,
+    "Weight": {
+      "Default": {
+        "Min": 1,
+        "Max": 1.2000000476837159
+      },
+      "Big": {
+        "Min": 1.600000023841858,
+        "Max": 2
+      }
+    },
+    "ModuleName": "Sushi Cardinal",
+    "Icon": "rbxassetid://104436232234256",
+    "Probability": 0.0008
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 30,
+    "SellPrice": 112,
+    "ModulePath": "ReplicatedStorage.Items.Tricolore Butterfly",
+    "Name": "Tricolore Butterfly",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 1.2999999523162842,
+        "Max": 1.5
+      },
+      "Big": {
+        "Min": 2,
+        "Max": 2.5
+      }
+    },
+    "ModuleName": "Tricolore Butterfly",
+    "Icon": "rbxassetid://138769463668635",
+    "Probability": 0.014285714285714286
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 74,
+    "SellPrice": 2835,
+    "ModulePath": "ReplicatedStorage.Items.Unicorn Tang",
+    "Name": "Unicorn Tang",
+    "Tier": 4,
+    "Weight": {
+      "Default": {
+        "Min": 1.399999976158142,
+        "Max": 1.600000023841858
+      },
+      "Big": {
+        "Min": 2.0999999046325685,
+        "Max": 2.700000047683716
+      }
+    },
+    "ModuleName": "Unicorn Tang",
+    "Icon": "rbxassetid://85435653124474",
+    "Probability": 0.00022222222222222223
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 62,
+    "SellPrice": 19,
+    "ModulePath": "ReplicatedStorage.Items.Vintage Blue Tang",
+    "Name": "Vintage Blue Tang",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 1.100000023841858,
+        "Max": 1.2999999523162842
+      },
+      "Big": {
+        "Min": 1.7000000476837159,
+        "Max": 2.0999999046325685
+      }
+    },
+    "ModuleName": "Vintage Blue Tang",
+    "Icon": "rbxassetid://136876564868613",
+    "Probability": 0.5
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 58,
+    "SellPrice": 180,
+    "ModulePath": "ReplicatedStorage.Items.Vintage Damsel",
+    "Name": "Vintage Damsel",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 0.800000011920929,
+        "Max": 0.8999999761581421
+      },
+      "Big": {
+        "Min": 1.2000000476837159,
+        "Max": 1.5
+      }
+    },
+    "ModuleName": "Vintage Damsel",
+    "Icon": "rbxassetid://135465556501628",
+    "Probability": 0.007407407407407408
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 51,
+    "SellPrice": 19,
+    "ModulePath": "ReplicatedStorage.Items.Volcanic Basslet",
+    "Name": "Volcanic Basslet",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 2.700000047683716,
+        "Max": 3.200000047683716
+      },
+      "Big": {
+        "Min": 4.199999809265137,
+        "Max": 5.300000190734863
+      }
+    },
+    "ModuleName": "Volcanic Basslet",
+    "Icon": "rbxassetid://73441603866106",
+    "Probability": 0.5
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 28,
+    "SellPrice": 347,
+    "ModulePath": "ReplicatedStorage.Items.White Clownfish",
+    "Name": "White Clownfish",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 0.5,
+        "Max": 0.6000000238418579
+      },
+      "Big": {
+        "Min": 0.800000011920929,
+        "Max": 1
+      }
+    },
+    "ModuleName": "White Clownfish",
+    "Icon": "rbxassetid://94709558139061",
+    "Probability": 0.004
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 69,
+    "SellPrice": 99,
+    "ModulePath": "ReplicatedStorage.Items.Yello Damselfish",
+    "Name": "Yello Damselfish",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 1.2000000476837159,
+        "Max": 1.399999976158142
+      },
+      "Big": {
+        "Min": 1.7999999523162842,
+        "Max": 2.299999952316284
+      }
+    },
+    "ModuleName": "Yello Damselfish",
+    "Icon": "rbxassetid://125066072333378",
+    "Probability": 0.01818181818181818
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 73,
+    "SellPrice": 3600,
+    "ModulePath": "ReplicatedStorage.Items.Yellowfin Tuna",
+    "Name": "Yellowfin Tuna",
+    "Tier": 4,
+    "Weight": {
+      "Default": {
+        "Min": 34.599998474121097,
+        "Max": 55.099998474121097
+      },
+      "Big": {
+        "Min": 72.0999984741211,
+        "Max": 124.4000015258789
+      }
+    },
+    "ModuleName": "Yellowfin Tuna",
+    "Icon": "rbxassetid://86565235696991",
+    "Probability": 0.00013333333333333334
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 61,
+    "SellPrice": 19,
+    "ModulePath": "ReplicatedStorage.Items.Yellowstate Angelfish",
+    "Name": "Yellowstate Angelfish",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 1.100000023841858,
+        "Max": 1.2999999523162842
+      },
+      "Big": {
+        "Min": 1.7000000476837159,
+        "Max": 2.0999999046325685
+      }
+    },
+    "ModuleName": "Yellowstate Angelfish",
+    "Icon": "rbxassetid://82807541331151",
+    "Probability": 0.5
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 190,
+    "SellPrice": 103,
+    "ModulePath": "ReplicatedStorage.Items.Salmon",
+    "Name": "Salmon",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 25.639999389648439,
+        "Max": 37.959999084472659
+      },
+      "Big": {
+        "Min": 55.939998626708987,
+        "Max": 70.66999816894531
+      }
+    },
+    "ModuleName": "Salmon",
+    "Icon": "rbxassetid://125238936461158",
+    "Probability": 0.02
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 82,
+    "SellPrice": 100000,
+    "ModulePath": "ReplicatedStorage.Items.Blob Shark",
+    "Name": "Blob Shark",
+    "Tier": 7,
+    "Weight": {
+      "Default": {
+        "Min": 532.2000122070313,
+        "Max": 590.5
+      },
+      "Big": {
+        "Min": 638.5,
+        "Max": 753.2999877929688
+      }
+    },
+    "ModuleName": "Blob Shark",
+    "Icon": "rbxassetid://120294742064292",
+    "Probability": 0.000004
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 89,
+    "SellPrice": 369,
+    "ModulePath": "ReplicatedStorage.Items.Volsail Tang",
+    "Name": "Volsail Tang",
+    "Tier": 3,
+    "Weight": {
+      "Default": {
+        "Min": 4.400000095367432,
+        "Max": 6.199999809265137
+      },
+      "Big": {
+        "Min": 6.5,
+        "Max": 10.100000381469727
+      }
+    },
+    "ModuleName": "Volsail Tang",
+    "Icon": "rbxassetid://129946055426678",
+    "Probability": 0.0033333333333333337
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 88,
+    "SellPrice": 347,
+    "ModulePath": "ReplicatedStorage.Items.Rockform Cardianl",
+    "Name": "Rockform Cardianl",
+    "Tier": 3,
+    "Weight": {
+      "Default": {
+        "Min": 2.4000000953674318,
+        "Max": 4.199999809265137
+      },
+      "Big": {
+        "Min": 4.5,
+        "Max": 6.699999809265137
+      }
+    },
+    "ModuleName": "Rockform Cardianl",
+    "Icon": "rbxassetid://120329148296828",
+    "Probability": 0.004
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 87,
+    "SellPrice": 153,
+    "ModulePath": "ReplicatedStorage.Items.Lava Butterfly",
+    "Name": "Lava Butterfly",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 4.400000095367432,
+        "Max": 6.199999809265137
+      },
+      "Big": {
+        "Min": 6.5,
+        "Max": 10.100000381469727
+      }
+    },
+    "ModuleName": "Lava Butterfly",
+    "Icon": "rbxassetid://121441755541039",
+    "Probability": 0.008
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 86,
+    "SellPrice": 3830,
+    "ModulePath": "ReplicatedStorage.Items.Slurpfish Chromis",
+    "Name": "Slurpfish Chromis",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 4.400000095367432,
+        "Max": 6.199999809265137
+      },
+      "Big": {
+        "Min": 6.5,
+        "Max": 10.100000381469727
+      }
+    },
+    "ModuleName": "Slurpfish Chromis",
+    "Icon": "rbxassetid://73157781682607",
+    "Probability": 0.000125
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 92,
+    "SellPrice": 21,
+    "ModulePath": "ReplicatedStorage.Items.Festive Goby",
+    "Name": "Festive Goby",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 0.6700000166893005,
+        "Max": 1.0099999904632569
+      },
+      "Big": {
+        "Min": 1.309999942779541,
+        "Max": 1.3899999856948853
+      }
+    },
+    "ModuleName": "Festive Goby",
+    "Icon": "rbxassetid://131719468046777",
+    "Probability": 0.3333333333333333
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 91,
+    "SellPrice": 26,
+    "ModulePath": "ReplicatedStorage.Items.Mistletoe Damsel",
+    "Name": "Mistletoe Damsel",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 5.510000228881836,
+        "Max": 8.270000457763672
+      },
+      "Big": {
+        "Min": 10.75,
+        "Max": 17.1299991607666
+      }
+    },
+    "ModuleName": "Mistletoe Damsel",
+    "Icon": "rbxassetid://119896827350397",
+    "Probability": 0.25
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 90,
+    "SellPrice": 26,
+    "ModulePath": "ReplicatedStorage.Items.Gingerbread Tang",
+    "Name": "Gingerbread Tang",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 3.200000047683716,
+        "Max": 4.800000190734863
+      },
+      "Big": {
+        "Min": 6.239999771118164,
+        "Max": 8.720000267028809
+      }
+    },
+    "ModuleName": "Gingerbread Tang",
+    "Icon": "rbxassetid://81165959957452",
+    "Probability": 0.2
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 99,
+    "SellPrice": 195000,
+    "ModulePath": "ReplicatedStorage.Items.Great Christmas Whale",
+    "Name": "Great Christmas Whale",
+    "Tier": 7,
+    "Weight": {
+      "Default": {
+        "Min": 14186,
+        "Max": 21279
+      },
+      "Big": {
+        "Min": 26918,
+        "Max": 32558
+      }
+    },
+    "ModuleName": "Great Christmas Whale",
+    "Icon": "rbxassetid://71302255255094",
+    "Probability": 0.000001
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 94,
+    "SellPrice": 72,
+    "ModulePath": "ReplicatedStorage.Items.Gingerbread Clownfish",
+    "Name": "Gingerbread Clownfish",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 1.159999966621399,
+        "Max": 1.7400000095367432
+      },
+      "Big": {
+        "Min": 2.609999895095825,
+        "Max": 3.5999999046325685
+      }
+    },
+    "ModuleName": "Gingerbread Clownfish",
+    "Icon": "rbxassetid://76627481663195",
+    "Probability": 0.01818181818181818
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 97,
+    "SellPrice": 38750,
+    "ModulePath": "ReplicatedStorage.Items.Gingerbread Turtle",
+    "Name": "Gingerbread Turtle",
+    "Tier": 5,
+    "Weight": {
+      "Default": {
+        "Min": 506.6300048828125,
+        "Max": 759.9500122070313
+      },
+      "Big": {
+        "Min": 1139.9300537109376,
+        "Max": 1519.9000244140626
+      }
+    },
+    "ModuleName": "Gingerbread Turtle",
+    "Icon": "rbxassetid://105391647263950",
+    "Probability": 0.000014285714285714286
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 98,
+    "SellPrice": 89253,
+    "ModulePath": "ReplicatedStorage.Items.Gingerbread Shark",
+    "Name": "Gingerbread Shark",
+    "Tier": 6,
+    "Weight": {
+      "Default": {
+        "Min": 11285.400390625,
+        "Max": 15928.099609375
+      },
+      "Big": {
+        "Min": 17892.150390625,
+        "Max": 19856.19921875
+      }
+    },
+    "ModuleName": "Gingerbread Shark",
+    "Icon": "rbxassetid://134485196164902",
+    "Probability": 0.000005
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 93,
+    "SellPrice": 190,
+    "ModulePath": "ReplicatedStorage.Items.Christmastree Longnose",
+    "Name": "Christmastree Longnose",
+    "Tier": 3,
+    "Weight": {
+      "Default": {
+        "Min": 5.880000114440918,
+        "Max": 7.320000171661377
+      },
+      "Big": {
+        "Min": 8.979999542236329,
+        "Max": 11.880000114440918
+      }
+    },
+    "ModuleName": "Christmastree Longnose",
+    "Icon": "rbxassetid://121538254026074",
+    "Probability": 0.002857142857142857
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 95,
+    "SellPrice": 2138,
+    "ModulePath": "ReplicatedStorage.Items.Candycane Lobster",
+    "Name": "Candycane Lobster",
+    "Tier": 4,
+    "Weight": {
+      "Default": {
+        "Min": 8.399999618530274,
+        "Max": 12.600000381469727
+      },
+      "Big": {
+        "Min": 18.899999618530275,
+        "Max": 29.270000457763673
+      }
+    },
+    "ModuleName": "Candycane Lobster",
+    "Icon": "rbxassetid://81306607650028",
+    "Probability": 0.0005
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 96,
+    "SellPrice": 1244,
+    "ModulePath": "ReplicatedStorage.Items.Festive Pufferfish",
+    "Name": "Festive Pufferfish",
+    "Tier": 4,
+    "Weight": {
+      "Default": {
+        "Min": 2.1500000953674318,
+        "Max": 3.2200000286102297
+      },
+      "Big": {
+        "Min": 4.829999923706055,
+        "Max": 5.380000114440918
+      }
+    },
+    "ModuleName": "Festive Pufferfish",
+    "Icon": "rbxassetid://111730193849173",
+    "Probability": 0.0008333333333333334
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 106,
+    "SellPrice": 91,
+    "ModulePath": "ReplicatedStorage.Items.Blue-Banded Goby",
+    "Name": "Blue-Banded Goby",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 1.0399999618530274,
+        "Max": 1.559999942779541
+      },
+      "Big": {
+        "Min": 2.140000104904175,
+        "Max": 2.619999885559082
+      }
+    },
+    "ModuleName": "Blue-Banded Goby",
+    "Icon": "rbxassetid://137187691311291",
+    "Probability": 0.02
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 107,
+    "SellPrice": 95,
+    "ModulePath": "ReplicatedStorage.Items.Blumato Clownfish",
+    "Name": "Blumato Clownfish",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 0.5299999713897705,
+        "Max": 0.800000011920929
+      },
+      "Big": {
+        "Min": 1.2000000476837159,
+        "Max": 1.5700000524520875
+      }
+    },
+    "ModuleName": "Blumato Clownfish",
+    "Icon": "rbxassetid://135433263876257",
+    "Probability": 0.01818181818181818
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 108,
+    "SellPrice": 19,
+    "ModulePath": "ReplicatedStorage.Items.Conspi Angelfish",
+    "Name": "Conspi Angelfish",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 2.3499999046325685,
+        "Max": 3.5299999713897707
+      },
+      "Big": {
+        "Min": 5.300000190734863,
+        "Max": 6
+      }
+    },
+    "ModuleName": "Conspi Angelfish",
+    "Icon": "rbxassetid://70666845671780",
+    "Probability": 0.5
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 109,
+    "SellPrice": 43,
+    "ModulePath": "ReplicatedStorage.Items.Fade Tang",
+    "Name": "Fade Tang",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 1.0700000524520875,
+        "Max": 1.6100000143051148
+      },
+      "Big": {
+        "Min": 2.4200000762939455,
+        "Max": 2.7699999809265138
+      }
+    },
+    "ModuleName": "Fade Tang",
+    "Icon": "rbxassetid://99713500880459",
+    "Probability": 0.06666666666666667
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 110,
+    "SellPrice": 3100,
+    "ModulePath": "ReplicatedStorage.Items.Lined Cardinal Fish",
+    "Name": "Lined Cardinal Fish",
+    "Tier": 5,
+    "Weight": {
+      "Default": {
+        "Min": 12.260000228881836,
+        "Max": 16.389999389648439
+      },
+      "Big": {
+        "Min": 19.579999923706056,
+        "Max": 32.40999984741211
+      }
+    },
+    "ModuleName": "Lined Cardinal Fish",
+    "Icon": "rbxassetid://96973556889996",
+    "Probability": 0.0001818181818181818
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 111,
+    "SellPrice": 19,
+    "ModulePath": "ReplicatedStorage.Items.Masked Angelfish",
+    "Name": "Masked Angelfish",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 1.9299999475479127,
+        "Max": 2.9000000953674318
+      },
+      "Big": {
+        "Min": 4.349999904632568,
+        "Max": 4.739999771118164
+      }
+    },
+    "ModuleName": "Masked Angelfish",
+    "Icon": "rbxassetid://85192354177842",
+    "Probability": 0.5
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 112,
+    "SellPrice": 21,
+    "ModulePath": "ReplicatedStorage.Items.Pygmy Goby",
+    "Name": "Pygmy Goby",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 1.1100000143051148,
+        "Max": 1.5700000524520875
+      },
+      "Big": {
+        "Min": 2.059999942779541,
+        "Max": 2.7699999809265138
+      }
+    },
+    "ModuleName": "Pygmy Goby",
+    "Icon": "rbxassetid://128173847216247",
+    "Probability": 0.16666666666666667
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 113,
+    "SellPrice": 24,
+    "ModulePath": "ReplicatedStorage.Items.Sail Tang",
+    "Name": "Sail Tang",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 2.549999952316284,
+        "Max": 3.8299999237060549
+      },
+      "Big": {
+        "Min": 5.75,
+        "Max": 6.619999885559082
+      }
+    },
+    "ModuleName": "Sail Tang",
+    "Icon": "rbxassetid://86089485683202",
+    "Probability": 0.2
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 114,
+    "SellPrice": 22,
+    "ModulePath": "ReplicatedStorage.Items.Watanabei Angelfish",
+    "Name": "Watanabei Angelfish",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 1.7799999713897706,
+        "Max": 2.6700000762939455
+      },
+      "Big": {
+        "Min": 4.010000228881836,
+        "Max": 4.300000190734863
+      }
+    },
+    "ModuleName": "Watanabei Angelfish",
+    "Icon": "rbxassetid://133021124365377",
+    "Probability": 0.25
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 115,
+    "SellPrice": 21,
+    "ModulePath": "ReplicatedStorage.Items.White Tang",
+    "Name": "White Tang",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 1.6200000047683716,
+        "Max": 2.430000066757202
+      },
+      "Big": {
+        "Min": 3.6500000953674318,
+        "Max": 3.8399999141693117
+      }
+    },
+    "ModuleName": "White Tang",
+    "Icon": "rbxassetid://138516719984773",
+    "Probability": 0.2
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 119,
+    "SellPrice": 391,
+    "ModulePath": "ReplicatedStorage.Items.Ballina Angelfish",
+    "Name": "Ballina Angelfish",
+    "Tier": 3,
+    "Weight": {
+      "Default": {
+        "Min": 1.940000057220459,
+        "Max": 2.5199999809265138
+      },
+      "Big": {
+        "Min": 3.119999885559082,
+        "Max": 4.519999980926514
+      }
+    },
+    "ModuleName": "Ballina Angelfish",
+    "Icon": "rbxassetid://99236757363784",
+    "Probability": 0.002857142857142857
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 121,
+    "SellPrice": 74,
+    "ModulePath": "ReplicatedStorage.Items.Bleekers Damsel",
+    "Name": "Bleekers Damsel",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 3.2200000286102297,
+        "Max": 4.559999942779541
+      },
+      "Big": {
+        "Min": 5.230000019073486,
+        "Max": 6.110000133514404
+      }
+    },
+    "ModuleName": "Bleekers Damsel",
+    "Icon": "rbxassetid://116977046936052",
+    "Probability": 0.02857142857142857
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 122,
+    "SellPrice": 59583,
+    "ModulePath": "ReplicatedStorage.Items.Loving Shark",
+    "Name": "Loving Shark",
+    "Tier": 6,
+    "Weight": {
+      "Default": {
+        "Min": 8421.23046875,
+        "Max": 11415.1103515625
+      },
+      "Big": {
+        "Min": 13522.98046875,
+        "Max": 195867.640625
+      }
+    },
+    "ModuleName": "Loving Shark",
+    "Icon": "rbxassetid://119173750281399",
+    "Probability": 0.000006666666666666667
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 120,
+    "SellPrice": 62,
+    "ModulePath": "ReplicatedStorage.Items.Pink Smith Damsel",
+    "Name": "Pink Smith Damsel",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 2.2200000286102297,
+        "Max": 2.9600000381469728
+      },
+      "Big": {
+        "Min": 3.619999885559082,
+        "Max": 4.409999847412109
+      }
+    },
+    "ModuleName": "Pink Smith Damsel",
+    "Icon": "rbxassetid://76606007357699",
+    "Probability": 0.02
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 138,
+    "SellPrice": 3971,
+    "ModulePath": "ReplicatedStorage.Items.Axolotl",
+    "Name": "Axolotl",
+    "Tier": 4,
+    "Weight": {
+      "Default": {
+        "Min": 0.11999999731779099,
+        "Max": 0.2199999988079071
+      },
+      "Big": {
+        "Min": 0.3100000023841858,
+        "Max": 0.4399999976158142
+      }
+    },
+    "ModuleName": "Axolotl",
+    "Icon": "rbxassetid://76558551981982",
+    "Probability": 0.00015384615384615385
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 139,
+    "SellPrice": 62,
+    "ModulePath": "ReplicatedStorage.Items.Silver Tuna",
+    "Name": "Silver Tuna",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 6.400000095367432,
+        "Max": 8.100000381469727
+      },
+      "Big": {
+        "Min": 9.600000381469727,
+        "Max": 12.199999809265137
+      }
+    },
+    "ModuleName": "Silver Tuna",
+    "Icon": "rbxassetid://84055400571306",
+    "Probability": 0.016666666666666668
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 140,
+    "SellPrice": 58,
+    "ModulePath": "ReplicatedStorage.Items.Pilot Fish",
+    "Name": "Pilot Fish",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 3.4000000953674318,
+        "Max": 6.5
+      },
+      "Big": {
+        "Min": 6.800000190734863,
+        "Max": 8.399999618530274
+      }
+    },
+    "ModuleName": "Pilot Fish",
+    "Icon": "rbxassetid://114269547366510",
+    "Probability": 0.02
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 135,
+    "SellPrice": 36,
+    "ModulePath": "ReplicatedStorage.Items.Patriot Tang",
+    "Name": "Patriot Tang",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 1.2899999618530274,
+        "Max": 1.940000057220459
+      },
+      "Big": {
+        "Min": 2.4600000381469728,
+        "Max": 2.75
+      }
+    },
+    "ModuleName": "Patriot Tang",
+    "Icon": "rbxassetid://118534942671075",
+    "Probability": 0.1
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 136,
+    "SellPrice": 100000,
+    "ModulePath": "ReplicatedStorage.Items.Frostborn Shark",
+    "Name": "Frostborn Shark",
+    "Tier": 7,
+    "Weight": {
+      "Default": {
+        "Min": 7521,
+        "Max": 8436
+      },
+      "Big": {
+        "Min": 10522,
+        "Max": 165867
+      }
+    },
+    "ModuleName": "Frostborn Shark",
+    "Icon": "rbxassetid://125463067542850",
+    "Probability": 0.000002
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 137,
+    "SellPrice": 94500,
+    "ModulePath": "ReplicatedStorage.Items.Plasma Shark",
+    "Name": "Plasma Shark",
+    "Tier": 5,
+    "Weight": {
+      "Default": {
+        "Min": 4821,
+        "Max": 9693
+      },
+      "Big": {
+        "Min": 10521,
+        "Max": 11468
+      }
+    },
+    "ModuleName": "Plasma Shark",
+    "Icon": "rbxassetid://88847410678758",
+    "Probability": 0.000004444444444444444
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 143,
+    "SellPrice": 1145,
+    "ModulePath": "ReplicatedStorage.Items.Pufferfish",
+    "Name": "Pufferfish",
+    "Tier": 4,
+    "Weight": {
+      "Default": {
+        "Min": 0.46000000834465029,
+        "Max": 0.7400000095367432
+      },
+      "Big": {
+        "Min": 0.9200000166893005,
+        "Max": 1.149999976158142
+      }
+    },
+    "ModuleName": "Pufferfish",
+    "Icon": "rbxassetid://88950964359044",
+    "Probability": 0.0006666666666666666
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 144,
+    "SellPrice": 71,
+    "ModulePath": "ReplicatedStorage.Items.Racoon Butterfly Fish",
+    "Name": "Racoon Butterfly Fish",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 2.5199999809265138,
+        "Max": 3.0299999713897707
+      },
+      "Big": {
+        "Min": 4.519999980926514,
+        "Max": 4.980000019073486
+      }
+    },
+    "ModuleName": "Racoon Butterfly Fish",
+    "Icon": "rbxassetid://92680808637130",
+    "Probability": 0.02
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 142,
+    "SellPrice": 64,
+    "ModulePath": "ReplicatedStorage.Items.Orange Basslet",
+    "Name": "Orange Basslet",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 1.100000023841858,
+        "Max": 1.2999999523162842
+      },
+      "Big": {
+        "Min": 1.7000000476837159,
+        "Max": 2.0999999046325685
+      }
+    },
+    "ModuleName": "Orange Basslet",
+    "Icon": "rbxassetid://129792505755834",
+    "Probability": 0.02
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 146,
+    "SellPrice": 40500,
+    "ModulePath": "ReplicatedStorage.Items.Strippled Seahorse",
+    "Name": "Strippled Seahorse",
+    "Tier": 5,
+    "Weight": {
+      "Default": {
+        "Min": 0.699999988079071,
+        "Max": 0.800000011920929
+      },
+      "Big": {
+        "Min": 1,
+        "Max": 1.2999999523162842
+      }
+    },
+    "ModuleName": "Strippled Seahorse",
+    "Icon": "rbxassetid://120444751052938",
+    "Probability": 0.000010526315789473685
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 147,
+    "SellPrice": 44000,
+    "ModulePath": "ReplicatedStorage.Items.Thresher Shark",
+    "Name": "Thresher Shark",
+    "Tier": 5,
+    "Weight": {
+      "Default": {
+        "Min": 352.6000061035156,
+        "Max": 390.20001220703127
+      },
+      "Big": {
+        "Min": 478.29998779296877,
+        "Max": 553.5999755859375
+      }
+    },
+    "ModuleName": "Thresher Shark",
+    "Icon": "rbxassetid://70681751795899",
+    "Probability": 0.000010526315789473685
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 141,
+    "SellPrice": 180000,
+    "ModulePath": "ReplicatedStorage.Items.Great Whale",
+    "Name": "Great Whale",
+    "Tier": 7,
+    "Weight": {
+      "Default": {
+        "Min": 90696,
+        "Max": 116044
+      },
+      "Big": {
+        "Min": 118028,
+        "Max": 131396
+      }
+    },
+    "ModuleName": "Great Whale",
+    "Icon": "rbxassetid://110349456710432",
+    "Probability": 0.0000010526315789473684
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 145,
+    "SellPrice": 280000,
+    "ModulePath": "ReplicatedStorage.Items.Worm Fish",
+    "Name": "Worm Fish",
+    "Tier": 7,
+    "Weight": {
+      "Default": {
+        "Min": 106949,
+        "Max": 112042
+      },
+      "Big": {
+        "Min": 130635,
+        "Max": 145847
+      }
+    },
+    "ModuleName": "Worm Fish",
+    "Icon": "rbxassetid://88157067345872",
+    "Probability": 3.3333333333333337e-7
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 163,
+    "SellPrice": 94,
+    "ModulePath": "ReplicatedStorage.Items.Viperfish",
+    "Name": "Viperfish",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 7.5,
+        "Max": 13
+      },
+      "Big": {
+        "Min": 15.199999809265137,
+        "Max": 21.200000762939454
+      }
+    },
+    "ModuleName": "Viperfish",
+    "Icon": "rbxassetid://132331063285672",
+    "Probability": 0.02
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 152,
+    "SellPrice": 4680,
+    "ModulePath": "ReplicatedStorage.Items.Deep Sea Crab",
+    "Name": "Deep Sea Crab",
+    "Tier": 5,
+    "Weight": {
+      "Default": {
+        "Min": 943.2000122070313,
+        "Max": 1414.9000244140626
+      },
+      "Big": {
+        "Min": 1610.300048828125,
+        "Max": 1802.800048828125
+      }
+    },
+    "ModuleName": "Deep Sea Crab",
+    "Icon": "rbxassetid://107492220673765",
+    "Probability": 0.0002
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 161,
+    "SellPrice": 88,
+    "ModulePath": "ReplicatedStorage.Items.Spotted Lantern Fish",
+    "Name": "Spotted Lantern Fish",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 2.4000000953674318,
+        "Max": 3.0999999046325685
+      },
+      "Big": {
+        "Min": 4.099999904632568,
+        "Max": 5.400000095367432
+      }
+    },
+    "ModuleName": "Spotted Lantern Fish",
+    "Icon": "rbxassetid://121295544969455",
+    "Probability": 0.02
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 159,
+    "SellPrice": 327500,
+    "ModulePath": "ReplicatedStorage.Items.Robot Kraken",
+    "Name": "Robot Kraken",
+    "Tier": 7,
+    "Weight": {
+      "Default": {
+        "Min": 259820,
+        "Max": 389730
+      },
+      "Big": {
+        "Min": 419600,
+        "Max": 486470
+      }
+    },
+    "ModuleName": "Robot Kraken",
+    "Icon": "rbxassetid://80927639907406",
+    "Probability": 2.857142857142857e-7
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 160,
+    "SellPrice": 3200,
+    "ModulePath": "ReplicatedStorage.Items.Monk Fish",
+    "Name": "Monk Fish",
+    "Tier": 4,
+    "Weight": {
+      "Default": {
+        "Min": 128.41000366210938,
+        "Max": 192.6199951171875
+      },
+      "Big": {
+        "Min": 288.92999267578127,
+        "Max": 1188.8900146484376
+      }
+    },
+    "ModuleName": "Monk Fish",
+    "Icon": "rbxassetid://117683281700675",
+    "Probability": 0.0003333333333333333
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 158,
+    "SellPrice": 218500,
+    "ModulePath": "ReplicatedStorage.Items.King Crab",
+    "Name": "King Crab",
+    "Tier": 6,
+    "Weight": {
+      "Default": {
+        "Min": 130524,
+        "Max": 160962
+      },
+      "Big": {
+        "Min": 180962,
+        "Max": 192306
+      }
+    },
+    "ModuleName": "King Crab",
+    "Icon": "rbxassetid://136951139611035",
+    "Probability": 8.333333333333333e-7
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 157,
+    "SellPrice": 402,
+    "ModulePath": "ReplicatedStorage.Items.Jellyfish",
+    "Name": "Jellyfish",
+    "Tier": 3,
+    "Weight": {
+      "Default": {
+        "Min": 15.199999809265137,
+        "Max": 28.200000762939454
+      },
+      "Big": {
+        "Min": 36.20000076293945,
+        "Max": 62.400001525878909
+      }
+    },
+    "ModuleName": "Jellyfish",
+    "Icon": "rbxassetid://115477999636961",
+    "Probability": 0.0033333333333333337
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 156,
+    "SellPrice": 162300,
+    "ModulePath": "ReplicatedStorage.Items.Giant Squid",
+    "Name": "Giant Squid",
+    "Tier": 7,
+    "Weight": {
+      "Default": {
+        "Min": 103535,
+        "Max": 112803
+      },
+      "Big": {
+        "Min": 120705,
+        "Max": 140607
+      }
+    },
+    "ModuleName": "Giant Squid",
+    "Icon": "rbxassetid://135470649745250",
+    "Probability": 0.00000125
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 155,
+    "SellPrice": 1840,
+    "ModulePath": "ReplicatedStorage.Items.Fangtooth",
+    "Name": "Fangtooth",
+    "Tier": 4,
+    "Weight": {
+      "Default": {
+        "Min": 180.05999755859376,
+        "Max": 270.0899963378906
+      },
+      "Big": {
+        "Min": 405.1400146484375,
+        "Max": 1924.3199462890626
+      }
+    },
+    "ModuleName": "Fangtooth",
+    "Icon": "rbxassetid://82285034746187",
+    "Probability": 0.0005
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 154,
+    "SellPrice": 22,
+    "ModulePath": "ReplicatedStorage.Items.Electric Eel",
+    "Name": "Electric Eel",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 19.329999923706056,
+        "Max": 28.989999771118165
+      },
+      "Big": {
+        "Min": 43.4900016784668,
+        "Max": 87.16999816894531
+      }
+    },
+    "ModuleName": "Electric Eel",
+    "Icon": "rbxassetid://112551199622795",
+    "Probability": 0.5
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 162,
+    "SellPrice": 3770,
+    "ModulePath": "ReplicatedStorage.Items.Vampire Squid",
+    "Name": "Vampire Squid",
+    "Tier": 4,
+    "Weight": {
+      "Default": {
+        "Min": 0.8999999761581421,
+        "Max": 2
+      },
+      "Big": {
+        "Min": 2.799999952316284,
+        "Max": 3.5999999046325685
+      }
+    },
+    "ModuleName": "Vampire Squid",
+    "Icon": "rbxassetid://87203317027314",
+    "Probability": 0.0003333333333333333
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 153,
+    "SellPrice": 96,
+    "ModulePath": "ReplicatedStorage.Items.Dark Eel",
+    "Name": "Dark Eel",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 6.199999809265137,
+        "Max": 8.5
+      },
+      "Big": {
+        "Min": 10.199999809265137,
+        "Max": 12.699999809265137
+      }
+    },
+    "ModuleName": "Dark Eel",
+    "Icon": "rbxassetid://135880333888900",
+    "Probability": 0.02
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 151,
+    "SellPrice": 24,
+    "ModulePath": "ReplicatedStorage.Items.Boar Fish",
+    "Name": "Boar Fish",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 6.019999980926514,
+        "Max": 9.029999732971192
+      },
+      "Big": {
+        "Min": 11.539999961853028,
+        "Max": 13.149999618530274
+      }
+    },
+    "ModuleName": "Boar Fish",
+    "Icon": "rbxassetid://114009571858522",
+    "Probability": 0.5
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 150,
+    "SellPrice": 27200,
+    "ModulePath": "ReplicatedStorage.Items.Blob Fish",
+    "Name": "Blob Fish",
+    "Tier": 6,
+    "Weight": {
+      "Default": {
+        "Min": 2.4000000953674318,
+        "Max": 3
+      },
+      "Big": {
+        "Min": 3.5,
+        "Max": 5
+      }
+    },
+    "ModuleName": "Blob Fish",
+    "Icon": "rbxassetid://109329387304752",
+    "Probability": 0.00002
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 149,
+    "SellPrice": 3620,
+    "ModulePath": "ReplicatedStorage.Items.Angler Fish",
+    "Name": "Angler Fish",
+    "Tier": 4,
+    "Weight": {
+      "Default": {
+        "Min": 57.20000076293945,
+        "Max": 65.30000305175781
+      },
+      "Big": {
+        "Min": 70.0999984741211,
+        "Max": 76.5
+      }
+    },
+    "ModuleName": "Angler Fish",
+    "Icon": "rbxassetid://95565358831204",
+    "Probability": 0.0003333333333333333
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 166,
+    "SellPrice": 19,
+    "ModulePath": "ReplicatedStorage.Items.Dead Fish",
+    "Name": "Dead Fish",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 1.5,
+        "Max": 2.299999952316284
+      },
+      "Big": {
+        "Min": 2.799999952316284,
+        "Max": 3.5999999046325685
+      }
+    },
+    "ModuleName": "Dead Fish",
+    "Icon": "rbxassetid://72777968915255",
+    "Probability": 0.25
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 165,
+    "SellPrice": 26,
+    "ModulePath": "ReplicatedStorage.Items.Skeleton Fish",
+    "Name": "Skeleton Fish",
+    "Tier": 1,
+    "Weight": {
+      "Default": {
+        "Min": 1.399999976158142,
+        "Max": 2.700000047683716
+      },
+      "Big": {
+        "Min": 3.700000047683716,
+        "Max": 4.300000190734863
+      }
+    },
+    "ModuleName": "Skeleton Fish",
+    "Icon": "rbxassetid://110090152643341",
+    "Probability": 0.1
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 164,
+    "SellPrice": 84,
+    "ModulePath": "ReplicatedStorage.Items.Swordfish",
+    "Name": "Swordfish",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 24.799999237060548,
+        "Max": 36.20000076293945
+      },
+      "Big": {
+        "Min": 44.400001525878909,
+        "Max": 68.0999984741211
+      }
+    },
+    "ModuleName": "Swordfish",
+    "Icon": "rbxassetid://105539179190905",
+    "Probability": 0.02
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 176,
+    "SellPrice": 195000,
+    "ModulePath": "ReplicatedStorage.Items.Ghost Worm Fish",
+    "Name": "Ghost Worm Fish",
+    "Tier": 7,
+    "Weight": {
+      "Default": {
+        "Min": 1092.5999755859376,
+        "Max": 1207.0999755859376
+      },
+      "Big": {
+        "Min": 1518.199951171875,
+        "Max": 1893.5
+      }
+    },
+    "ModuleName": "Ghost Worm Fish",
+    "Icon": "rbxassetid://107896897205452",
+    "Probability": 0.000001
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 83,
+    "SellPrice": 125000,
+    "ModulePath": "ReplicatedStorage.Items.Ghost Shark",
+    "Name": "Ghost Shark",
+    "Tier": 7,
+    "Weight": {
+      "Default": {
+        "Min": 1092.5999755859376,
+        "Max": 1207.0999755859376
+      },
+      "Big": {
+        "Min": 1518.199951171875,
+        "Max": 1693.5
+      }
+    },
+    "ModuleName": "Ghost Shark",
+    "Icon": "rbxassetid://102028503382077",
+    "Probability": 0.000002
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 189,
+    "SellPrice": 92,
+    "ModulePath": "ReplicatedStorage.Items.Rockfish",
+    "Name": "Rockfish",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 2.5999999046325685,
+        "Max": 4.5
+      },
+      "Big": {
+        "Min": 6.300000190734863,
+        "Max": 8.399999618530274
+      }
+    },
+    "ModuleName": "Rockfish",
+    "Icon": "rbxassetid://88961987133136",
+    "Probability": 0.02
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 191,
+    "SellPrice": 412,
+    "ModulePath": "ReplicatedStorage.Items.Sheepshead Fish",
+    "Name": "Sheepshead Fish",
+    "Tier": 3,
+    "Weight": {
+      "Default": {
+        "Min": 16.219999313354493,
+        "Max": 19.329999923706056
+      },
+      "Big": {
+        "Min": 22.489999771118165,
+        "Max": 26.049999237060548
+      }
+    },
+    "ModuleName": "Sheepshead Fish",
+    "Icon": "rbxassetid://112711438552296",
+    "Probability": 0.0033333333333333337
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 182,
+    "SellPrice": 95,
+    "ModulePath": "ReplicatedStorage.Items.Blackcap Basslet",
+    "Name": "Blackcap Basslet",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 3.0999999046325685,
+        "Max": 4
+      },
+      "Big": {
+        "Min": 5.599999904632568,
+        "Max": 6.300000190734863
+      }
+    },
+    "ModuleName": "Blackcap Basslet",
+    "Icon": "rbxassetid://95659897738388",
+    "Probability": 0.02
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 183,
+    "SellPrice": 422,
+    "ModulePath": "ReplicatedStorage.Items.Catfish",
+    "Name": "Catfish",
+    "Tier": 3,
+    "Weight": {
+      "Default": {
+        "Min": 33.29999923706055,
+        "Max": 49.900001525878909
+      },
+      "Big": {
+        "Min": 64.5999984741211,
+        "Max": 131.60000610351563
+      }
+    },
+    "ModuleName": "Catfish",
+    "Icon": "rbxassetid://98970734819318",
+    "Probability": 0.0033333333333333337
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 184,
+    "SellPrice": 287,
+    "ModulePath": "ReplicatedStorage.Items.Coney Fish",
+    "Name": "Coney Fish",
+    "Tier": 3,
+    "Weight": {
+      "Default": {
+        "Min": 15.399999618530274,
+        "Max": 22.200000762939454
+      },
+      "Big": {
+        "Min": 27.299999237060548,
+        "Max": 35.20000076293945
+      }
+    },
+    "ModuleName": "Coney Fish",
+    "Icon": "rbxassetid://126049387807805",
+    "Probability": 0.0033333333333333337
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 185,
+    "SellPrice": 29700,
+    "ModulePath": "ReplicatedStorage.Items.Hermit Crab",
+    "Name": "Hermit Crab",
+    "Tier": 6,
+    "Weight": {
+      "Default": {
+        "Min": 0.30000001192092898,
+        "Max": 0.800000011920929
+      },
+      "Big": {
+        "Min": 1,
+        "Max": 1.5
+      }
+    },
+    "ModuleName": "Hermit Crab",
+    "Icon": "rbxassetid://84444153694943",
+    "Probability": 0.000016666666666666669
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 186,
+    "SellPrice": 93,
+    "ModulePath": "ReplicatedStorage.Items.Parrot Fish",
+    "Name": "Parrot Fish",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 8.699999809265137,
+        "Max": 13.300000190734864
+      },
+      "Big": {
+        "Min": 19.799999237060548,
+        "Max": 31.399999618530275
+      }
+    },
+    "ModuleName": "Parrot Fish",
+    "Icon": "rbxassetid://101895900955177",
+    "Probability": 0.02
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 187,
+    "SellPrice": 218500,
+    "ModulePath": "ReplicatedStorage.Items.Queen Crab",
+    "Name": "Queen Crab",
+    "Tier": 7,
+    "Weight": {
+      "Default": {
+        "Min": 130524,
+        "Max": 160962
+      },
+      "Big": {
+        "Min": 180962,
+        "Max": 192306
+      }
+    },
+    "ModuleName": "Queen Crab",
+    "Icon": "rbxassetid://73709080100110",
+    "Probability": 0.00000125
+  },
+  {
+    "Type": "Fishes",
+    "Description": "",
+    "Id": 188,
+    "SellPrice": 97,
+    "ModulePath": "ReplicatedStorage.Items.Red Snapper",
+    "Name": "Red Snapper",
+    "Tier": 2,
+    "Weight": {
+      "Default": {
+        "Min": 3.0999999046325685,
+        "Max": 4.5
+      },
+      "Big": {
+        "Min": 5.300000190734863,
+        "Max": 6.199999809265137
+      }
+    },
+    "ModuleName": "Red Snapper",
+    "Icon": "rbxassetid://70818316245817",
+    "Probability": 0.02
+  }
+]
