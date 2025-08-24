@@ -14,7 +14,7 @@ local UICorner_4 = Instance.new("UICorner")
 local Icon = Instance.new("ImageLabel")
 
 ScreenGui.Name = "DiscordJoiner"
-ScreenGui.Parent = game:GetService("CoreGui")
+ScreenGui.Parent = cloneref(gethui()) or game:GetService("CoreGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ScreenGui.ResetOnSpawn = false
 ScreenGui.DisplayOrder = 9999
