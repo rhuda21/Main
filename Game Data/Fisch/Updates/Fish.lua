@@ -28,37 +28,49 @@ local function prettyPrintJson(jsonString)
     end
     return result
 end
-local function processValue(value)
-    if typeof(value) == "Color3" then
-        return {
-            _type = "Color3",
-            R = value.R,
-            G = value.G,
-            B = value.B
-        }
-    elseif typeof(value) == "Instance" then
-        return {
-            _type = "Instance",
-            ClassName = value.ClassName,
-            Name = value.Name
-        }
-    elseif type(value) == "table" then
-        local processed = {}
-        for k, v in pairs(value) do
-            processed[k] = processValue(v)
+local Data = require(game:GetService("ReplicatedStorage").shared.modules.library.fish)
+local function extractAllFishingData()
+    local result = {
+        Fish = {},
+        Crates = {},
+        Locations = Data.Locations or {},
+        Rarities = Data.Rarities,
+        RarityColors = Data.RarityColours
+    }
+    for name, data in pairs(Data) do
+        if type(data) == "table" then
+            if data.IsCrate then
+                result.Crates[name] = {
+                    Price = data.Price,
+                    BaitContents = data.BaitContents,
+                    CoinContents = data.CoinContents,
+                    Rarity = data.Rarity,
+                    Unpurchasable = data.Unpurchasable
+                }
+            elseif data.Rarity then
+                result.Fish[name] = {
+                    Rarity = data.Rarity,
+                    Price = data.Price,
+                    XP = data.XP,
+                    Resilience = data.Resilience,
+                    Worlds = data.Worlds,
+                    Location = data.From,
+                    FavoriteBait = data.FavouriteBait
+                }
+            end
         end
-        return processed
-    else
-        return value
     end
+    return result
 end
-local _require = loadstring(game:HttpGet("https://gitlab.com/r_soft/main/-/raw/main/Others/Require.lua?ref_type=heads"))()
-local fishModule = game:GetService("ReplicatedStorage").shared.modules.library.fish
-local fishData = _require.GetScript(fishModule)
-local processedData = {}
-for key, value in pairs(fishData) do
-    processedData[key] = processValue(value)
+local fishingData = extractAllFishingData()
+setclipboard(prettyPrintJson(HttpService:JSONEncode(fishingData)))
+local fishCount = 0
+for _ in pairs(fishingData.Fish) do
+    fishCount = fishCount + 1
 end
-local Fish = prettyPrintJson(HttpService:JSONEncode(processedData))
-setclipboard(Fish)
-return Fish
+local crateCount = 0
+for _ in pairs(fishingData.Crates) do
+    crateCount = crateCount + 1
+end
+print("Total fish:", fishCount)
+print("Total crates:", crateCount)
