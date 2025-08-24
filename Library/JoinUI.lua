@@ -17,6 +17,7 @@ ScreenGui.Name = "DiscordJoiner"
 ScreenGui.Parent = game:GetService("CoreGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ScreenGui.ResetOnSpawn = false
+ScreenGui.DisplayOrder = 9999
 
 JoinerFrame.Name = "JoinerFrame"
 JoinerFrame.Parent = ScreenGui
