@@ -98,7 +98,6 @@ Icon.Parent = TitleBar
 Icon.BackgroundTransparency = 1
 Icon.Position = UDim2.new(0.02, 0, 0.1, 0)
 Icon.Size = UDim2.new(0, 30, 0, 30)
-Icon.Image = "rbxassetid://7072718362" -- Discord logo
 Icon.ScaleType = Enum.ScaleType.Fit
 
 local function copyInvite()
