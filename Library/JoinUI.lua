@@ -1,3 +1,22 @@
+local function OpenDC(Invite)
+    if request then
+        local success, err = pcall(function()
+            request({
+                Url = 'http://127.0.0.1:6463/rpc?v=1',
+                Method = 'POST',
+                Headers = {
+                    ['Content-Type'] = 'application/json',
+                    Origin = 'https://discord.com'
+                },
+                Body = HttpService:JSONEncode({
+                    cmd = 'INVITE_BROWSER',
+                    nonce = HttpService:GenerateGUID(false),
+                    args = {code = Invite}
+                })
+            })
+        end)
+    end
+end
 if not _G.LoadedUBJoiner then _G.LoadedUBJoiner = true end
 local ScreenGui = Instance.new("ScreenGui")
 local JoinerFrame = Instance.new("Frame")
@@ -46,7 +65,7 @@ DiscordLabel.BackgroundTransparency = 1
 DiscordLabel.Position = UDim2.new(0.5, 0, 0.3, 0)
 DiscordLabel.Size = UDim2.new(0.8, 0, 0, 60)
 DiscordLabel.Font = Enum.Font.GothamSemibold
-DiscordLabel.Text = "Join our community so you can make suggestion. HELP us become Number 1 Keyless Script!"
+DiscordLabel.Text = "Join our community so you can make suggestion. HELP us become Number 1 Keyless Script! \n We have OVER 15 GAMES"
 DiscordLabel.TextColor3 = Color3.fromRGB(220, 220, 220)
 DiscordLabel.TextSize = 16
 DiscordLabel.TextWrapped = true
@@ -101,6 +120,7 @@ Icon.Size = UDim2.new(0, 30, 0, 30)
 Icon.ScaleType = Enum.ScaleType.Fit
 
 local function copyInvite()
+    OpenDC("pn8xyhuSeV")
     local inviteLink = "https://discord.gg/pn8xyhuSeV"
     CopyButton.Text = "Copy"
     CopyButton.BackgroundColor3 = Color3.fromRGB(66, 77, 181)
