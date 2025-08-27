@@ -45,7 +45,7 @@ function FileLib:ReadFile(path)
 end
 
 function FileLib:WriteFile(path, data)
-    local writeSuccess = FileLib:WriteFile(fileName, json) 
+    local success, result = pcall(_writefile, path, data)
     if success then
         return result
     end
