@@ -10,7 +10,7 @@ local function OpenDC(Invite)
                 },
                 Body = HttpService:JSONEncode({
                     cmd = 'INVITE_BROWSER',
-                    nonce = HttpService:GenerateGUID(false),
+                    nonce = game:GetService("HttpService"):GenerateGUID(false),
                     args = {code = Invite}
                 })
             })
@@ -63,7 +63,7 @@ DiscordLabel.Name = "DiscordLabel"
 DiscordLabel.Parent = JoinerFrame
 DiscordLabel.BackgroundTransparency = 1
 DiscordLabel.Position = UDim2.new(0.5, 0, 0.3, 0)
-DiscordLabel.Size = UDim2.new(0.8, 0, 0, 60)
+DiscordLabel.Size = UDim2.new(0.8, 0, 0, 70)
 DiscordLabel.Font = Enum.Font.GothamSemibold
 DiscordLabel.Text = "Join our community so you can make suggestion. HELP us become Number 1 Keyless Script! We have OVER 15 GAMES"
 DiscordLabel.TextColor3 = Color3.fromRGB(220, 220, 220)
