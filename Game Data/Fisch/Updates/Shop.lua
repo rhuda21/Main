@@ -54,5 +54,4 @@ for itemName, itemData in pairs(itemsTable) do
     end
 end
 local prettyJSON = prettyPrintJson(http:JSONEncode(organized))
-setclipboard(prettyJSON)
 return prettyJSON
