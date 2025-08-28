@@ -34,5 +34,4 @@ for _, locationData in pairs(locations) do
     table.insert(locationNames, locationData.Name)
 end
 local Locations = prettyPrintJson(HttpService:JSONEncode(locationNames))
-setclipboard(Locations)
 return Locations
