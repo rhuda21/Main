@@ -63,14 +63,5 @@ local function extractAllFishingData()
     return result
 end
 local fishingData = extractAllFishingData()
-setclipboard(prettyPrintJson(HttpService:JSONEncode(fishingData)))
-local fishCount = 0
-for _ in pairs(fishingData.Fish) do
-    fishCount = fishCount + 1
-end
-local crateCount = 0
-for _ in pairs(fishingData.Crates) do
-    crateCount = crateCount + 1
-end
-print("Total fish:", fishCount)
-print("Total crates:", crateCount)
+local data = prettyPrintJson(HttpService:JSONEncode(fishingData))
+return data
