@@ -56,4 +56,4 @@ for rodName, rodStats in pairs(RodsModule) do
     table.insert(rodsData, rodEntry)
 end
 local rods = prettyPrintJson(HttpService:JSONEncode(rodsData))
-setclipboard(rods)
+return rods
