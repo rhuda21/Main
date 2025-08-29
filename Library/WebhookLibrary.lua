@@ -5,7 +5,7 @@ function WebhookLib.SendMessageEMBED(url, embed, mention)
         embeds = {{
             title = embed.title,
             description = embed.description,
-            color = embed.color,
+            color = 14893841 or embed.color,
             fields = embed.fields,
             footer = embed.footer and {text = embed.footer.text, icon_url = embed.footer.icon_url} or nil,
             thumbnail = embed.thumbnail and {url = embed.thumbnail.url} or nil,
