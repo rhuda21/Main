@@ -1,5 +1,13 @@
 local WebhookLib = {}
 local WebhookTemplate = {}
+local success, GameName = pcall(function() return game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name end)
+
+local config = {
+    defaultColor = 14893841,
+    defaultFooter = "🔹 UB Hub | Report Bugs in Discord",
+    defaultThumbnail = "",
+    defaultAuthor = "UB Hub | " .. (success and GameName or "Fail to get Game")
+}
 
 function WebhookLib.SendMessageEMBED(url, embed, mention)
     local payload = {
@@ -29,13 +37,6 @@ function WebhookLib.SendMessageEMBED(url, embed, mention)
         warn("Failed to send webhook:", response)
     end
 end
-
-local config = {
-    defaultColor = 14893841,
-    defaultFooter = "🔹 UB Hub | Report Bugs in Discord",
-    defaultThumbnail = "",
-    defaultAuthor = "UB Hub | Hunty Zombie"
-}
 function WebhookTemplate:CreateEmbed()
     return {
         title = "",
