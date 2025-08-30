@@ -1,5 +1,6 @@
 local HttpService = game:GetService("HttpService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
 local function safeRequire(module)
     local success, result = pcall(require, module)
     if success and type(result) == "function" then
@@ -30,6 +31,27 @@ local function extractNamePrice(data)
     end
     return result
 end
+
+local function extractSprinklerData(sprinklerModule)
+    local sprinklerData = safeRequire(sprinklerModule)
+    local result = {}
+    if sprinklerData and sprinklerData.SprinklerBoxSizes then
+        for sprinklerName, size in pairs(sprinklerData.SprinklerBoxSizes) do
+            result[sprinklerName] = {
+                Name = sprinklerName,
+                BoxSize = {X = size.X, Y = size.Y, Z = size.Z},
+                Duration = sprinklerData.SprinklerDurations and sprinklerData.SprinklerDurations[sprinklerName] or 0,
+                Offset = sprinklerData.SprinklerOffsets and sprinklerData.SprinklerOffsets[sprinklerName] and 
+                         {X = sprinklerData.SprinklerOffsets[sprinklerName].X, 
+                          Y = sprinklerData.SprinklerOffsets[sprinklerName].Y, 
+                          Z = sprinklerData.SprinklerOffsets[sprinklerName].Z} or {X = 0, Y = 0, Z = 0}
+            }
+        end
+    end
+    
+    return result
+end
+
 local allData = {
     Seeds = extractNamePrice(safeRequire(ReplicatedStorage.Data.SeedData)),
     Eggs = extractNamePrice(safeRequire(ReplicatedStorage.Data.PetRegistry.PetEggs)),
@@ -38,10 +60,9 @@ local allData = {
     Pets = extractNamePrice(safeRequire(ReplicatedStorage.Data.PetRegistry.PetList)),
     Event1 = extractNamePrice(safeRequire(ReplicatedStorage.Data.EventShopData)),
     Merchant = extractNamePrice(safeRequire(ReplicatedStorage.Data.TravelingMerchant.TravelingMerchantData.GnomeMerchantShopData)),
-    Sprinkler = extractNamePrice(safeRequire(ReplicatedStorage.Data.SprinklerData)),
+    Sprinkler = extractSprinklerData(ReplicatedStorage.Data.SprinklerData), -- Changed to use sprinkler extractor
     PetsM = extractNamePrice(safeRequire(ReplicatedStorage.Data.PetRegistry.PetMutationRegistry))
 }
-
 local mutationModule = safeRequire(ReplicatedStorage.Modules.MutationHandler)
 if mutationModule and mutationModule.MutationNames then
     local mutationsData = {}
@@ -64,6 +85,7 @@ for categoryName, categoryData in pairs(allData) do
         table.insert(jsonLines, ",")
     end
     first = false
+    
     table.insert(jsonLines, '\n  "' .. categoryName .. '": ')
     local categoryJson = HttpService:JSONEncode(categoryData)
     table.insert(jsonLines, categoryJson)
