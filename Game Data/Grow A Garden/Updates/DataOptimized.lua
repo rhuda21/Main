@@ -56,8 +56,9 @@ local allData = {
     Pets = extractNamePrice(safeRequire(ReplicatedStorage.Data.PetRegistry.PetList)),
     Event1 = extractNamePrice(safeRequire(ReplicatedStorage.Data.EventShopData)),
     Merchant = extractNamePrice(safeRequire(ReplicatedStorage.Data.TravelingMerchant.TravelingMerchantData.GnomeMerchantShopData)),
-    Sprinkler = extractSprinklerData(ReplicatedStorage.Data.SprinklerData), -- Changed to use sprinkler extractor
-    PetsM = extractNamePrice(safeRequire(ReplicatedStorage.Data.PetRegistry.PetMutationRegistry))
+    Sprinkler = extractSprinklerData(ReplicatedStorage.Data.SprinklerData),
+    PetsM = extractNamePrice(safeRequire(ReplicatedStorage.Data.PetRegistry.PetMutationRegistry)),
+    Garden = extractNamePrice(safeRequire(ReplicatedStorage.Data.GardenCoinShopData))
 }
 local mutationModule = safeRequire(ReplicatedStorage.Modules.MutationHandler)
 if mutationModule and mutationModule.MutationNames then
