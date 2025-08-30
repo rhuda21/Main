@@ -1,6 +1,5 @@
 local HttpService = game:GetService("HttpService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
-
 local function safeRequire(module)
     local success, result = pcall(require, module)
     if success and type(result) == "function" then
@@ -16,7 +15,6 @@ local function safeRequire(module)
         return {}
     end
 end
-
 local function extractNamePrice(data)
     local result = {}
     for itemName, itemData in pairs(data) do
@@ -31,7 +29,6 @@ local function extractNamePrice(data)
     end
     return result
 end
-
 local function extractSprinklerData(sprinklerModule)
     local sprinklerData = safeRequire(sprinklerModule)
     local result = {}
@@ -51,7 +48,6 @@ local function extractSprinklerData(sprinklerModule)
     
     return result
 end
-
 local allData = {
     Seeds = extractNamePrice(safeRequire(ReplicatedStorage.Data.SeedData)),
     Eggs = extractNamePrice(safeRequire(ReplicatedStorage.Data.PetRegistry.PetEggs)),
@@ -85,12 +81,11 @@ for categoryName, categoryData in pairs(allData) do
         table.insert(jsonLines, ",")
     end
     first = false
-    
     table.insert(jsonLines, '\n  "' .. categoryName .. '": ')
     local categoryJson = HttpService:JSONEncode(categoryData)
     table.insert(jsonLines, categoryJson)
 end
 table.insert(jsonLines, "\n}")
-local formattedJson = table.concat(jsonLines)
-setclipboard(formattedJson)
-return formattedJson
+local data = table.concat(jsonLines)
+setclipboard(data)
+return data
