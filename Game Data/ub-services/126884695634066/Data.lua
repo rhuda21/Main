@@ -1,5 +1,6 @@
 local HttpService = game:GetService("HttpService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
+print(" -- UB AUTO DATA UPGRADE INIT -- ")
 local function safeRequire(module)
     local success, result = pcall(require, module)
     if success and type(result) == "function" then
@@ -15,6 +16,7 @@ local function safeRequire(module)
         return {}
     end
 end
+
 local function extractNamePrice(data)
     local result = {}
     for itemName, itemData in pairs(data) do
@@ -29,6 +31,7 @@ local function extractNamePrice(data)
     end
     return result
 end
+
 local function extractSprinklerData(sprinklerModule)
     local sprinklerData = safeRequire(sprinklerModule)
     local result = {}
@@ -45,8 +48,41 @@ local function extractSprinklerData(sprinklerModule)
             }
         end
     end
-    
     return result
+end
+local function extractMerchantItems(merchantData)
+    local result = {}
+    for itemName, itemData in pairs(merchantData) do
+        if type(itemData) == "table" then
+            result[itemName] = {
+                Name = itemData.SeedName or itemData.Name or itemName,
+                Price = itemData.Price or itemData.Cost or itemData.PriceValue or itemData.Value or 0,
+                Rarity = itemData.SeedRarity or itemData.Rarity or "Common",
+                StockChance = itemData.StockChance or 1,
+                StockAmount = itemData.StockAmount or {1, 1},
+                ItemType = itemData.ItemType or "Item"
+            }
+        end
+    end
+    return result
+end
+local function extractAllMerchantsData()
+    local merchantsModule = safeRequire(ReplicatedStorage.Data.TravelingMerchant.TravelingMerchantData)
+    local allMerchantsData = {}
+    if merchantsModule then
+        for merchantName, merchantData in pairs(merchantsModule) do
+            if merchantData.ShopData then
+                local shopItems = extractMerchantItems(safeRequire(merchantData.ShopData))
+                allMerchantsData[merchantName] = {
+                    Title = merchantData.Title or merchantName,
+                    AppearanceChance = merchantData.AppearanceChance or 0,
+                    Duration = merchantData.Duration or 0,
+                    Items = shopItems
+                }
+            end
+        end
+    end
+    return allMerchantsData
 end
 local allData = {
     Seeds = extractNamePrice(safeRequire(ReplicatedStorage.Data.SeedData)),
@@ -55,11 +91,12 @@ local allData = {
     Cosmetics = extractNamePrice(safeRequire(ReplicatedStorage.Data.CosmeticItemShopData)),
     Pets = extractNamePrice(safeRequire(ReplicatedStorage.Data.PetRegistry.PetList)),
     Event1 = extractNamePrice(safeRequire(ReplicatedStorage.Data.EventShopData)),
-    Merchant = extractNamePrice(safeRequire(ReplicatedStorage.Data.TravelingMerchant.TravelingMerchantData.GnomeMerchantShopData)),
+    Merchant = extractAllMerchantsData(),
     Sprinkler = extractSprinklerData(ReplicatedStorage.Data.SprinklerData),
     PetsM = extractNamePrice(safeRequire(ReplicatedStorage.Data.PetRegistry.PetMutationRegistry)),
     Garden = extractNamePrice(safeRequire(ReplicatedStorage.Data.GardenCoinShopData))
 }
+
 local mutationModule = safeRequire(ReplicatedStorage.Modules.MutationHandler)
 if mutationModule and mutationModule.MutationNames then
     local mutationsData = {}
@@ -75,6 +112,7 @@ if mutationModule and mutationModule.MutationNames then
     end
     allData.Mutations = mutationsData
 end
+
 local jsonLines = {"{"}
 local first = true
 for categoryName, categoryData in pairs(allData) do
