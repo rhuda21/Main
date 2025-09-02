@@ -85,8 +85,31 @@ local function extractAllMerchantsData()
             end
         end
     end
-    
     return allMerchantsData
+end
+
+local function extractPetData(petData)
+    local result = {}
+    for petName, petInfo in pairs(petData) do
+        if type(petInfo) == "table" then
+            result[petName] = {
+                Name = petInfo.Name or petName,
+                Price = petInfo.Price or petInfo.Cost or petInfo.PriceValue or petInfo.Value or 0,
+                Rarity = petInfo.Rarity or "Common",
+                Hunger = petInfo.Hunger or petInfo.Food or 0,
+                Type = petInfo.Type or petInfo.PetType or "Pet",
+                Description = petInfo.Description or "",
+                Icon = petInfo.Icon or "rbxassetid://0"
+                SellPrice = petInfo.SellPrice or 1
+            }
+            for key, value in pairs(petInfo) do
+                if not result[petName][key] then
+                    result[petName][key] = value
+                end
+            end
+        end
+    end
+    return result
 end
 
 local allData = {
