@@ -1,6 +1,6 @@
 local HttpService = game:GetService("HttpService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
-print(" -- UB AUTO DATA UPGRADE INIT -- ")
+
 local function safeRequire(module)
     local success, result = pcall(require, module)
     if success and type(result) == "function" then
@@ -50,6 +50,7 @@ local function extractSprinklerData(sprinklerModule)
     end
     return result
 end
+
 local function extractMerchantItems(merchantData)
     local result = {}
     for itemName, itemData in pairs(merchantData) do
@@ -66,27 +67,28 @@ local function extractMerchantItems(merchantData)
     end
     return result
 end
+
 local function extractAllMerchantsData()
     local merchantsModule = safeRequire(ReplicatedStorage.Data.TravelingMerchant.TravelingMerchantData)
     local allMerchantsData = {}
+    
     if merchantsModule then
         for merchantName, merchantData in pairs(merchantsModule) do
-            if merchantData.ShopData then
-                local shopData = safeRequire(merchantData.ShopData)
-                if shopData and type(shopData) == "table" then
-                    local shopItems = extractMerchantItems(shopData)
-                    allMerchantsData[merchantName] = {
-                        Title = merchantData.Title or merchantName,
-                        AppearanceChance = merchantData.AppearanceChance or 0,
-                        Duration = merchantData.Duration or 0,
-                        Items = shopItems
-                    }
-                end
+            if merchantData.ShopData and type(merchantData.ShopData) == "table" then
+                local shopItems = extractMerchantItems(merchantData.ShopData)
+                allMerchantsData[merchantName] = {
+                    Title = merchantData.Title or merchantName,
+                    AppearanceChance = merchantData.AppearanceChance or 0,
+                    Duration = merchantData.Duration or 0,
+                    Items = shopItems
+                }
             end
         end
     end
+    
     return allMerchantsData
 end
+
 local allData = {
     Seeds = extractNamePrice(safeRequire(ReplicatedStorage.Data.SeedData)),
     Eggs = extractNamePrice(safeRequire(ReplicatedStorage.Data.PetRegistry.PetEggs)),
