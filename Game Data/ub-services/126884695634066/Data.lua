@@ -72,13 +72,16 @@ local function extractAllMerchantsData()
     if merchantsModule then
         for merchantName, merchantData in pairs(merchantsModule) do
             if merchantData.ShopData then
-                local shopItems = extractMerchantItems(safeRequire(merchantData.ShopData))
-                allMerchantsData[merchantName] = {
-                    Title = merchantData.Title or merchantName,
-                    AppearanceChance = merchantData.AppearanceChance or 0,
-                    Duration = merchantData.Duration or 0,
-                    Items = shopItems
-                }
+                local shopData = safeRequire(merchantData.ShopData)
+                if shopData and type(shopData) == "table" then
+                    local shopItems = extractMerchantItems(shopData)
+                    allMerchantsData[merchantName] = {
+                        Title = merchantData.Title or merchantName,
+                        AppearanceChance = merchantData.AppearanceChance or 0,
+                        Duration = merchantData.Duration or 0,
+                        Items = shopItems
+                    }
+                end
             end
         end
     end
