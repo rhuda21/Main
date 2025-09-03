@@ -134,7 +134,12 @@ if mutationModule and mutationModule.MutationNames then
             mutationsData[name] = {
                 Name = mutationData.Name,
                 Id = mutationData.Id,
-                ValueMulti = mutationData.ValueMulti
+                ValueMulti = mutationData.ValueMulti,
+                Color = {
+                    R = r,
+                    G = g,
+                    B = b
+                }
             }
         end
     end
