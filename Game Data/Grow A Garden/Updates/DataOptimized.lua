@@ -131,6 +131,9 @@ if mutationModule and mutationModule.MutationNames then
     for name, _ in pairs(mutationModule.MutationNames) do
         local mutationData = mutationModule:GetMutations()[name]
         if mutationData then
+            local r, g, b = math.floor(mutationData.Color.R * 255), 
+                            math.floor(mutationData.Color.G * 255), 
+                            math.floor(mutationData.Color.B * 255)
             mutationsData[name] = {
                 Name = mutationData.Name,
                 Id = mutationData.Id,
