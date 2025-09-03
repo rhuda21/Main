@@ -99,7 +99,7 @@ local function extractPetData(petData)
                 Hunger = petInfo.Hunger or petInfo.Food or 0,
                 Type = petInfo.Type or petInfo.PetType or "Pet",
                 Description = petInfo.Description or "",
-                Icon = petInfo.Icon or "rbxassetid://0"
+                Icon = petInfo.Icon or "rbxassetid://0",
                 SellPrice = petInfo.SellPrice or 1
             }
             for key, value in pairs(petInfo) do
