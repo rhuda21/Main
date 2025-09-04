@@ -1,0 +1,426 @@
+[
+  {
+    "Type": "Fishing Rods",
+    "Name": "Chrome Rod",
+    "Tier": 4,
+    "Id": 7,
+    "Icon": "rbxassetid://83222944871842",
+    "Description": "Ol' reliable'"
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Lucky Rod",
+    "Tier": 3,
+    "Id": 4,
+    "Icon": "rbxassetid://85174841193446",
+    "Description": "Imbued with centuries of luck"
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Magma Rod",
+    "Tier": 5,
+    "Id": 3,
+    "Icon": "rbxassetid://130960889779123",
+    "Description": "Unlock fishing in Lava Pools"
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Starter Rod",
+    "Tier": 1,
+    "Id": 1,
+    "Icon": "rbxassetid://100007811075966",
+    "Description": "The most basic rod"
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Steampunk Rod",
+    "Tier": 4,
+    "Id": 6,
+    "Icon": "rbxassetid://109211472277743",
+    "Description": "???"
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Hyper Rod",
+    "Tier": 100,
+    "Id": 9,
+    "Icon": "rbxassetid://114578814996909",
+    "Description": "Hyper Boat Pack"
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Gold Rod",
+    "Tier": 100,
+    "Id": 8,
+    "Icon": "rbxassetid://114471091895897",
+    "Description": "VIP Exclusive"
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Lava Rod",
+    "Tier": 2,
+    "Id": 2,
+    "Icon": "rbxassetid://75593774049916",
+    "Description": "Unlock fishing in Lava Pools"
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Carbon Rod",
+    "Tier": 1,
+    "Id": 76,
+    "Icon": "rbxassetid://124099699625912",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Gingerbread Rod",
+    "Tier": 2,
+    "Id": 103,
+    "Icon": "rbxassetid://88417579240692",
+    "Description": "EVENT - Christmas 2024"
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Ice Rod",
+    "Tier": 2,
+    "Id": 78,
+    "Icon": "rbxassetid://92630142441112",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Luck Rod",
+    "Tier": 1,
+    "Id": 79,
+    "Icon": "rbxassetid://127110979437680",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Midnight Rod",
+    "Tier": 3,
+    "Id": 80,
+    "Icon": "rbxassetid://130162999569066",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Toy Rod",
+    "Tier": 1,
+    "Id": 84,
+    "Icon": "rbxassetid://138216787235127",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Grass Rod",
+    "Tier": 2,
+    "Id": 85,
+    "Icon": "rbxassetid://130802650199282",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Candy Cane Rod",
+    "Tier": 5,
+    "Id": 100,
+    "Icon": "rbxassetid://82270679061745",
+    "Description": "EVENT - Christmas 2024"
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Christmas Tree Rod",
+    "Tier": 4,
+    "Id": 101,
+    "Icon": "rbxassetid://78639604918154",
+    "Description": "EVENT - Christmas 2024"
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Demascus Rod",
+    "Tier": 2,
+    "Id": 77,
+    "Icon": "rbxassetid://92202353564703",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Frozen Rod",
+    "Tier": 100,
+    "Id": 102,
+    "Icon": "rbxassetid://136553588257457",
+    "Description": "LIMITED - Frozen Pack"
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Abyssal Chroma",
+    "Tier": 100,
+    "Id": 167,
+    "Icon": "rbxassetid://124678532461341",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Cute Rod",
+    "Tier": 95,
+    "Id": 123,
+    "Icon": "rbxassetid://103281741610796",
+    "Description": "The spirit of Valentine's Day is upon you."
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Angelic Rod",
+    "Tier": 100,
+    "Id": 124,
+    "Icon": "rbxassetid://103391024554005",
+    "Description": "LIMITED - Valentine Pack"
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Astral Rod",
+    "Tier": 5,
+    "Id": 5,
+    "Icon": "rbxassetid://123734625865292",
+    "Description": "Ascend beyond the stars"
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Ares Rod",
+    "Tier": 6,
+    "Id": 126,
+    "Icon": "rbxassetid://74424529377774",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Ghoul Rod",
+    "Tier": 7,
+    "Id": 129,
+    "Icon": "rbxassetid://72323478762209",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Forsaken",
+    "Tier": 5,
+    "Id": 127,
+    "Icon": "rbxassetid://116453364785174",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Red Matter",
+    "Tier": 100,
+    "Id": 131,
+    "Icon": "rbxassetid://126405191333384",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Lightsaber",
+    "Tier": 100,
+    "Id": 130,
+    "Icon": "rbxassetid://99584235204159",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Crystalized",
+    "Tier": 7,
+    "Id": 134,
+    "Icon": "rbxassetid://103493787682868",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Earthly",
+    "Tier": 2,
+    "Id": 132,
+    "Icon": "rbxassetid://130277486101163",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Neptune's Trident",
+    "Tier": 6,
+    "Id": 133,
+    "Icon": "rbxassetid://101209529442976",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Polarized",
+    "Tier": 2,
+    "Id": 128,
+    "Icon": "rbxassetid://127763221923032",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Monochrome",
+    "Tier": 4,
+    "Id": 148,
+    "Icon": "rbxassetid://90210469908392",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Lightning",
+    "Tier": 100,
+    "Id": 174,
+    "Icon": "rbxassetid://101379332743485",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Loving",
+    "Tier": 100,
+    "Id": 175,
+    "Icon": "rbxassetid://112586849729572",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Aqua Prism",
+    "Tier": 100,
+    "Id": 171,
+    "Icon": "rbxassetid://108606190037759",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Aquatic",
+    "Tier": 100,
+    "Id": 170,
+    "Icon": "rbxassetid://113612903290719",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Blossom",
+    "Tier": 100,
+    "Id": 172,
+    "Icon": "rbxassetid://128521809779947",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Heavenly",
+    "Tier": 100,
+    "Id": 173,
+    "Icon": "rbxassetid://93080233675189",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Angler Rod",
+    "Tier": 6,
+    "Id": 168,
+    "Icon": "rbxassetid://76924330674942",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Aether Shard",
+    "Tier": 2,
+    "Id": 177,
+    "Icon": "rbxassetid://125006628928474",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Flower Garden",
+    "Tier": 3,
+    "Id": 179,
+    "Icon": "rbxassetid://131572620708470",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Amber",
+    "Tier": 2,
+    "Id": 178,
+    "Icon": "rbxassetid://92025920580149",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Jelly",
+    "Tier": 7,
+    "Id": 181,
+    "Icon": "rbxassetid://140074706748952",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Ghostfinn Rod",
+    "Tier": 6,
+    "Id": 169,
+    "Icon": "rbxassetid://116644397704032",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Cursed",
+    "Tier": 6,
+    "Id": 180,
+    "Icon": "rbxassetid://131975420788500",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Galactic",
+    "Tier": 7,
+    "Id": 192,
+    "Icon": "rbxassetid://127771159160485",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Enlightened",
+    "Tier": 7,
+    "Id": 193,
+    "Icon": "rbxassetid://135282537420782",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Soulreaver",
+    "Tier": 5,
+    "Id": 212,
+    "Icon": "rbxassetid://82915877680641",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Fiery",
+    "Tier": 6,
+    "Id": 216,
+    "Icon": "rbxassetid://95655883897541",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Pirate Octopus",
+    "Tier": 4,
+    "Id": 214,
+    "Icon": "rbxassetid://113826603097430",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Pinata",
+    "Tier": 2,
+    "Id": 217,
+    "Icon": "rbxassetid://96441140230554",
+    "Description": ""
+  },
+  {
+    "Type": "Fishing Rods",
+    "Name": "Purple Saber",
+    "Tier": 3,
+    "Id": 213,
+    "Icon": "rbxassetid://100717868964112",
+    "Description": ""
+  }
+]
