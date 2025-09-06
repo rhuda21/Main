@@ -29,7 +29,7 @@ local function prettyPrintJson(jsonString)
     return result
 end
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local FairyUpgrades = require(ReplicatedStorage.Data.FairyUpgrades)
+local FairyUpgrades = require(game:GetService("ReplicatedStorage").Data.FairyUpgradesData)
 local function removeFunctions(tbl)
     local result = {}
     for k, v in pairs(tbl) do
