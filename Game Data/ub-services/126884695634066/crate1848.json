@@ -1,0 +1,1035 @@
+{
+  "Exclusive Cosmetic Crate": {
+    "Color": {
+      "B": 255,
+      "G": 255,
+      "R": 255
+    },
+    "Items": {
+      "Gold Water Fountain": {
+        "Name": "Gold Water Fountain",
+        "ItemOdd": 5
+      },
+      "Gold Pillar": {
+        "Name": "Gold Pillar",
+        "ItemOdd": 25
+      },
+      "Gold Fire Pit": {
+        "Name": "Gold Fire Pit",
+        "ItemOdd": 25
+      },
+      "Gold Candy Blossom Statue": {
+        "Name": "Gold Candy Blossom Statue",
+        "ItemOdd": 2.5
+      },
+      "Gold Torii": {
+        "Name": "Gold Torii",
+        "ItemOdd": 5
+      },
+      "Stone Bunny Statue": {
+        "Name": "Stone Bunny Statue",
+        "ItemOdd": 37
+      },
+      "Platinum Candy Blossom Statue": {
+        "Name": "Platinum Candy Blossom Statue",
+        "ItemOdd": 0.5
+      }
+    },
+    "Name": "Exclusive Cosmetic Crate",
+    "OpenTime": 30
+  },
+  "Summer Fun Crate": {
+    "Color": {
+      "B": 255,
+      "G": 255,
+      "R": 255
+    },
+    "Items": {
+      "Bean Bag Toss Red": {
+        "Name": "Bean Bag Toss Red",
+        "ItemOdd": 10
+      },
+      "Blue Popsicle": {
+        "Name": "Blue Popsicle",
+        "ItemOdd": 20
+      },
+      "Red Popsicle": {
+        "Name": "Red Popsicle",
+        "ItemOdd": 20
+      },
+      "Speakers": {
+        "Name": "Speakers",
+        "ItemOdd": 7.5
+      },
+      "Bean Bag Toss Blue": {
+        "Name": "Bean Bag Toss Blue",
+        "ItemOdd": 10
+      },
+      "Ice Cream Cart": {
+        "Name": "Ice Cream Cart",
+        "ItemOdd": 4.5
+      },
+      "Pink Popsicle": {
+        "Name": "Pink Popsicle",
+        "ItemOdd": 20
+      },
+      "Volley Ball Net": {
+        "Name": "Volley Ball Net",
+        "ItemOdd": 7.5
+      },
+      "Arcade Machine": {
+        "Name": "Arcade Machine",
+        "ItemOdd": 0.5
+      }
+    },
+    "Name": "Summer Fun Crate",
+    "OpenTime": 3600
+  },
+  "Farmers Gnome Crate": {
+    "Color": {
+      "B": 255,
+      "G": 255,
+      "R": 255
+    },
+    "Items": {
+      "Cleetus Gnome": {
+        "Name": "Cleetus Gnome",
+        "ItemOdd": 1
+      },
+      "Raphael Gnome": {
+        "Name": "Raphael Gnome",
+        "ItemOdd": 26
+      },
+      "Sam Gnome": {
+        "Name": "Sam Gnome",
+        "ItemOdd": 23
+      },
+      "Eloise Gnome": {
+        "Name": "Eloise Gnome",
+        "ItemOdd": 24
+      },
+      "Steven Gnome": {
+        "Name": "Steven Gnome",
+        "ItemOdd": 26
+      }
+    },
+    "Name": "Farmers Gnome Crate",
+    "OpenTime": 3600
+  },
+  "Mysterious Crate": {
+    "Color": {
+      "B": 0,
+      "G": 170,
+      "R": 255
+    },
+    "Items": {
+      "Wheelbarrow": {
+        "Name": "Wheelbarrow",
+        "ItemOdd": 30
+      },
+      "Green Gnome": {
+        "Name": "Green Gnome",
+        "ItemOdd": 5
+      },
+      "Frog Fountain": {
+        "Name": "Frog Fountain",
+        "ItemOdd": 15
+      },
+      "Beta Gnome": {
+        "Name": "Beta Gnome",
+        "ItemOdd": 5
+      },
+      "Small Wood Table": {
+        "Name": "Small Wood Table",
+        "ItemOdd": 30
+      },
+      "Blue Gnome": {
+        "Name": "Blue Gnome",
+        "ItemOdd": 5
+      }
+    },
+    "Name": "Mysterious Crate",
+    "OpenTime": 1800
+  },
+  "Bee Crate": {
+    "Color": {
+      "B": 255,
+      "G": 255,
+      "R": 255
+    },
+    "Items": {
+      "BeeHive": {
+        "Name": "BeeHive",
+        "ItemOdd": 20
+      },
+      "Honey Pot": {
+        "Name": "Honey Pot",
+        "ItemOdd": 25
+      },
+      "Honey Pillar": {
+        "Name": "Honey Pillar",
+        "ItemOdd": 15
+      },
+      "Bee Podium": {
+        "Name": "Bee Podium",
+        "ItemOdd": 10
+      },
+      "Honey Barrel": {
+        "Name": "Honey Barrel",
+        "ItemOdd": 20
+      },
+      "Honey Fountain": {
+        "Name": "Honey Fountain",
+        "ItemOdd": 5
+      }
+    },
+    "Name": "Bee Crate",
+    "OpenTime": 600
+  },
+  "Oasis Crate": {
+    "Color": {
+      "B": 255,
+      "G": 255,
+      "R": 255
+    },
+    "Items": {
+      "Palm Tree Painting": {
+        "Name": "Palm Tree Painting",
+        "ItemOdd": 20
+      },
+      "Sun Carpet": {
+        "Name": "Sun Carpet",
+        "ItemOdd": 15
+      },
+      "Sun Gate": {
+        "Name": "Sun Gate",
+        "ItemOdd": 10
+      },
+      "Sun Painting": {
+        "Name": "Sun Painting",
+        "ItemOdd": 20
+      },
+      "Surfer Statue": {
+        "Name": "Surfer Statue",
+        "ItemOdd": 5
+      },
+      "Throne Sun": {
+        "Name": "Throne Sun",
+        "ItemOdd": 10
+      },
+      "Boat Painting": {
+        "Name": "Boat Painting",
+        "ItemOdd": 20
+      }
+    },
+    "Name": "Oasis Crate",
+    "OpenTime": 3600
+  },
+  "Twilight Crate": {
+    "Color": {
+      "B": 255,
+      "G": 255,
+      "R": 255
+    },
+    "Items": {
+      "Twilight Pillar": {
+        "Name": "Twilight Pillar",
+        "ItemOdd": 19
+      },
+      "Twilight Ring Walkway": {
+        "Name": "Twilight Ring Walkway",
+        "ItemOdd": 10
+      },
+      "Twilight Fence": {
+        "Name": "Twilight Fence",
+        "ItemOdd": 26
+      },
+      "Twilight Fire Pit": {
+        "Name": "Twilight Fire Pit",
+        "ItemOdd": 26
+      },
+      "Twilight Night Owl Statue": {
+        "Name": "Twilight Night Owl Statue",
+        "ItemOdd": 19
+      }
+    },
+    "Name": "Twilight Crate",
+    "OpenTime": 600
+  },
+  "Glimmering Crate": {
+    "Color": {
+      "B": 104,
+      "G": 255,
+      "R": 3
+    },
+    "Items": {
+      "Fairy Book Shelf": {
+        "Name": "Fairy Book Shelf",
+        "ItemOdd": 25
+      },
+      "Mushroom Lamp": {
+        "Name": "Mushroom Lamp",
+        "ItemOdd": 10
+      },
+      "Fairy Statue": {
+        "Name": "Fairy Statue",
+        "ItemOdd": 5
+      },
+      "Fairy Purple Chair": {
+        "Name": "Fairy Purple Chair",
+        "ItemOdd": 25
+      },
+      "Elden Fairy Lamp Post": {
+        "Name": "Elden Fairy Lamp Post",
+        "ItemOdd": 25
+      },
+      "Mushroom Table": {
+        "Name": "Mushroom Table",
+        "ItemOdd": 10
+      }
+    },
+    "Name": "Glimmering Crate",
+    "OpenTime": 3600
+  },
+  "July 4th Crate": {
+    "Color": {
+      "B": 255,
+      "G": 255,
+      "R": 255
+    },
+    "Items": {
+      "America Flag Badge": {
+        "Name": "America Flag Badge",
+        "ItemOdd": 19
+      },
+      "July 4th Toy": {
+        "Name": "July 4th Toy",
+        "ItemOdd": 19
+      },
+      "America Banner": {
+        "Name": "America Banner",
+        "ItemOdd": 19
+      },
+      "Uncle Sam Gnome": {
+        "Name": "Uncle Sam Gnome",
+        "ItemOdd": 5
+      },
+      "Bald Eagle Statue": {
+        "Name": "Bald Eagle Statue",
+        "ItemOdd": 19
+      },
+      "American Flag": {
+        "Name": "American Flag",
+        "ItemOdd": 19
+      }
+    },
+    "Name": "July 4th Crate",
+    "OpenTime": 3600
+  },
+  "Fun Crate": {
+    "Color": {
+      "B": 255,
+      "G": 255,
+      "R": 255
+    },
+    "Items": {
+      "Red Flag": {
+        "Name": "Red Flag",
+        "ItemOdd": 25
+      },
+      "Roundabout": {
+        "Name": "Roundabout",
+        "ItemOdd": 12
+      },
+      "Blue Flag": {
+        "Name": "Blue Flag",
+        "ItemOdd": 25
+      },
+      "Seesaw": {
+        "Name": "Seesaw",
+        "ItemOdd": 20
+      },
+      "Swing set": {
+        "Name": "Swing set",
+        "ItemOdd": 17
+      },
+      "Trampoline": {
+        "Name": "Trampoline",
+        "ItemOdd": 1
+      }
+    },
+    "Name": "Fun Crate",
+    "OpenTime": 3600
+  },
+  "Corrupted Zen Crate": {
+    "Color": {
+      "B": 14,
+      "G": 45,
+      "R": 168
+    },
+    "Items": {
+      "Corrupted Bamboo Fence": {
+        "Name": "Corrupted Bamboo Fence",
+        "ItemOdd": 20
+      },
+      "Corrupted Garden Light": {
+        "Name": "Corrupted Garden Light",
+        "ItemOdd": 20
+      },
+      "Corrupted Bridge": {
+        "Name": "Corrupted Bridge",
+        "ItemOdd": 13
+      },
+      "Mounted Katanas": {
+        "Name": "Mounted Katanas",
+        "ItemOdd": 13
+      },
+      "Zen Fan": {
+        "Name": "Zen Fan",
+        "ItemOdd": 30
+      },
+      "Corrupted Well": {
+        "Name": "Corrupted Well",
+        "ItemOdd": 4
+      }
+    },
+    "Name": "Corrupted Zen Crate",
+    "OpenTime": 3600
+  },
+  "Zen Gnome Crate": {
+    "Color": {
+      "B": 255,
+      "G": 255,
+      "R": 255
+    },
+    "Items": {
+      "Light Ninja Gnome": {
+        "Name": "Light Ninja Gnome",
+        "ItemOdd": 30
+      },
+      "Samurai Gnome": {
+        "Name": "Samurai Gnome",
+        "ItemOdd": 5
+      },
+      "Panda Gnome": {
+        "Name": "Panda Gnome",
+        "ItemOdd": 15
+      },
+      "Dark Ninja Gnome": {
+        "Name": "Dark Ninja Gnome",
+        "ItemOdd": 30
+      },
+      "Zen Channeller Gnome": {
+        "Name": "Zen Channeller Gnome",
+        "ItemOdd": 20
+      }
+    },
+    "Name": "Zen Gnome Crate",
+    "OpenTime": 3600
+  },
+  "Common Gnome Crate": {
+    "Color": {
+      "B": 255,
+      "G": 255,
+      "R": 255
+    },
+    "Items": {
+      "Sleepy Gnome": {
+        "Name": "Sleepy Gnome",
+        "ItemOdd": 26
+      },
+      "Crazy Gnome": {
+        "Name": "Crazy Gnome",
+        "ItemOdd": 24
+      },
+      "Grumpy Gnome": {
+        "Name": "Grumpy Gnome",
+        "ItemOdd": 23
+      },
+      "Silly Gnome": {
+        "Name": "Silly Gnome",
+        "ItemOdd": 26
+      },
+      "Fearless Gnome": {
+        "Name": "Fearless Gnome",
+        "ItemOdd": 1
+      }
+    },
+    "Name": "Common Gnome Crate",
+    "OpenTime": 1800
+  },
+  "Enchanted Crate": {
+    "Color": {
+      "B": 203,
+      "G": 169,
+      "R": 255
+    },
+    "Items": {
+      "Gnome Wagon": {
+        "Name": "Gnome Wagon",
+        "ItemOdd": 10
+      },
+      "Fairy Mirror": {
+        "Name": "Fairy Mirror",
+        "ItemOdd": 5
+      },
+      "Fairy Gate": {
+        "Name": "Fairy Gate",
+        "ItemOdd": 10
+      },
+      "Mushroom Gnome Home": {
+        "Name": "Mushroom Gnome Home",
+        "ItemOdd": 10
+      },
+      "Fairy Lamp": {
+        "Name": "Fairy Lamp",
+        "ItemOdd": 20
+      },
+      "Fairy Chair": {
+        "Name": "Fairy Chair",
+        "ItemOdd": 20
+      },
+      "Fairy Stand": {
+        "Name": "Fairy Stand",
+        "ItemOdd": 20
+      },
+      "Fairy Pond": {
+        "Name": "Fairy Pond",
+        "ItemOdd": 5
+      }
+    },
+    "Name": "Enchanted Crate",
+    "OpenTime": 3600
+  },
+  "Iconic Gnome Crate": {
+    "Color": {
+      "B": 255,
+      "G": 255,
+      "R": 255
+    },
+    "Items": {
+      "1x1x1x1 Gnome": {
+        "Name": "1x1x1x1 Gnome",
+        "ItemOdd": 1
+      },
+      "Bloxy Cola Gnome": {
+        "Name": "Bloxy Cola Gnome",
+        "ItemOdd": 12
+      },
+      "Shedletsky Gnome": {
+        "Name": "Shedletsky Gnome",
+        "ItemOdd": 7
+      },
+      "Guest Gnome": {
+        "Name": "Guest Gnome",
+        "ItemOdd": 25
+      },
+      "Candy Blossom Gnome": {
+        "Name": "Candy Blossom Gnome",
+        "ItemOdd": 55
+      }
+    },
+    "Name": "Iconic Gnome Crate",
+    "OpenTime": 600
+  },
+  "Food Crate": {
+    "Color": {
+      "B": 203,
+      "G": 169,
+      "R": 255
+    },
+    "Items": {
+      "Coffee Machine": {
+        "Name": "Coffee Machine",
+        "ItemOdd": 20
+      },
+      "Pink Cake": {
+        "Name": "Pink Cake",
+        "ItemOdd": 25
+      },
+      "Hotdog Cart": {
+        "Name": "Hotdog Cart",
+        "ItemOdd": 6
+      },
+      "Blue Cake": {
+        "Name": "Blue Cake",
+        "ItemOdd": 25
+      },
+      "Cheese Mat": {
+        "Name": "Cheese Mat",
+        "ItemOdd": 6
+      },
+      "Banana Hammock": {
+        "Name": "Banana Hammock",
+        "ItemOdd": 15
+      },
+      "Golden Hotdog Statue": {
+        "Name": "Golden Hotdog Statue",
+        "ItemOdd": 3
+      }
+    },
+    "Name": "Food Crate",
+    "OpenTime": 3600
+  },
+  "Sign Crate": {
+    "Color": {
+      "B": 255,
+      "G": 255,
+      "R": 255
+    },
+    "Items": {
+      "No Stealing Sign": {
+        "Name": "No Stealing Sign",
+        "ItemOdd": 1
+      },
+      "Keep Out Sign": {
+        "Name": "Keep Out Sign",
+        "ItemOdd": 21
+      },
+      "No Trespassing Sign": {
+        "Name": "No Trespassing Sign",
+        "ItemOdd": 18
+      },
+      "Beware Of Dog Sign": {
+        "Name": "Beware Of Dog Sign",
+        "ItemOdd": 21
+      },
+      "Smile On Cam Sign": {
+        "Name": "Smile On Cam Sign",
+        "ItemOdd": 21
+      },
+      "Mean Gardener Sign": {
+        "Name": "Mean Gardener Sign",
+        "ItemOdd": 18
+      }
+    },
+    "Name": "Sign Crate",
+    "OpenTime": 1800
+  },
+  "Zen Crate": {
+    "Color": {
+      "B": 255,
+      "G": 255,
+      "R": 255
+    },
+    "Items": {
+      "Zen Bridge": {
+        "Name": "Zen Bridge",
+        "ItemOdd": 5
+      },
+      "Buddha Statue": {
+        "Name": "Buddha Statue",
+        "ItemOdd": 5
+      },
+      "Temple Lamp": {
+        "Name": "Temple Lamp",
+        "ItemOdd": 20
+      },
+      "Japanese Gong": {
+        "Name": "Japanese Gong",
+        "ItemOdd": 15
+      },
+      "Bamboo Fence": {
+        "Name": "Bamboo Fence",
+        "ItemOdd": 20
+      },
+      "Bamboo Tech": {
+        "Name": "Bamboo Tech",
+        "ItemOdd": 15
+      },
+      "Zen Waterfall": {
+        "Name": "Zen Waterfall",
+        "ItemOdd": 3
+      }
+    },
+    "Name": "Zen Crate",
+    "OpenTime": 3600
+  },
+  "Bloodmoon Crate": {
+    "Color": {
+      "B": 255,
+      "G": 255,
+      "R": 255
+    },
+    "Items": {
+      "Blood Fence": {
+        "Name": "Blood Fence",
+        "ItemOdd": 19
+      },
+      "Blood Bench": {
+        "Name": "Blood Bench",
+        "ItemOdd": 19
+      },
+      "Blood Fire Pit": {
+        "Name": "Blood Fire Pit",
+        "ItemOdd": 26
+      },
+      "Blood Lamp": {
+        "Name": "Blood Lamp",
+        "ItemOdd": 10
+      },
+      "Blood Chain": {
+        "Name": "Blood Chain",
+        "ItemOdd": 26
+      }
+    },
+    "Name": "Bloodmoon Crate",
+    "OpenTime": 600
+  },
+  "Sprout Crate": {
+    "Color": {
+      "B": 203,
+      "G": 169,
+      "R": 255
+    },
+    "Items": {
+      "Beanstalk Hammock": {
+        "Name": "Beanstalk Hammock",
+        "ItemOdd": 25
+      },
+      "Egg Podium": {
+        "Name": "Egg Podium",
+        "ItemOdd": 5
+      },
+      "Chopped Beanstalk": {
+        "Name": "Chopped Beanstalk",
+        "ItemOdd": 20
+      },
+      "Beanpod Crate": {
+        "Name": "Beanpod Crate",
+        "ItemOdd": 20
+      },
+      "Beanstalk Entrance": {
+        "Name": "Beanstalk Entrance",
+        "ItemOdd": 10
+      },
+      "Bean Vine Pillar": {
+        "Name": "Bean Vine Pillar",
+        "ItemOdd": 25
+      }
+    },
+    "Name": "Sprout Crate",
+    "OpenTime": 3600
+  },
+  "Dino Crate": {
+    "Color": {
+      "B": 255,
+      "G": 255,
+      "R": 255
+    },
+    "Items": {
+      "Spine Fence": {
+        "Name": "Spine Fence",
+        "ItemOdd": 20
+      },
+      "Dino Skull": {
+        "Name": "Dino Skull",
+        "ItemOdd": 5
+      },
+      "Bone": {
+        "Name": "Bone",
+        "ItemOdd": 20
+      },
+      "Dinosaur Footprints": {
+        "Name": "Dinosaur Footprints",
+        "ItemOdd": 20
+      },
+      "Dino Proof Fence": {
+        "Name": "Dino Proof Fence",
+        "ItemOdd": 15
+      },
+      "Skeleton Statue": {
+        "Name": "Skeleton Statue",
+        "ItemOdd": 5
+      },
+      "Rock Car": {
+        "Name": "Rock Car",
+        "ItemOdd": 15
+      }
+    },
+    "Name": "Dino Crate",
+    "OpenTime": 3600
+  },
+  "Archaeologist Crate": {
+    "Color": {
+      "B": 255,
+      "G": 255,
+      "R": 255
+    },
+    "Items": {
+      "Dino Lamp": {
+        "Name": "Dino Lamp",
+        "ItemOdd": 20
+      },
+      "DNA Container": {
+        "Name": "DNA Container",
+        "ItemOdd": 5
+      },
+      "Archeology Tool Rack": {
+        "Name": "Archeology Tool Rack",
+        "ItemOdd": 5
+      },
+      "Dino Trophy": {
+        "Name": "Dino Trophy",
+        "ItemOdd": 15
+      },
+      "Dino Bone Case": {
+        "Name": "Dino Bone Case",
+        "ItemOdd": 20
+      },
+      "Dino Slayer Statue": {
+        "Name": "Dino Slayer Statue",
+        "ItemOdd": 15
+      }
+    },
+    "Name": "Archaeologist Crate",
+    "OpenTime": 3600
+  },
+  "Statue Crate": {
+    "Color": {
+      "B": 255,
+      "G": 255,
+      "R": 255
+    },
+    "Items": {
+      "Stone Candy Blossom Statue": {
+        "Name": "Stone Candy Blossom Statue",
+        "ItemOdd": 1
+      },
+      "Mossy Stone Blossom Statue": {
+        "Name": "Mossy Stone Blossom Statue",
+        "ItemOdd": 10
+      },
+      "Stone Mango Statue": {
+        "Name": "Stone Mango Statue",
+        "ItemOdd": 10
+      },
+      "Female Scarecrow": {
+        "Name": "Female Scarecrow",
+        "ItemOdd": 25
+      },
+      "Male Scarecrow": {
+        "Name": "Male Scarecrow",
+        "ItemOdd": 25
+      }
+    },
+    "Name": "Statue Crate",
+    "OpenTime": 5400
+  },
+  "Honey Crafters Crate": {
+    "Color": {
+      "B": 255,
+      "G": 255,
+      "R": 255
+    },
+    "Items": {
+      "Queen Bee Painting": {
+        "Name": "Queen Bee Painting",
+        "ItemOdd": 20
+      },
+      "Bee Rug": {
+        "Name": "Bee Rug",
+        "ItemOdd": 9
+      },
+      "Bee Mailbox": {
+        "Name": "Bee Mailbox",
+        "ItemOdd": 15
+      },
+      "Bee Stinger Painting": {
+        "Name": "Bee Stinger Painting",
+        "ItemOdd": 20
+      },
+      "Bee Flag": {
+        "Name": "Bee Flag",
+        "ItemOdd": 10
+      },
+      "Honey Gate": {
+        "Name": "Honey Gate",
+        "ItemOdd": 5
+      },
+      "Bee Painting": {
+        "Name": "Bee Painting",
+        "ItemOdd": 20
+      },
+      "Bee Hunter Statue": {
+        "Name": "Bee Hunter Statue",
+        "ItemOdd": 1
+      }
+    },
+    "Name": "Honey Crafters Crate",
+    "OpenTime": 600
+  },
+  "Kitchen Crate": {
+    "Color": {
+      "B": 203,
+      "G": 169,
+      "R": 255
+    },
+    "Items": {
+      "Fridge": {
+        "Name": "Fridge",
+        "ItemOdd": 20
+      },
+      "Frying Pan": {
+        "Name": "Frying Pan",
+        "ItemOdd": 25
+      },
+      "Pizza Box": {
+        "Name": "Pizza Box",
+        "ItemOdd": 25
+      },
+      "Chris P Statue": {
+        "Name": "Chris P Statue",
+        "ItemOdd": 3
+      },
+      "Cabinet Utensil": {
+        "Name": "Cabinet Utensil",
+        "ItemOdd": 20
+      },
+      "Stove": {
+        "Name": "Stove",
+        "ItemOdd": 20
+      },
+      "Donut Swing": {
+        "Name": "Donut Swing",
+        "ItemOdd": 10
+      },
+      "Sink Cabinet": {
+        "Name": "Sink Cabinet",
+        "ItemOdd": 20
+      }
+    },
+    "Name": "Kitchen Crate",
+    "OpenTime": 3600
+  },
+  "Beach Crate": {
+    "Color": {
+      "B": 255,
+      "G": 255,
+      "R": 255
+    },
+    "Items": {
+      "Yellow Short Beach Chair": {
+        "Name": "Yellow Short Beach Chair",
+        "ItemOdd": 5
+      },
+      "Yellow Beach Ball": {
+        "Name": "Yellow Beach Ball",
+        "ItemOdd": 5
+      },
+      "Beach Towel Yellow": {
+        "Name": "Beach Towel Yellow",
+        "ItemOdd": 5
+      },
+      "Beach Towel Pink": {
+        "Name": "Beach Towel Pink",
+        "ItemOdd": 5
+      },
+      "Blue Short Beach Chair": {
+        "Name": "Blue Short Beach Chair",
+        "ItemOdd": 5
+      },
+      "Pink Short Beach Chair": {
+        "Name": "Pink Short Beach Chair",
+        "ItemOdd": 5
+      },
+      "Red Long Beach Chair": {
+        "Name": "Red Long Beach Chair",
+        "ItemOdd": 4
+      },
+      "Red Surf Board": {
+        "Name": "Red Surf Board",
+        "ItemOdd": 3
+      },
+      "Blue Surf Board": {
+        "Name": "Blue Surf Board",
+        "ItemOdd": 3
+      },
+      "Pink Surf Board": {
+        "Name": "Pink Surf Board",
+        "ItemOdd": 3
+      },
+      "Yellow Beach Umbrella": {
+        "Name": "Yellow Beach Umbrella",
+        "ItemOdd": 5
+      },
+      "Blue Beach Ball": {
+        "Name": "Blue Beach Ball",
+        "ItemOdd": 5
+      },
+      "Beach Towel Blue": {
+        "Name": "Beach Towel Blue",
+        "ItemOdd": 5
+      },
+      "Blue Beach Umbrella": {
+        "Name": "Blue Beach Umbrella",
+        "ItemOdd": 5
+      },
+      "Red Beach Umbrella": {
+        "Name": "Red Beach Umbrella",
+        "ItemOdd": 5
+      },
+      "Pink Beach Umbrella": {
+        "Name": "Pink Beach Umbrella",
+        "ItemOdd": 5
+      },
+      "Beach Towel Red": {
+        "Name": "Beach Towel Red",
+        "ItemOdd": 5
+      },
+      "Yellow Surf Board": {
+        "Name": "Yellow Surf Board",
+        "ItemOdd": 3
+      },
+      "Pink Beach Ball": {
+        "Name": "Pink Beach Ball",
+        "ItemOdd": 5
+      },
+      "Yellow Long Beach Chair": {
+        "Name": "Yellow Long Beach Chair",
+        "ItemOdd": 4
+      },
+      "Red Short Beach Chair": {
+        "Name": "Red Short Beach Chair",
+        "ItemOdd": 5
+      },
+      "Red Beach Ball": {
+        "Name": "Red Beach Ball",
+        "ItemOdd": 5
+      }
+    },
+    "Name": "Beach Crate",
+    "OpenTime": 1800
+  },
+  "Classic Gnome Crate": {
+    "Color": {
+      "B": 255,
+      "G": 255,
+      "R": 255
+    },
+    "Items": {
+      "Bacon Gnome": {
+        "Name": "Bacon Gnome",
+        "ItemOdd": 26
+      },
+      "Gold Gnome": {
+        "Name": "Gold Gnome",
+        "ItemOdd": 1
+      },
+      "Builderman Gnome": {
+        "Name": "Builderman Gnome",
+        "ItemOdd": 26
+      },
+      "Noob Gnome": {
+        "Name": "Noob Gnome",
+        "ItemOdd": 23
+      },
+      "Zombie Gnome": {
+        "Name": "Zombie Gnome",
+        "ItemOdd": 24
+      }
+    },
+    "Name": "Classic Gnome Crate",
+    "OpenTime": 5400
+  }
+}
