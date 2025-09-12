@@ -47,7 +47,13 @@ local function extractAllMutationsData()
                     Display = mutationData.Display,
                     PriceMultiply = mutationData.PriceMultiply,
                     Chance = mutationData.Chance,
-                    Color = tostring(mutationData.Color)
+                    if mutationData.Color then
+                        result.Color = {
+                            R = math.floor(mutationData.Color.R * 255),
+                            G = math.floor(mutationData.Color.G * 255),
+                            B = math.floor(mutationData.Color.B * 255)
+                        }
+                    end
                 }
             end
         end
