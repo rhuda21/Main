@@ -1,9 +1,7 @@
 {
     "126884695634066": {
         "Data": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Grow%20A%20Garden/Updates/DataOptimized.lua",
-        "crafting": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Grow%20A%20Garden/Updates/Crafting%20RecipiesJSON.lua",
-        "crate": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Grow%20A%20Garden/Updates/CrateJSON.lua",
-        "FairyRewards": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Grow%20A%20Garden/Updates/FairyRewards.lua"
+        "crafting": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Grow%20A%20Garden/Updates/Crafting%20RecipiesJSON.lua"
     },
     "137925884276740": {
         "shop": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Build%20A%20Plane/Updates/Shop.lua",
