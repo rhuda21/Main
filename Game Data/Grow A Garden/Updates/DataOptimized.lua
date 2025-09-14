@@ -14,8 +14,6 @@ local function extractMerchantItems(merchantData)
                 Name = itemData.SeedName or itemData.Name or itemName,
                 Price = itemData.Price or itemData.Cost or itemData.PriceValue or itemData.Value or 0,
                 Rarity = itemData.SeedRarity or itemData.Rarity or "Common",
-                StockChance = itemData.StockChance or 1,
-                StockAmount = itemData.StockAmount or {1, 1},
                 ItemType = itemData.ItemType or "Item"
             }
         end
@@ -46,7 +44,6 @@ local function extractPetData(petData)
         if type(petInfo) == "table" then
             result[petName] = {
                 Name = petInfo.Name or petName,
-                Price = petInfo.Price or petInfo.Cost or petInfo.PriceValue or petInfo.Value or 0,
                 Rarity = petInfo.Rarity or "Common",
                 Hunger = petInfo.Hunger or petInfo.Food or 0,
                 Icon = petInfo.Icon or "rbxassetid://0",
@@ -77,7 +74,6 @@ if mutationModule and mutationModule.MutationNames then
             mutationsData[name] = {
                 Name = mutationData.Name,
                 Id = mutationData.Id,
-                ValueMulti = mutationData.ValueMulti,
                 Color = {
                     R = r,
                     G = g,
