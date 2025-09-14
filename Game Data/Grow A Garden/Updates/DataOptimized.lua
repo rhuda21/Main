@@ -64,11 +64,6 @@ local function extractPetData(petData)
                 Icon = petInfo.Icon or "rbxassetid://0",
                 SellPrice = petInfo.SellPrice or 1
             }
-            for key, value in pairs(petInfo) do
-                if not result[petName][key] then
-                    result[petName][key] = value
-                end
-            end
         end
     end
     return result
