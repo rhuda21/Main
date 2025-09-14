@@ -45,7 +45,6 @@ local function extractPetData(petData)
             result[petName] = {
                 Name = petInfo.Name or petName,
                 Rarity = petInfo.Rarity or "Common",
-                Hunger = petInfo.Hunger or petInfo.Food or 0,
                 Icon = petInfo.Icon or "rbxassetid://0",
                 SellPrice = petInfo.SellPrice or 1
             }
@@ -88,25 +87,11 @@ end
 local cosmeticCrates = require(game:GetService("ReplicatedStorage").Data.CosmeticCrateRegistry.CosmeticCrates)
 local crateData = {}
 for crateName, data in pairs(cosmeticCrates) do
-    local crateEntry = {
-        Name = crateName,
-        Color = data.Color and {
-            R = math.floor(data.Color.R * 255),
-            G = math.floor(data.Color.G * 255),
-            B = math.floor(data.Color.B * 255)
-        } or nil,
-        OpenTime = data.OpenTime or 1800,
-        Items = {}
-    }
     if data.CosmeticRolls and data.CosmeticRolls.Items then
         for itemName, itemData in pairs(data.CosmeticRolls.Items) do
-            crateEntry.Items[itemName] = {
-                Name = itemData.Name,
-                ItemOdd = itemData.ItemOdd
-            }
+            table.insert(crateItems, itemData.Name or itemName)
         end
     end
-    crateData[crateName] = crateEntry
 end
 allData.Crate = crateData
 
