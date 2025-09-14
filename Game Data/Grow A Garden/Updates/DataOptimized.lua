@@ -89,7 +89,7 @@ local crateData = {}
 for crateName, data in pairs(cosmeticCrates) do
     if data.CosmeticRolls and data.CosmeticRolls.Items then
         for itemName, itemData in pairs(data.CosmeticRolls.Items) do
-            table.insert(crateItems, itemData.Name or itemName)
+            table.insert(crateData, itemData.Name or itemName)
         end
     end
 end
