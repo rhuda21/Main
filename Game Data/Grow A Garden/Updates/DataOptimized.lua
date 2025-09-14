@@ -60,7 +60,6 @@ local function extractPetData(petData)
                 Price = petInfo.Price or petInfo.Cost or petInfo.PriceValue or petInfo.Value or 0,
                 Rarity = petInfo.Rarity or "Common",
                 Hunger = petInfo.Hunger or petInfo.Food or 0,
-                Description = petInfo.Description or "",
                 Icon = petInfo.Icon or "rbxassetid://0",
                 SellPrice = petInfo.SellPrice or 1
             }
