@@ -3,18 +3,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local function safeRequire(module)
     local success, result = pcall(require, module)
-    if success and type(result) == "function" then
-        local funcSuccess, funcResult = pcall(result)
-        if funcSuccess and type(funcResult) == "table" then
-            return funcResult
-        else
-            return {}
-        end
-    elseif success and type(result) == "table" then
-        return result
-    else
-        return {}
-    end
+    return (success and type(result) == "table") and result or {}
 end
 
 local function extractMerchantItems(merchantData)
