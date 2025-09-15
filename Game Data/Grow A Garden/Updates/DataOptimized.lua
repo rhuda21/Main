@@ -13,8 +13,6 @@ local function extractMerchantItems(merchantData)
             result[itemName] = {
                 Name = itemData.SeedName or itemData.Name or itemName,
                 Price = itemData.Price or itemData.Cost or itemData.PriceValue or itemData.Value or 0,
-                Rarity = itemData.SeedRarity or itemData.Rarity or "Common",
-                ItemType = itemData.ItemType or "Item"
             }
         end
     end
@@ -58,7 +56,6 @@ local allData = {
     Pets = extractPetData(safeRequire(ReplicatedStorage.Data.PetRegistry.PetList)),
     Merchant = extractAllMerchantsData(),
     PetsM = safeRequire(ReplicatedStorage.Data.PetRegistry.PetMutationRegistry),
-    Event1 = safeRequire(game:GetService("ReplicatedStorage").Data.EventShopData)
 }
 
 local mutationModule = safeRequire(ReplicatedStorage.Modules.MutationHandler)
