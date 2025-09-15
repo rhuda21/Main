@@ -1,4 +1,3 @@
-local HttpService = game:GetService("HttpService")
 local craftingData = require(game:GetService("ReplicatedStorage").Data.CraftingData.CraftingRecipeRegistry)
 local recipes = {}
 for recipeName, recipeData in pairs(craftingData.ItemRecipes) do
@@ -18,6 +17,6 @@ for recipeName, recipeData in pairs(craftingData.ItemRecipes) do
     end
     recipes[recipeName] = recipe
 end
-local craftingfrecipies = HttpService:JSONEncode(recipes)
+local craftingfrecipies = game:GetService("HttpService"):JSONEncode(recipes)
 --setclipboard(craftingfrecipies)
 return craftingfrecipies
