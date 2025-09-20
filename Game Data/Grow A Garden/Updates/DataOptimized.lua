@@ -14,10 +14,7 @@ local function extractItems(data, mapper)
     return result
 end
 local merchantMapper = function(name, data)
-    return {
-        Name = data.SeedName or data.Name or name,
-        Price = data.Price or data.Cost or data.PriceValue or data.Value or 0
-    }
+    return {Name = data.SeedName or data.Name or name,Price = data.Price or data.Cost or data.PriceValue or data.Value or 0}
 end
 local petMapper = function(name, data)
     return {
@@ -75,6 +72,18 @@ for _, data in pairs(cosmeticCrates) do
     end
 end
 allData.Crate = crateItems
-local jsonData = HttpService:JSONEncode(allData)
-setclipboard(jsonData)
-return jsonData
+local jsonLines = {"{"}
+local first = true
+for categoryName, categoryData in pairs(allData) do
+    if not first then
+        table.insert(jsonLines, ",")
+    end
+    first = false
+    table.insert(jsonLines, '\n  "' .. categoryName .. '": ')
+    local categoryJson = HttpService:JSONEncode(categoryData)
+    table.insert(jsonLines, categoryJson)
+end
+table.insert(jsonLines, "\n}")
+local data = table.concat(jsonLines)
+setclipboard(data)
+return data
