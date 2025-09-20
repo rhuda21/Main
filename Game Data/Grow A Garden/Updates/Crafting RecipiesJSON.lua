@@ -4,12 +4,8 @@ for recipeName, recipeData in pairs(require(game:GetService("ReplicatedStorage")
     for i, v in pairs(recipeData.Inputs) do
         inputs[i] = {
             ItemType = v.ItemType,
-            ItemData = {
-                AcceptAllTypes = v.ItemData.AcceptAllTypes or false,
-                ItemName = v.ItemData.ItemName
-            }
+            ItemData = {AcceptAllTypes = v.ItemData.AcceptAllTypes or false,ItemName = v.ItemData.ItemName}
         }
     end
     recipes[recipeName] = {Inputs = inputs, MachineTypes = recipeData.MachineTypes, Cost = recipeData.Cost}
-end
-return game:GetService("HttpService"):JSONEncode(recipes)
+end return game:GetService("HttpService"):JSONEncode(recipes)
