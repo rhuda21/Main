@@ -28,8 +28,18 @@ local petMapper = function(name, data)
         SellPrice = data.SellPrice or 1
     }
 end
-local petMutationMapper = function(name, data)
-    return {Name = data.Name or name,Id = data.EnumId or "Unknown"}
+local function extractPetMutations()
+    local petMutationRegistry = safeRequire(ReplicatedStorage.Data.PetRegistry.PetMutationRegistry)
+    local result = {}
+    for mutationName, mutationData in pairs(petMutationRegistry) do
+        if type(mutationData) == "table" and mutationData.EnumId then
+            table.insert(result, {
+                Name = mutationData.Name or mutationName,
+                Id = mutationData.EnumId
+            })
+        end
+    end
+    return result
 end
 
 local function extractAllMerchantsData()
@@ -50,7 +60,7 @@ local allData = {
     Seeds = safeRequire(ReplicatedStorage.Data.SeedData),
     Pets = extractItems(safeRequire(ReplicatedStorage.Data.PetRegistry.PetList), petMapper),
     Merchant = extractAllMerchantsData(),
-    PetsM = extractItems(safeRequire(ReplicatedStorage.Data.PetRegistry.PetMutationRegistry), petMutationMapper)
+    PetsM = extractPetMutations()
 }
 
 local mutationModule = safeRequire(ReplicatedStorage.Modules.MutationHandler)
@@ -99,3 +109,4 @@ table.insert(jsonLines, "\n}")
 local data = table.concat(jsonLines)
 setclipboard(data)
 return data
+
