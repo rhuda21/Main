@@ -15,15 +15,6 @@ LocalPlayer.Idled:connect(function()
     wait(1)
     VirtualUser:Button2Up(Vector2.new(0, 0), workspace.CurrentCamera.CFrame)
 end)
-
-task.spawn(function()
-	if game.PlaceId == 85896571713843 then
-		loadstring(game:HttpGet("https://gitlab.com/r_soft/main/-/raw/main/Library/JOINER_GUI.lua?ref_type=heads"))()
-	else
-		print("no join gui")
-	end
-end)
-
 local ProtectGui = protectgui or (syn and syn.protect_gui) or function(f) end
 
 local Themes = {
