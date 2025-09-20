@@ -92,6 +92,7 @@ for crateName, data in pairs(cosmeticCrates) do
 end
 allData.Crate = crateData
 
+
 local jsonLines = {"{"}
 local first = true
 for categoryName, categoryData in pairs(allData) do
