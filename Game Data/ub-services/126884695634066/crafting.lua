@@ -1,22 +1,15 @@
-local craftingData = require(game:GetService("ReplicatedStorage").Data.CraftingData.CraftingRecipeRegistry)
 local recipes = {}
-for recipeName, recipeData in pairs(craftingData.ItemRecipes) do
-    local recipe = {
-        Inputs = {},
-        MachineTypes = recipeData.MachineTypes, 
-        Cost = recipeData.Cost
-    }
-    for inputIndex, input in pairs(recipeData.Inputs) do
-        recipe.Inputs[inputIndex] = {
-            ItemType = input.ItemType,
+for recipeName, recipeData in pairs(require(game:GetService("ReplicatedStorage").Data.CraftingData.CraftingRecipeRegistry).ItemRecipes) do
+    local inputs = {}
+    for i, v in pairs(recipeData.Inputs) do
+        inputs[i] = {
+            ItemType = v.ItemType,
             ItemData = {
-                AcceptAllTypes = input.ItemData.AcceptAllTypes or false,
-                ItemName = input.ItemData.ItemName
+                AcceptAllTypes = v.ItemData.AcceptAllTypes or false,
+                ItemName = v.ItemData.ItemName
             }
         }
     end
-    recipes[recipeName] = recipe
+    recipes[recipeName] = {Inputs = inputs, MachineTypes = recipeData.MachineTypes, Cost = recipeData.Cost}
 end
-local craftingfrecipies = game:GetService("HttpService"):JSONEncode(recipes)
---setclipboard(craftingfrecipies)
-return craftingfrecipies
+return game:GetService("HttpService"):JSONEncode(recipes)
