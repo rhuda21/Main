@@ -1,9 +1,11 @@
 local HttpService = game:GetService("HttpService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
 local function safeRequire(module)
     local success, result = pcall(require, module)
     return success and type(result) == "table" and result or {}
 end
+
 local function extractItems(data, mapper)
     local result = {}
     for name, itemData in pairs(data) do
@@ -13,9 +15,11 @@ local function extractItems(data, mapper)
     end
     return result
 end
+
 local merchantMapper = function(name, data)
     return {Name = data.SeedName or data.Name or name,Price = data.Price or data.Cost or data.PriceValue or data.Value or 0}
 end
+
 local petMapper = function(name, data)
     return {
         Name = data.Name or name,
@@ -24,6 +28,10 @@ local petMapper = function(name, data)
         SellPrice = data.SellPrice or 1
     }
 end
+local petMutationMapper = function(name, data)
+    return {Name = data.Name or name,Id = data.EnumId or "Unknown"}
+end
+
 local function extractAllMerchantsData()
     local merchants = safeRequire(ReplicatedStorage.Data.TravelingMerchant.TravelingMerchantData)
     local result = {}
@@ -37,12 +45,14 @@ local function extractAllMerchantsData()
     end
     return result
 end
+
 local allData = {
     Seeds = safeRequire(ReplicatedStorage.Data.SeedData),
     Pets = extractItems(safeRequire(ReplicatedStorage.Data.PetRegistry.PetList), petMapper),
     Merchant = extractAllMerchantsData(),
-    PetsM = safeRequire(ReplicatedStorage.Data.PetRegistry.PetMutationRegistry)
+    PetsM = extractItems(safeRequire(ReplicatedStorage.Data.PetRegistry.PetMutationRegistry), petMutationMapper)
 }
+
 local mutationModule = safeRequire(ReplicatedStorage.Modules.MutationHandler)
 if mutationModule and mutationModule.MutationNames then
     local mutations = {}
@@ -62,6 +72,7 @@ if mutationModule and mutationModule.MutationNames then
     end
     allData.Mutations = mutations
 end
+
 local cosmeticCrates = require(ReplicatedStorage.Data.CosmeticCrateRegistry.CosmeticCrates)
 local crateItems = {}
 for _, data in pairs(cosmeticCrates) do
@@ -72,6 +83,7 @@ for _, data in pairs(cosmeticCrates) do
     end
 end
 allData.Crate = crateItems
+
 local jsonLines = {"{"}
 local first = true
 for categoryName, categoryData in pairs(allData) do
