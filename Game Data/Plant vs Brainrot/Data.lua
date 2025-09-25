@@ -23,4 +23,4 @@ for categoryName, categoryData in pairs(allData) do
 end
 table.insert(jsonLines, "\n}")
 local data = table.concat(jsonLines)
-print(data)
+return data
