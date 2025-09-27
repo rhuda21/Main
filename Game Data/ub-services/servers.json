@@ -3909,20 +3909,12 @@
         "placeVersion": 1914,
         "lastUpdated": "2025-09-27T12:54:37.236Z"
       },
-      "4537ed3d-5f34-4ed2-9005-3413564ff1a9": {
+      "8e5fd14d-db53-4308-a91a-a922c24ca27b": {
         "placeVersion": 1914,
-        "lastUpdated": "2025-09-27T12:57:04.275Z"
-      },
-      "7d53c0ea-22fb-4521-888d-cbe50cdb0836": {
-        "placeVersion": 1914,
-        "lastUpdated": "2025-09-27T12:57:50.351Z"
-      },
-      "6495e1f5-548e-409a-87af-836ccd024101": {
-        "placeVersion": 1914,
-        "lastUpdated": "2025-09-27T12:58:04.947Z"
+        "lastUpdated": "2025-09-27T12:58:17.495Z"
       }
     },
-    "lastUpdated": "2025-09-27T12:58:04.947Z",
+    "lastUpdated": "2025-09-27T12:58:17.495Z",
     "createdAt": "2025-09-20T06:44:18.907Z"
   },
   "124977557560410": {
@@ -4750,17 +4742,9 @@
       "e7cc353a-69a5-41ec-93da-5bc5a8ea0a9d": {
         "placeVersion": 40,
         "lastUpdated": "2025-09-27T12:46:07.934Z"
-      },
-      "66722566-cdd5-45f3-8f43-c34d212717f6": {
-        "placeVersion": 38,
-        "lastUpdated": "2025-09-27T12:55:23.759Z"
-      },
-      "a191fc58-597a-0641-60fe-21444b81fae0": {
-        "placeVersion": 38,
-        "lastUpdated": "2025-09-27T12:56:32.857Z"
       }
     },
-    "lastUpdated": "2025-09-27T12:56:32.857Z",
+    "lastUpdated": "2025-09-27T12:46:07.934Z",
     "createdAt": "2025-09-24T15:23:10.552Z"
   }
 }
