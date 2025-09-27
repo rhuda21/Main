@@ -11,7 +11,6 @@ local CopyButton = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
 local ExitButton = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
-local Icon = Instance.new("ImageLabel")
 
 ScreenGui.Name = "DiscordJoiner"
 ScreenGui.Parent = cloneref(gethui()) or game:GetService("CoreGui")
@@ -92,13 +91,6 @@ ExitButton.AutoButtonColor = false
 
 UICorner_4.Parent = ExitButton
 UICorner_4.CornerRadius = UDim.new(0, 4)
-
-Icon.Name = "Icon"
-Icon.Parent = TitleBar
-Icon.BackgroundTransparency = 1
-Icon.Position = UDim2.new(0.02, 0, 0.1, 0)
-Icon.Size = UDim2.new(0, 30, 0, 30)
-Icon.ScaleType = Enum.ScaleType.Fit
 
 local function OpenDC(Invite)
     if request then
