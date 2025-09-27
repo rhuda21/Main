@@ -1,18 +1,28 @@
 local HttpService = game:GetService("HttpService")
-local r = game:GetService("ReplicatedStorage").Modules.Library.FuseDurations
-local m = game:GetService("ReplicatedStorage").Modules.Library.BrainrotMutations
-local rarity = {}
-for name, d in pairs(require(r)) do
-    table.insert(rarity, name)
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local MODULE_PATHS = {
+    Rarities = ReplicatedStorage.Modules.Library.FuseDurations,
+    Mutations = ReplicatedStorage.Modules.Library.BrainrotMutations,
+    Code = ReplicatedStorage.Modules.Library.Codes
+}
+local collectedData = {}
+for dataType, modulePath in pairs(MODULE_PATHS) do
+    local moduleTable = require(modulePath)
+    local keys = {}
+    if dataType == "Mutations" then
+        for key in pairs(moduleTable.Colors) do
+            table.insert(keys, key)
+        end
+    else
+        for key in pairs(moduleTable) do
+            table.insert(keys, key)
+        end
+    end
+    collectedData[dataType] = keys
 end
-local mutation = {}
-for name, data in pairs(require(m).Colors) do
-    table.insert(mutation, name)
-end
-local allData = { Rarities = rarity, Mutations = mutation,}
 local jsonLines = {"{"}
 local first = true
-for categoryName, categoryData in pairs(allData) do
+for categoryName, categoryData in pairs(collectedData) do
     if not first then
         table.insert(jsonLines, ",")
     end
