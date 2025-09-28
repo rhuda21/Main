@@ -1,3 +1,8 @@
+task.spawn(function()
+    pcall(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Executed.lua"))()
+    end)
+end)
 if not _G.LoadedUBJoiner then _G.LoadedUBJoiner = true end
 local ScreenGui = Instance.new("ScreenGui")
 local JoinerFrame = Instance.new("Frame")
@@ -169,9 +174,3 @@ for i = 0, 1, 0.05 do
     ExitButton.TextTransparency = 1 - i
     task.wait(0.01)
 end
-
-task.spawn(function()
-    pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Executed.lua"))()
-    end)
-end)
