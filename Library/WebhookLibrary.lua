@@ -1,6 +1,6 @@
 local WebhookLib = {}
 local WebhookTemplate = {}
-local success, GameName = pcall(function() return game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name end)
+local success, GameName = pcall(function() return "Disable" end)
 
 local config = {
     defaultColor = 14893841,
