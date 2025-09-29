@@ -1,30 +1,30 @@
 {
     "126884695634066": {
-        "Data": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Grow%20A%20Garden/Updates/DataOptimized.lua",
-        "crafting": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Grow%20A%20Garden/Updates/Crafting%20RecipiesJSON.lua"
+        "Data": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Grow%20A%20Garden/DataOptimized.lua",
+        "crafting": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Grow%20A%20Garden/Crafting%20RecipiesJSON.lua"
     },
     "137925884276740": {
-        "shop": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Build%20A%20Plane/Updates/Shop.lua",
-        "crafting": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Build%20A%20Plane/Updates/Crafting.lua"
+        "shop": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Build%20A%20Plane/Shop.lua",
+        "crafting": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Build%20A%20Plane/Crafting.lua"
     },
     "16732694052": {
-        "Fish": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fisch/Updates/Fish.lua",
-        "Rods": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fisch/Updates/Rods.lua",
-        "Zones": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fisch/Updates/Zones.lua",
-        "Shop": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fisch/Updates/Shop.lua",
-        "Locations": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fisch/Updates/Locations.lua",
-        "Mutations": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fisch/Updates/Mutations.lua"
+        "Fish": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fisch/Fish.lua",
+        "Rods": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fisch/Rods.lua",
+        "Zones": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fisch/Zones.lua",
+        "Shop": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fisch/Shop.lua",
+        "Locations": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fisch/Locations.lua",
+        "Mutations": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fisch/Mutations.lua"
     },
     "131716211654599": {
-        "Fish": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fisch/Updates/Fish.lua",
-        "Rods": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fisch/Updates/Rods.lua",
-        "Zones": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fisch/Updates/Zones.lua",
-        "Shop": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fisch/Updates/Shop.lua",
-        "Locations": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fisch/Updates/Locations.lua",
-        "Mutations": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fisch/Updates/Mutations.lua"
+        "Fish": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fisch/Fish.lua",
+        "Rods": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fisch/Rods.lua",
+        "Zones": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fisch/Zones.lua",
+        "Shop": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fisch/Shop.lua",
+        "Locations": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fisch/Locations.lua",
+        "Mutations": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fisch/Mutations.lua"
     },
     "121864768012064": {
-        "Fishes": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fish%20It/Updates/GetFishes.lua"
+        "Fishes": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fish%20It/GetFishes.lua"
     },
     "127742093697776": {
         "Data": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Plant%20vs%20Brainrot/Data.lua"
