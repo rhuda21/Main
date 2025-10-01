@@ -9472,13 +9472,9 @@
       "11938a46-17c1-4f83-9a86-728eb37427fc": {
         "placeVersion": 1938,
         "lastUpdated": "2025-10-01T05:57:16.024Z"
-      },
-      "f876d2ad-05d4-009f-906e-72dae7201a8c": {
-        "placeVersion": 1938,
-        "lastUpdated": "2025-10-01T06:20:49.347Z"
       }
     },
-    "lastUpdated": "2025-10-01T06:20:49.347Z",
+    "lastUpdated": "2025-10-01T05:57:16.024Z",
     "createdAt": "2025-09-20T06:44:18.907Z"
   },
   "124977557560410": {
@@ -11562,13 +11558,9 @@
       "78c38eb2-1900-477a-acdd-d4f6fab1c1c5": {
         "placeVersion": 47,
         "lastUpdated": "2025-10-01T05:39:27.171Z"
-      },
-      "6b97b83b-b06a-409e-a809-bca4f8102062": {
-        "placeVersion": 47,
-        "lastUpdated": "2025-10-01T06:27:07.259Z"
       }
     },
-    "lastUpdated": "2025-10-01T06:27:07.259Z",
+    "lastUpdated": "2025-10-01T05:39:27.171Z",
     "createdAt": "2025-09-24T15:23:10.552Z"
   },
   "127742093697776": {
@@ -11725,24 +11717,20 @@
         "placeVersion": 3435,
         "lastUpdated": "2025-10-01T06:20:45.474Z"
       },
-      "55ce4da5-fa32-4dba-a588-af8e553c6ff0": {
+      "2e9ad49e-0f21-460e-940e-5419466ec2ae": {
         "placeVersion": 3435,
-        "lastUpdated": "2025-10-01T06:23:49.785Z"
+        "lastUpdated": "2025-10-01T06:22:12.651Z"
       },
-      "9f307939-4b9c-4191-be6a-de6e81c60beb": {
+      "436258fa-59f0-4525-985e-d81f8db81a3a": {
         "placeVersion": 3435,
-        "lastUpdated": "2025-10-01T06:26:37.597Z"
+        "lastUpdated": "2025-10-01T06:26:00.908Z"
       },
-      "ab623229-c173-4672-9eef-f585b49dee44": {
+      "42b422af-7d4c-45e7-a837-de9ccb83d563": {
         "placeVersion": 3435,
-        "lastUpdated": "2025-10-01T06:26:54.155Z"
-      },
-      "44dc3b58-caff-4e14-8ad2-97cdf0775703": {
-        "placeVersion": 3435,
-        "lastUpdated": "2025-10-01T06:27:52.148Z"
+        "lastUpdated": "2025-10-01T06:27:59.015Z"
       }
     },
-    "lastUpdated": "2025-10-01T06:27:52.148Z",
+    "lastUpdated": "2025-10-01T06:27:59.015Z",
     "createdAt": "2025-10-01T04:38:23.307Z"
   }
 }
