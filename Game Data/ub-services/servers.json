@@ -9857,12 +9857,12 @@
         "placeVersion": 1941,
         "lastUpdated": "2025-10-02T21:59:12.505Z"
       },
-      "e202f6e1-106d-4d58-b774-7e789b7e1b6c": {
-        "placeVersion": 1941,
-        "lastUpdated": "2025-10-02T22:03:59.682Z"
+      "64e56388-fffd-491a-b11b-036f187569e4": {
+        "placeVersion": 1938,
+        "lastUpdated": "2025-10-02T22:05:14.960Z"
       }
     },
-    "lastUpdated": "2025-10-02T22:03:59.682Z",
+    "lastUpdated": "2025-10-02T22:05:14.960Z",
     "createdAt": "2025-09-20T06:44:18.907Z"
   },
   "124977557560410": {
@@ -15280,17 +15280,9 @@
       "59ed21e7-d2ae-426c-a296-635b210ce9a8": {
         "placeVersion": 3462,
         "lastUpdated": "2025-10-02T22:03:08.573Z"
-      },
-      "b6e84091-f086-4be2-955b-c71b82e0c72f": {
-        "placeVersion": 3462,
-        "lastUpdated": "2025-10-02T22:03:12.112Z"
-      },
-      "99bbfd2c-6b5f-4ea2-8356-d2832574808f": {
-        "placeVersion": 3462,
-        "lastUpdated": "2025-10-02T22:04:16.923Z"
       }
     },
-    "lastUpdated": "2025-10-02T22:04:16.923Z",
+    "lastUpdated": "2025-10-02T22:03:08.573Z",
     "createdAt": "2025-10-01T04:38:23.307Z"
   }
 }
