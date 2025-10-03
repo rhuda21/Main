@@ -16429,24 +16429,12 @@
         "placeVersion": 3479,
         "lastUpdated": "2025-10-03T10:40:06.505Z"
       },
-      "688c1366-8d27-4f8a-81eb-05cbfbd20dcf": {
-        "placeVersion": 3482,
-        "lastUpdated": "2025-10-03T10:42:01.968Z"
-      },
-      "7bdcc664-360d-43d5-b727-84d0e4f5246b": {
-        "placeVersion": 3493,
-        "lastUpdated": "2025-10-03T10:42:38.477Z"
-      },
-      "14665e12-9644-4eba-8949-be000a099785": {
-        "placeVersion": 3493,
-        "lastUpdated": "2025-10-03T10:42:45.602Z"
-      },
-      "90a169a1-8962-4d6b-83f4-2909a1751b24": {
-        "placeVersion": 3482,
-        "lastUpdated": "2025-10-03T10:44:08.845Z"
+      "8ba57cb3-5530-43f8-ad23-89a3548fccbf": {
+        "placeVersion": 3462,
+        "lastUpdated": "2025-10-03T10:44:23.380Z"
       }
     },
-    "lastUpdated": "2025-10-03T10:44:08.845Z",
+    "lastUpdated": "2025-10-03T10:44:23.380Z",
     "createdAt": "2025-10-01T04:38:23.307Z"
   }
 }
