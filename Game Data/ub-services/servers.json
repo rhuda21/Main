@@ -15592,19 +15592,13 @@
       "79e92574-1ece-477e-b79d-c4c568bc9acd": {
         "placeVersion": 3462,
         "lastUpdated": "2025-10-03T00:46:41.332Z"
+      },
+      "64fc9f51-eed8-42a5-9007-92ba08707083": {
+        "placeVersion": 3462,
+        "lastUpdated": "2025-10-03T00:47:50.498Z"
       }
     },
-    "lastUpdated": "2025-10-03T00:46:41.332Z",
+    "lastUpdated": "2025-10-03T00:47:50.498Z",
     "createdAt": "2025-10-01T04:38:23.307Z"
-  },
-  "90780367887725": {
-    "jobs": {
-      "9b7c3f78-0ecb-44f2-b04d-640c3b8fadf2": {
-        "placeVersion": 1869,
-        "lastUpdated": "2025-10-03T00:47:18.833Z"
-      }
-    },
-    "lastUpdated": "2025-10-03T00:47:18.833Z",
-    "createdAt": "2025-10-03T00:47:18.833Z"
   }
 }
