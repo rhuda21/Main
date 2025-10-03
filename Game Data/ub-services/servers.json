@@ -9905,16 +9905,12 @@
         "placeVersion": 1941,
         "lastUpdated": "2025-10-03T01:23:07.934Z"
       },
-      "78d5e540-5f35-436a-b555-6460e26c9d9d": {
+      "0950522e-b69f-947b-42ca-024deb9bbd3c": {
         "placeVersion": 1941,
-        "lastUpdated": "2025-10-03T01:26:49.114Z"
-      },
-      "8ae7eb36-e574-422e-a2be-4a1764f67e2f": {
-        "placeVersion": 1938,
-        "lastUpdated": "2025-10-03T01:29:01.029Z"
+        "lastUpdated": "2025-10-03T01:29:27.792Z"
       }
     },
-    "lastUpdated": "2025-10-03T01:29:01.029Z",
+    "lastUpdated": "2025-10-03T01:29:27.792Z",
     "createdAt": "2025-09-20T06:44:18.907Z"
   },
   "124977557560410": {
@@ -15664,21 +15660,9 @@
       "c41a98ca-8902-4f03-a5b5-cba15fa6d4ee": {
         "placeVersion": 3462,
         "lastUpdated": "2025-10-03T01:24:52.988Z"
-      },
-      "a4e470b9-2fa4-418c-9fc1-c170f55ebd1a": {
-        "placeVersion": 3462,
-        "lastUpdated": "2025-10-03T01:27:40.810Z"
-      },
-      "3086366d-a37a-42ba-9779-e5f5daf91acf": {
-        "placeVersion": 3462,
-        "lastUpdated": "2025-10-03T01:29:05.369Z"
-      },
-      "7bfde3c9-9612-464e-9b65-367bace2df09": {
-        "placeVersion": 3462,
-        "lastUpdated": "2025-10-03T01:29:25.500Z"
       }
     },
-    "lastUpdated": "2025-10-03T01:29:25.500Z",
+    "lastUpdated": "2025-10-03T01:24:52.988Z",
     "createdAt": "2025-10-01T04:38:23.307Z"
   }
 }
