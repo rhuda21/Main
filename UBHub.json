@@ -1,6 +1,6 @@
 {
     "Name": "UB Hub | ",
-    "keysystem": true,
+    "keysystem": false,
     "GamesURL": "https://raw.githubusercontent.com/TeamUBHub/UBLoader/refs/heads/main/index/Games.lua",
     "KeyAPI": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/API/DiscordKey.lua",
     "Discord": "discord.gg/pn8xyhuSeV",
