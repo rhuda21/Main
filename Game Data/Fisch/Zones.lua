@@ -28,9 +28,8 @@ local function prettyPrintJson(jsonString)
     end
     return result
 end
-local _require = loadstring(game:HttpGet("https://gitlab.com/r_soft/main/-/raw/main/Others/Require.lua?ref_type=heads"))()
 local fishingZonesModule = game:GetService("ReplicatedStorage").shared.modules.library.fish.zones
-local zoneData = _require.GetScript(fishingZonesModule)
+local zoneData = require(fishingZonesModule)
 local data = prettyPrintJson(HttpService:JSONEncode(zoneData))
 setclipboard(data)
 return data
