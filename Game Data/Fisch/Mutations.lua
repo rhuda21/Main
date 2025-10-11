@@ -1,4 +1,5 @@
 local HttpService = game:GetService("HttpService")
+
 local function prettyPrintJson(jsonString)
     local result = ""
     local indentLevel = 0
@@ -28,6 +29,7 @@ local function prettyPrintJson(jsonString)
     end
     return result
 end
+
 local MutationsModule = require(game:GetService("ReplicatedStorage").shared.modules.fishing.mutations)
 local mutationsTable = nil
 for key, value in pairs(MutationsModule) do
@@ -36,6 +38,7 @@ for key, value in pairs(MutationsModule) do
         break
     end
 end
+
 local function extractAllMutationsData()
     local result = {
         Mutations = {}
@@ -43,23 +46,27 @@ local function extractAllMutationsData()
     if mutationsTable then
         for mutationName, mutationData in pairs(mutationsTable) do
             if type(mutationData) == "table" then
-                result.Mutations[mutationName] = {
+                local mutationInfo = {
                     Display = mutationData.Display,
                     PriceMultiply = mutationData.PriceMultiply,
-                    Chance = mutationData.Chance,
-                    if mutationData.Color then
-                        result.Color = {
-                            R = math.floor(mutationData.Color.R * 255),
-                            G = math.floor(mutationData.Color.G * 255),
-                            B = math.floor(mutationData.Color.B * 255)
-                        }
-                    end
+                    Chance = mutationData.Chance
                 }
+                
+                if mutationData.Color then
+                    mutationInfo.Color = {
+                        R = math.floor(mutationData.Color.R * 255),
+                        G = math.floor(mutationData.Color.G * 255),
+                        B = math.floor(mutationData.Color.B * 255)
+                    }
+                end
+                
+                result.Mutations[mutationName] = mutationInfo
             end
         end
     end
     return result
 end
+
 local mutationsData = extractAllMutationsData()
 local data = prettyPrintJson(HttpService:JSONEncode(mutationsData))
 setclipboard(data)
