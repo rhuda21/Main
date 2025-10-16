@@ -2,8 +2,8 @@
   "LOGGING": {
     "ENABLED": true,
     "LOG_SUCCESS": true,
-    "LOG_WARNINGS": true,
+    "LOG_WARNINGS": false,
     "LOG_ERRORS": true,
-    "LOG_SECURITY": true
+    "LOG_SECURITY": false
   }
 }
