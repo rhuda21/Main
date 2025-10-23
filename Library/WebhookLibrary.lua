@@ -1,112 +1,110 @@
 local WebhookLib = {}
 local WebhookTemplate = {}
-local success, GameName = pcall(function() return "Disable" end)
+local HttpService = game:GetService("HttpService")
 
-local config = {
-    defaultColor = 14893841,
-    defaultFooter = "🔹 UB Hub | Report Bugs in Discord",
-    defaultThumbnail = "",
-    defaultAuthor = "UB Hub | " .. (success and GameName or "Fail to get Game")
+local function getGameName()
+    local s, name = pcall(function()
+        local universeData = HttpService:JSONDecode(game:HttpGet("https://apis.roblox.com/universes/v1/places/" .. game.PlaceId .. "/universe"))
+        local gameData = HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games?universeIds=" .. universeData.universeId))
+        return gameData.data[1].name
+    end)
+    return s and name or "Unknown Game"
+end
+local success, GameName = pcall(function() return getGameName() end)
+local cfg = {
+    color = 14893841,
+    footer = "🔹 UB Hub | Report bugs in discord",
+    thumbnail = "",
+    author = "UB Hub | " .. (success and GameName or "Failed to get game")
 }
-
 function WebhookLib.SendMessageEMBED(url, embed, mention)
-    local payload = {
+    local data = {
         content = mention and ("<@" .. mention .. ">") or "",
         embeds = {{
             title = embed.title,
             description = embed.description,
-            color = 14893841 or embed.color,
+            color = embed.color or 14893841,
             fields = embed.fields,
-            footer = embed.footer and {text = embed.footer.text, icon_url = embed.footer.icon_url} or nil,
-            thumbnail = embed.thumbnail and {url = embed.thumbnail.url} or nil,
-            author = embed.author and {name = embed.author.name, icon_url = embed.author.icon_url} or nil,
+            footer = embed.footer and {text = embed.footer.text, icon_url = embed.footer.icon_url},
+            thumbnail = embed.thumbnail and {url = embed.thumbnail.url},
+            author = embed.author and {name = embed.author.name, icon_url = embed.author.icon_url},
             timestamp = embed.timestamp
         }}
     }
-    local success, response = pcall(function()
-        return request({
+    local ok, err = pcall(function()
+        request({
             Url = url,
             Method = "POST",
-            Headers = {
-                ["Content-Type"] = "application/json",
-            },
-            Body = game:GetService("HttpService"):JSONEncode(payload)
+            Headers = {["Content-Type"] = "application/json"},
+            Body = HttpService:JSONEncode(data)
         })
     end)
-    if not success then
-        warn("Failed to send webhook:", response)
-    end
+    if not ok then warn("Webhook failed:", err) end
 end
+
 function WebhookTemplate:CreateEmbed()
     return {
         title = "",
         description = "",
-        color = config.defaultColor,
+        color = cfg.color,
         fields = {},
-        footer = {
-            text = config.defaultFooter,
-            icon_url = ""
-        },
-        thumbnail = {
-            url = config.defaultThumbnail
-        },
-        author = {
-            name = config.defaultAuthor,
-            icon_url = ""
-        },
+        footer = {text = cfg.footer, icon_url = ""},
+        thumbnail = {url = cfg.thumbnail},
+        author = {name = cfg.author, icon_url = ""},
         timestamp = os.date("!%Y-%m-%dT%H:%M:%SZ")
     }
 end
 function WebhookTemplate:AddField(embed, name, value, inline)
-    table.insert(embed.fields, {name = name or "",value = value or "",inline = inline or false})
+    table.insert(embed.fields, {
+        name = name or "",
+        value = value or "",
+        inline = inline or false
+    })
     return embed
 end
 function WebhookTemplate:SetColor(embed, color)
-    if type(color) == "string" and color:match("^#?[0-9a-fA-F]+") then
+    if type(color) == "string" then
         color = color:gsub("#", "")
-        embed.color = tonumber(color, 16) or config.defaultColor
+        embed.color = tonumber(color, 16) or cfg.color
     else
-        embed.color = tonumber(color) or config.defaultColor
+        embed.color = tonumber(color) or cfg.color
     end
     return embed
 end
-function WebhookTemplate:CreateStatsEmbed(stats, options)
-    options = options or {}
+function WebhookTemplate:CreateStatsEmbed(stats, opts)
+    opts = opts or {}
     local embed = self:CreateEmbed()
-    embed.title = options.title or "🎮 Game Stats"
-    embed.description = options.description or "📊 Tracking your game statistics"
-    if options.color then
-        self:SetColor(embed, options.color)
-    end
-    if options.fields then
-        for _, field in ipairs(options.fields) do
+    embed.title = opts.title or "🎮 Game Stats"
+    embed.description = opts.description or "📊 Tracking your game stats"
+    if opts.color then self:SetColor(embed, opts.color) end
+    if opts.fields then
+        for _, field in ipairs(opts.fields) do
             if field.custom and type(field.custom) == "function" then
-                local customField = field.custom()
-                if customField then self:AddField(embed, customField.name, customField.value, customField.inline) end
+                local custom = field.custom()
+                if custom then 
+                    self:AddField(embed, custom.name, custom.value, custom.inline) 
+                end
             else
-                local value = stats[field.key]
-                if value ~= nil then
-                    local displayValue = field.format and string.format(field.format, value) or tostring(value)
+                local val = stats[field.key]
+                if val then
+                    local display = field.format and string.format(field.format, val) or tostring(val)
                     local fieldName = field.emoji and (field.emoji .. " " .. field.key) or field.key
-                    self:AddField(embed, fieldName, "```\n" .. displayValue .. "\n```", field.inline ~= false)
+                    self:AddField(embed, fieldName, "```\n" .. display .. "\n```", field.inline ~= false)
                 end
             end
         end
     end
-    if options.showTimestamp ~= false then
-        local timestamp = options.timestamp or os.time()
-        local timestampStr = options.timestampFormat == "discord" and 
-                           ("<t:%d:R>"):format(timestamp) or
-                           os.date(options.timestampFormat or "%c", timestamp)
-        self:AddField(embed, "🕒 Last Updated", timestampStr, false)
+    if opts.showTimestamp ~= false then
+        local time = opts.timestamp or os.time()
+        local timeStr = opts.timestampFormat == "discord" 
+            and ("<t:%d:R>"):format(time)  or os.date(opts.timestampFormat or "%c", time)
+        self:AddField(embed, "🕒 Last Updated", timeStr, false)
     end
     return embed
 end
-function WebhookTemplate:Configure(newConfig)
-    for key, value in pairs(newConfig) do
-        if config[key] ~= nil then
-            config[key] = value
-        end
+function WebhookTemplate:Configure(newCfg)
+    for k, v in pairs(newCfg) do
+        if cfg[k] then cfg[k] = v end
     end
 end
 return WebhookLib, WebhookTemplate
