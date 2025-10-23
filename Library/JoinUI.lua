@@ -1,151 +1,147 @@
 if not _G.LoadedUBJoiner then _G.LoadedUBJoiner = true end
-local ScreenGui = Instance.new("ScreenGui")
-local JoinerFrame = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local TitleBar = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
-local DiscordLabel = Instance.new("TextLabel")
-local Divider = Instance.new("Frame")
-local ButtonContainer = Instance.new("Frame")
-local CopyButton = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
-local ExitButton = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
 
-ScreenGui.Name = "DiscordJoiner"
-ScreenGui.Parent = (gethui() or cloneref(game:GetService("CoreGui")) or game:GetService("CoreGui"))
-ScreenGui.ResetOnSpawn = false
+local gui = Instance.new("ScreenGui")
+local frame = Instance.new("Frame")
+local corner = Instance.new("UICorner")
+local titlebar = Instance.new("Frame")
+local corner2 = Instance.new("UICorner")
+local label = Instance.new("TextLabel")
+local divider = Instance.new("Frame")
+local btnContainer = Instance.new("Frame")
+local copyBtn = Instance.new("TextButton")
+local corner3 = Instance.new("UICorner")
+local exitBtn = Instance.new("TextButton")
+local corner4 = Instance.new("UICorner")
 
-JoinerFrame.Name = "JoinerFrame"
-JoinerFrame.Parent = ScreenGui
-JoinerFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-JoinerFrame.BorderSizePixel = 0
-JoinerFrame.Position = UDim2.new(0.5, -175, 0.5, -125)
-JoinerFrame.Size = UDim2.new(0, 350, 0, 250)
-JoinerFrame.Draggable = true
-JoinerFrame.Active = true
+gui.Name = "DiscordJoiner"
+gui.Parent = (gethui() or cloneref(game:GetService("CoreGui")) or game:GetService("CoreGui"))
+gui.ResetOnSpawn = false
 
-UICorner.Parent = JoinerFrame
-UICorner.CornerRadius = UDim.new(0, 8)
+frame.Name = "JoinerFrame"
+frame.Parent = gui
+frame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+frame.BorderSizePixel = 0
+frame.Position = UDim2.new(0.5, -175, 0.5, -125)
+frame.Size = UDim2.new(0, 350, 0, 250)
+frame.Draggable = true
+frame.Active = true
 
-TitleBar.Name = "TitleBar"
-TitleBar.Parent = JoinerFrame
-TitleBar.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
-TitleBar.BorderSizePixel = 0
-TitleBar.Size = UDim2.new(1, 0, 0, 40)
+corner.Parent = frame
+corner.CornerRadius = UDim.new(0, 8)
 
-UICorner_2.Parent = TitleBar
-UICorner_2.CornerRadius = UDim.new(0, 8)
+titlebar.Name = "TitleBar"
+titlebar.Parent = frame
+titlebar.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
+titlebar.BorderSizePixel = 0
+titlebar.Size = UDim2.new(1, 0, 0, 40)
 
-DiscordLabel.Name = "DiscordLabel"
-DiscordLabel.Parent = JoinerFrame
-DiscordLabel.BackgroundTransparency = 1
-DiscordLabel.Position = UDim2.new(0.5, 0, 0.3, 0)
-DiscordLabel.Size = UDim2.new(0.8, 0, 0, 70)
-DiscordLabel.Font = Enum.Font.GothamSemibold
-DiscordLabel.Text = "Join our community so you can make suggestion. HELP us become Number 1 Keyless Script! We have OVER 15 GAMES"
-DiscordLabel.TextColor3 = Color3.fromRGB(220, 220, 220)
-DiscordLabel.TextSize = 16
-DiscordLabel.TextWrapped = true
-DiscordLabel.AnchorPoint = Vector2.new(0.5, 0)
+corner2.Parent = titlebar
+corner2.CornerRadius = UDim.new(0, 8)
 
-Divider.Name = "Divider"
-Divider.Parent = JoinerFrame
-Divider.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
-Divider.BorderSizePixel = 0
-Divider.Position = UDim2.new(0, 0, 0.6, 0)
-Divider.Size = UDim2.new(1, 0, 0, 1)
+label.Name = "DiscordLabel"
+label.Parent = frame
+label.BackgroundTransparency = 1
+label.Position = UDim2.new(0.5, 0, 0.3, 0)
+label.Size = UDim2.new(0.8, 0, 0, 70)
+label.Font = Enum.Font.GothamSemibold
+label.Text = "Join our community to make suggestions and help us become the #1 keyless script! We support OVER 15 games"
+label.TextColor3 = Color3.fromRGB(220, 220, 220)
+label.TextSize = 16
+label.TextWrapped = true
+label.AnchorPoint = Vector2.new(0.5, 0)
 
-ButtonContainer.Name = "ButtonContainer"
-ButtonContainer.Parent = JoinerFrame
-ButtonContainer.BackgroundTransparency = 1
-ButtonContainer.Position = UDim2.new(0, 0, 0.65, 0)
-ButtonContainer.Size = UDim2.new(1, 0, 0, 80)
+divider.Name = "Divider"
+divider.Parent = frame
+divider.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+divider.BorderSizePixel = 0
+divider.Position = UDim2.new(0, 0, 0.6, 0)
+divider.Size = UDim2.new(1, 0, 0, 1)
 
-CopyButton.Name = "CopyButton"
-CopyButton.Parent = ButtonContainer
-CopyButton.BackgroundColor3 = Color3.fromRGB(88, 101, 242)
-CopyButton.Position = UDim2.new(0.1, 0, 0.1, 0)
-CopyButton.Size = UDim2.new(0.35, 0, 0.8, 0)
-CopyButton.Font = Enum.Font.Gotham
-CopyButton.Text = "Copy Invite"
-CopyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-CopyButton.TextSize = 14
-CopyButton.AutoButtonColor = false
+btnContainer.Name = "ButtonContainer"
+btnContainer.Parent = frame
+btnContainer.BackgroundTransparency = 1
+btnContainer.Position = UDim2.new(0, 0, 0.65, 0)
+btnContainer.Size = UDim2.new(1, 0, 0, 80)
 
-UICorner_3.Parent = CopyButton
-UICorner_3.CornerRadius = UDim.new(0, 4)
+copyBtn.Name = "CopyButton"
+copyBtn.Parent = btnContainer
+copyBtn.BackgroundColor3 = Color3.fromRGB(88, 101, 242)
+copyBtn.Position = UDim2.new(0.1, 0, 0.1, 0)
+copyBtn.Size = UDim2.new(0.35, 0, 0.8, 0)
+copyBtn.Font = Enum.Font.Gotham
+copyBtn.Text = "Copy Invite"
+copyBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+copyBtn.TextSize = 14
+copyBtn.AutoButtonColor = false
 
-ExitButton.Name = "ExitButton"
-ExitButton.Parent = ButtonContainer
-ExitButton.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
-ExitButton.Position = UDim2.new(0.55, 0, 0.1, 0)
-ExitButton.Size = UDim2.new(0.35, 0, 0.8, 0)
-ExitButton.Font = Enum.Font.Gotham
-ExitButton.Text = "Close"
-ExitButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-ExitButton.TextSize = 14
-ExitButton.AutoButtonColor = false
+corner3.Parent = copyBtn
+corner3.CornerRadius = UDim.new(0, 4)
 
-UICorner_4.Parent = ExitButton
-UICorner_4.CornerRadius = UDim.new(0, 4)
+exitBtn.Name = "ExitButton"
+exitBtn.Parent = btnContainer
+exitBtn.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
+exitBtn.Position = UDim2.new(0.55, 0, 0.1, 0)
+exitBtn.Size = UDim2.new(0.35, 0, 0.8, 0)
+exitBtn.Font = Enum.Font.Gotham
+exitBtn.Text = "Close"
+exitBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+exitBtn.TextSize = 14
+exitBtn.AutoButtonColor = false
 
+corner4.Parent = exitBtn
+corner4.CornerRadius = UDim.new(0, 4)
 
 local function copyInvite()
-    local inviteLink = "https://discord.gg/pn8xyhuSeV"
-    CopyButton.Text = "Copy"
-    CopyButton.BackgroundColor3 = Color3.fromRGB(66, 77, 181)
-    task.wait(0.3)
-    setclipboard(inviteLink)
-    CopyButton.Text = "Copied!"
-    CopyButton.BackgroundColor3 = Color3.fromRGB(59, 165, 92)
+    local link = "https://discord.gg/pn8xyhuSeV"
+    copyBtn.Text = "Copying..."
+    copyBtn.BackgroundColor3 = Color3.fromRGB(66, 77, 181)
+    wait(0.3)
+    setclipboard(link)
+    copyBtn.Text = "Copied!"
+    copyBtn.BackgroundColor3 = Color3.fromRGB(59, 165, 92)
     task.delay(2, function()
-        CopyButton.Text = "Copy Invite"
-        CopyButton.BackgroundColor3 = Color3.fromRGB(88, 101, 242)
+        copyBtn.Text = "Copy Invite"
+        copyBtn.BackgroundColor3 = Color3.fromRGB(88, 101, 242)
     end)
 end
 
 local function closeGui()
     for i = 1, 0, -0.05 do
-        JoinerFrame.BackgroundTransparency = 1 - i
-        TitleBar.BackgroundTransparency = 1 - i
-        DiscordLabel.TextTransparency = 1 - i
-        CopyButton.TextTransparency = 1 - i
-        ExitButton.TextTransparency = 1 - i
-        task.wait(0.01)
+        frame.BackgroundTransparency = 1 - i
+        titlebar.BackgroundTransparency = 1 - i
+        label.TextTransparency = 1 - i
+        copyBtn.TextTransparency = 1 - i
+        exitBtn.TextTransparency = 1 - i
+        wait(0.01)
     end
-    ScreenGui:Destroy()
+    gui:Destroy()
 end
 
-local function buttonHoverEffect(button, hoverColor)
-    local originalColor = button.BackgroundColor3
-    button.MouseEnter:Connect(function()
-        button.BackgroundColor3 = hoverColor
-    end) 
-    button.MouseLeave:Connect(function()
-        button.BackgroundColor3 = originalColor
-    end)
+local function hoverEffect(btn, color)
+    local orig = btn.BackgroundColor3
+    btn.MouseEnter:Connect(function() btn.BackgroundColor3 = color end) 
+    btn.MouseLeave:Connect(function() btn.BackgroundColor3 = orig end)
 end
 
-buttonHoverEffect(CopyButton, Color3.fromRGB(71, 82, 196))
-buttonHoverEffect(ExitButton, Color3.fromRGB(66, 69, 74))
+hoverEffect(copyBtn, Color3.fromRGB(71, 82, 196))
+hoverEffect(exitBtn, Color3.fromRGB(66, 69, 74))
 
-CopyButton.MouseButton1Click:Connect(copyInvite)
-ExitButton.MouseButton1Click:Connect(closeGui)
+copyBtn.MouseButton1Click:Connect(copyInvite)
+exitBtn.MouseButton1Click:Connect(closeGui)
 
-JoinerFrame.BackgroundTransparency = 1
-TitleBar.BackgroundTransparency = 1
-DiscordLabel.TextTransparency = 1
-CopyButton.TextTransparency = 1
-ExitButton.TextTransparency = 1
+frame.BackgroundTransparency = 1
+titlebar.BackgroundTransparency = 1
+label.TextTransparency = 1
+copyBtn.TextTransparency = 1
+exitBtn.TextTransparency = 1
 
 for i = 0, 1, 0.05 do
-    JoinerFrame.BackgroundTransparency = 1 - i
-    TitleBar.BackgroundTransparency = 1 - i
-    DiscordLabel.TextTransparency = 1 - i
-    CopyButton.TextTransparency = 1 - i
-    ExitButton.TextTransparency = 1 - i
-    task.wait(0.01)
+    frame.BackgroundTransparency = 1 - i
+    titlebar.BackgroundTransparency = 1 - i
+    label.TextTransparency = 1 - i
+    copyBtn.TextTransparency = 1 - i
+    exitBtn.TextTransparency = 1 - i
+    wait(0.01)
 end
 
 task.spawn(function()
