@@ -1,5 +1,26 @@
+--Decompiled by Medal, I take no credit I only Made The dumper and I I.. I iron man
+local v1 = game:GetService("ReplicatedStorage")
+require(v1.Data.NPCLevels.NPCLevelData.NPCLevelTypes)
+require(v1.Modules.UpdateService)
 local v2 = {}
 local v3 = {
+	["Spooky Chest"] = {
+		["SeedName"] = "Spooky Chest",
+		["SeedRarity"] = "Legendary",
+		["StockChance"] = 4,
+		["StockAmount"] = { 1, 2 },
+		["Price"] = 30,
+		["SpecialCurrencyType"] = "CandyCorn",
+		["PurchaseID"] = 3438505209,
+		["DisplayInShop"] = true,
+		["ShowOdds"] = true,
+		["LayoutOrder"] = 100,
+		["LockedInShop"] = false,
+		["ItemType"] = "Seed Pack",
+		["Stack"] = 1,
+		["Description"] = "",
+		["FallbackPrice"] = 199
+	},
 	["Bloodred Mushroom"] = {
 		["SeedName"] = "Bloodred Mushroom",
 		["SeedRarity"] = "Uncommon",
@@ -139,14 +160,14 @@ local v3 = {
 	["Blood Orange"] = {
 		["SeedName"] = "Blood Orange",
 		["SeedRarity"] = "Prismatic",
-		["StockChance"] = 28,
+		["StockChance"] = 24,
 		["StockAmount"] = { 1, 1 },
 		["Price"] = 200,
 		["SpecialCurrencyType"] = "CandyCorn",
 		["PurchaseID"] = 3432693910,
 		["DisplayInShop"] = true,
 		["ShowOdds"] = true,
-		["LayoutOrder"] = 160,
+		["LayoutOrder"] = 170,
 		["LockedInShop"] = false,
 		["ItemType"] = "Seed",
 		["Stack"] = 1,
@@ -329,6 +350,23 @@ local v5 = {
 		["Description"] = "",
 		["FallbackPrice"] = 99
 	},
+	["Spider Prop"] = {
+		["SeedName"] = "Spider Prop",
+		["SeedRarity"] = "Uncommon",
+		["StockChance"] = 1,
+		["StockAmount"] = { 1, 2 },
+		["Price"] = 6,
+		["SpecialCurrencyType"] = "CandyCorn",
+		["PurchaseID"] = 3438506588,
+		["DisplayInShop"] = true,
+		["ShowOdds"] = true,
+		["LayoutOrder"] = 108,
+		["LockedInShop"] = false,
+		["ItemType"] = "Cosmetic",
+		["Stack"] = 1,
+		["Description"] = "",
+		["FallbackPrice"] = 119
+	},
 	["Ghost Lantern"] = {
 		["SeedName"] = "Ghost Lantern",
 		["SeedRarity"] = "Rare",
@@ -357,6 +395,23 @@ local v5 = {
 		["DisplayInShop"] = true,
 		["ShowOdds"] = true,
 		["LayoutOrder"] = 112,
+		["LockedInShop"] = false,
+		["ItemType"] = "Cosmetic",
+		["Stack"] = 1,
+		["Description"] = "",
+		["FallbackPrice"] = 119
+	},
+	["Black String Lights"] = {
+		["SeedName"] = "Black String Lights",
+		["SeedRarity"] = "Rare",
+		["StockChance"] = 2,
+		["StockAmount"] = { 1, 1 },
+		["Price"] = 15,
+		["SpecialCurrencyType"] = "CandyCorn",
+		["PurchaseID"] = 3438508218,
+		["DisplayInShop"] = true,
+		["ShowOdds"] = true,
+		["LayoutOrder"] = 114,
 		["LockedInShop"] = false,
 		["ItemType"] = "Cosmetic",
 		["Stack"] = 1,
@@ -397,6 +452,23 @@ local v5 = {
 		["Description"] = "",
 		["FallbackPrice"] = 239
 	},
+	["Spell Book"] = {
+		["SeedName"] = "Spell Book",
+		["SeedRarity"] = "Legendary",
+		["StockChance"] = 6,
+		["StockAmount"] = { 1, 1 },
+		["Price"] = 36,
+		["SpecialCurrencyType"] = "CandyCorn",
+		["PurchaseID"] = 3438507017,
+		["DisplayInShop"] = true,
+		["ShowOdds"] = true,
+		["LayoutOrder"] = 135,
+		["LockedInShop"] = false,
+		["ItemType"] = "Cosmetic",
+		["Stack"] = 1,
+		["Description"] = "",
+		["FallbackPrice"] = 219
+	},
 	["Skull Chain"] = {
 		["SeedName"] = "Skull Chain",
 		["SeedRarity"] = "Mythical",
@@ -430,6 +502,23 @@ local v5 = {
 		["Stack"] = 1,
 		["Description"] = "Looksss like its used for sssome ritualistic practice...",
 		["FallbackPrice"] = 289
+	},
+	["Sarcophagus"] = {
+		["SeedName"] = "Sarcophagus",
+		["SeedRarity"] = "Divine",
+		["StockChance"] = 12,
+		["StockAmount"] = { 1, 1 },
+		["Price"] = 60,
+		["SpecialCurrencyType"] = "CandyCorn",
+		["PurchaseID"] = 3438507351,
+		["DisplayInShop"] = true,
+		["ShowOdds"] = true,
+		["LayoutOrder"] = 150,
+		["LockedInShop"] = false,
+		["ItemType"] = "Cosmetic",
+		["Stack"] = 1,
+		["Description"] = "",
+		["FallbackPrice"] = 319
 	}
 }
 v2["Devilish Decor"] = v5
@@ -501,6 +590,23 @@ local v6 = {
 		["Stack"] = 1,
 		["Description"] = "",
 		["FallbackPrice"] = 129
+	},
+	["Lich Crystal"] = {
+		["SeedName"] = "Lich Crystal",
+		["SeedRarity"] = "Divine",
+		["StockChance"] = 6,
+		["StockAmount"] = { 1, 1 },
+		["Price"] = 60,
+		["SpecialCurrencyType"] = "CandyCorn",
+		["PurchaseID"] = 3438502202,
+		["DisplayInShop"] = true,
+		["ShowOdds"] = true,
+		["LayoutOrder"] = 50,
+		["LockedInShop"] = false,
+		["ItemType"] = "Gear",
+		["Stack"] = 1,
+		["Description"] = "",
+		["FallbackPrice"] = 499
 	}
 }
 v2["Ghosty Gadgets"] = v6
