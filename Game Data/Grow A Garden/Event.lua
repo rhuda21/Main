@@ -1,7 +1,5 @@
 --Decompiled by Medal, I take no credit I only Made The dumper and I I.. I iron man
 local v1 = game:GetService("ReplicatedStorage")
-require(v1.Data.NPCLevels.NPCLevelData.NPCLevelTypes)
-require(v1.Modules.UpdateService)
 local v2 = {}
 local v3 = {
 	["Spooky Chest"] = {
