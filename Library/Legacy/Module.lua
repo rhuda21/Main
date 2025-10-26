@@ -8,6 +8,9 @@ local UBHubOT = {
     SaveManager = "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Library/Legacy/Saver.lua",
     InterfaceManager = "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Library/V2.lua"
 }
+local Library = loadstring(game:HttpGet(UBHubOT.Lib))()
+local SaveManager = loadstring(game:HttpGet(UBHubOT.SaveManager))()
+local InterfaceManager = loadstring(game:HttpGet(UBHubOT.InterfaceManager))()
 local WebhookLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Library/WebhookLibrary.lua"))()
 local Window = Library:CreateWindow{
     Title = config.Name .. tostring(_G.currentVersion),
