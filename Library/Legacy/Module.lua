@@ -1,15 +1,14 @@
 local Module = {}
 local HttpService = game:GetService("HttpService")
-local JSON = game:HttpGet("https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/UBHub.json")
-local config = HttpService:JSONDecode(JSON)
-local Optionsurl = "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Library/Legacy/Configuration.lua"
-local response = game:HttpGet(Optionsurl)
-local UBHubOT = loadstring(response)()
-local Library = loadstring(game:HttpGetAsync(UBHubOT.Lib))()
-local SaveManager = loadstring(game:HttpGetAsync(UBHubOT.SaveManager))()
-local InterfaceManager = loadstring(game:HttpGetAsync(UBHubOT.InterfaceManager))()
+local config = HttpService:JSONDecode(game:HttpGet("https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/UBHub.json"))
+local UBHubOT = {
+    DC = "https://discord.gg/pn8xyhuSeV",
+    Endpoint = "https://ubhub.pages.dev/",
+    Lib = "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Library/V2.lua",
+    SaveManager = "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Library/Legacy/Saver.lua",
+    InterfaceManager = "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Library/V2.lua"
+}
 local WebhookLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Library/WebhookLibrary.lua"))()
-
 local Window = Library:CreateWindow{
     Title = config.Name .. tostring(_G.currentVersion),
     SubTitle = "",
@@ -25,5 +24,4 @@ Module.SaveManager = SaveManager
 Module.InterfaceManager = InterfaceManager
 Module.WebhookLib = WebhookLib
 Module.Window = Window
-
 return Module
