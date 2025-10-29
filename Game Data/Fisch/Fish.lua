@@ -45,7 +45,8 @@ local function extractAllFishingData()
                     BaitContents = data.BaitContents,
                     CoinContents = data.CoinContents,
                     Rarity = data.Rarity,
-                    Unpurchasable = data.Unpurchasable
+                    Unpurchasable = data.Unpurchasable,
+                    Image = data.Icon
                 }
             elseif data.Rarity then
                 result.Fish[name] = {
@@ -55,7 +56,8 @@ local function extractAllFishingData()
                     Resilience = data.Resilience,
                     Worlds = data.Worlds,
                     Location = data.From,
-                    FavoriteBait = data.FavouriteBait
+                    FavoriteBait = data.FavouriteBait,
+                    Image = data.Icon
                 }
             end
         end
