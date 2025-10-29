@@ -29,6 +29,7 @@ local function prettyPrintJson(jsonString)
     return result
 end
 local Data = require(game:GetService("ReplicatedStorage").shared.modules.library.fish)
+local FishImages = require(game:GetService("ReplicatedStorage").shared.data.fishImages)
 local function extractAllFishingData()
     local result = {
         Fish = {},
@@ -46,9 +47,10 @@ local function extractAllFishingData()
                     CoinContents = data.CoinContents,
                     Rarity = data.Rarity,
                     Unpurchasable = data.Unpurchasable,
-                    Image = data.Icon
+                    Image = data.Icon or FishImages[name] or ""
                 }
             elseif data.Rarity then
+                local image = data.Icon or FishImages[name] or ""
                 result.Fish[name] = {
                     Rarity = data.Rarity,
                     Price = data.Price,
@@ -57,7 +59,7 @@ local function extractAllFishingData()
                     Worlds = data.Worlds,
                     Location = data.From,
                     FavoriteBait = data.FavouriteBait,
-                    Image = data.Icon
+                    Image = image
                 }
             end
         end
