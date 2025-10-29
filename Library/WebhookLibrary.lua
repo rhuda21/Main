@@ -77,6 +77,7 @@ function WebhookTemplate:CreateStatsEmbed(stats, opts)
     embed.title = opts.title or "🎮 Game Stats"
     embed.description = opts.description or "📊 Tracking your game stats"
     if opts.color then self:SetColor(embed, opts.color) end
+    if opts.thumbnail then embed.thumbnail = opts.thumbnail end
     if opts.fields then
         for _, field in ipairs(opts.fields) do
             if field.custom and type(field.custom) == "function" then
