@@ -2,8 +2,7 @@ local HttpService = game:GetService("HttpService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local MODULE_PATHS = {
     Rarities = ReplicatedStorage.Modules.Library.FuseDurations,
-    Mutations = ReplicatedStorage.Modules.Library.BrainrotMutations,
-    Code = ReplicatedStorage.Modules.Library.Codes
+    Mutations = ReplicatedStorage.Modules.Library.BrainrotMutations
 }
 local collectedData = {}
 for dataType, modulePath in pairs(MODULE_PATHS) do
