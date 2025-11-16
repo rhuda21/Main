@@ -16,7 +16,8 @@
         "Mutations": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fisch/Mutations.lua"
     },
     "6701277882": {
-        "Fishes": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fish%20It/GetFishes.lua"
+        "Fishes": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fish%20It/GetFishes.lua",
+        "Rods": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Fish%20It/GetRods.lua"
     },
     "8316902627": {
         "Data": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Plant%20vs%20Brainrot/Data.lua"
