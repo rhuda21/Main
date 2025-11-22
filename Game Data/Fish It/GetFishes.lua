@@ -52,7 +52,7 @@ for _, child in ipairs(itemsFolder:GetChildren()) do
     if child:IsA("ModuleScript") then
         local success, moduleData = pcall(function() return require(child) end)
         if success and moduleData and moduleData.Data then
-            if moduleData.Data.Type == "Fishes" then
+            if moduleData.Data.Type == "Fish" then
                 local fish = {
                     Id = moduleData.Data.Id or 0,
                     Type = moduleData.Data.Type or "Unknown",
@@ -66,8 +66,6 @@ for _, child in ipairs(itemsFolder:GetChildren()) do
                         Default = getWeightRange(moduleData.Weight, "Default")
                     },
                     Probability = (moduleData.Probability and moduleData.Probability.Chance) or 0,
-                    ModuleName = child.Name,
-                    ModulePath = child:GetFullName()
                 } 
                 table.insert(allFishData, fish)
             end
