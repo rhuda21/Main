@@ -78,3 +78,4 @@ for _, child in ipairs(itemsFolder:GetChildren()) do
     end
 local Fishes = prettyPrintJson(HttpService:JSONEncode(allFishData))
 setclipboard(Fishes)
+return Fishes
