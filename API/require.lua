@@ -31,16 +31,11 @@ end
 
 function Require.GetScript(module)
     local source
-    if module.Source then
-        source = module.Source
-    else
-        local decompiled, isError = Require.Decompiler(module)
-        if isError then
-            return nil, "Failed to decompile: " .. tostring(decompiled)
-        end
-        source = decompiled
+    local decompiled, isError = Require.Decompiler(module)
+    if isError then
+        return nil, "Failed to decompile: " .. tostring(decompiled)
     end
-    
+    source = decompiled
     source = ReplaceRequire(source)
     local func, err = loadstring(source)
     if not func then
@@ -55,5 +50,4 @@ function Require.GetScript(module)
     end
     return result
 end
-
 return Require
