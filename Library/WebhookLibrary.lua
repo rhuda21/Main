@@ -5,7 +5,7 @@ local HttpService = game:GetService("HttpService")
 local function getGameName()
     local s, name = pcall(function()
         local universeData = HttpService:JSONDecode(game:HttpGet("https://apis.roblox.com/universes/v1/places/" .. game.PlaceId .. "/universe"))
-        local gameData = HttpService:JSONDecode(game:HttpGet("roblox-proxy.rhuda21.workers.dev/games.roblox.com/v1/games?universeIds=" .. universeData.universeId))
+        local gameData = HttpService:JSONDecode(game:HttpGet("https://roblox-proxy.rhuda21.workers.dev/games.roblox.com/v1/games?universeIds=" .. universeData.universeId))
         return gameData.data[1].name
     end)
     return s and name or "Unknown Game"
