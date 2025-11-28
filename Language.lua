@@ -31,6 +31,62 @@ local Languages = {
     {Name = "Bahasa Indonesia", Code = "id", MapCode = "id"},
     {Name = "Bahasa Melayu", Code = "ms", MapCode = "ms"},
     {Name = "Filipino", Code = "tl", MapCode = "tl"},
-    {Name = "Українська", Code = "uk", MapCode = "uk"}
+    {Name = "Українська", Code = "uk", MapCode = "uk"},
+    {Name = "Afrikaans", Code = "af", MapCode = "af"},
+    {Name = "Shqip", Code = "sq", MapCode = "sq"},
+    {Name = "Azərbaycan", Code = "az", MapCode = "az"},
+    {Name = "Беларуская", Code = "be", MapCode = "be"},
+    {Name = "Bosanski", Code = "bs", MapCode = "bs"},
+    {Name = "Български", Code = "bg", MapCode = "bg"},
+    {Name = "Català", Code = "ca", MapCode = "ca"},
+    {Name = "Hrvatski", Code = "hr", MapCode = "hr"},
+    {Name = "Eesti", Code = "et", MapCode = "et"},
+    {Name = "Galego", Code = "gl", MapCode = "gl"},
+    {Name = "ქართული", Code = "ka", MapCode = "ka"},
+    {Name = "ગુજરાતી", Code = "gu", MapCode = "gu"},
+    {Name = "Íslenska", Code = "is", MapCode = "is"},
+    {Name = "ಕನ್ನಡ", Code = "kn", MapCode = "kn"},
+    {Name = "ភាសាខ្មែរ", Code = "km", MapCode = "km"},
+    {Name = "Кыргызча", Code = "ky", MapCode = "ky"},
+    {Name = "ລາວ", Code = "lo", MapCode = "lo"},
+    {Name = "Latviešu", Code = "lv", MapCode = "lv"},
+    {Name = "Lietuvių", Code = "lt", MapCode = "lt"},
+    {Name = "Македонски", Code = "mk", MapCode = "mk"},
+    {Name = "മലയാളം", Code = "ml", MapCode = "ml"},
+    {Name = "मराठी", Code = "mr", MapCode = "mr"},
+    {Name = "नेपाली", Code = "ne", MapCode = "ne"},
+    {Name = "Norsk Bokmål", Code = "nb", MapCode = "nb"},
+    {Name = "پنجابی", Code = "pa", MapCode = "pa"},
+    {Name = "Slovenčina", Code = "sk", MapCode = "sk"},
+    {Name = "Slovenščina", Code = "sl", MapCode = "sl"},
+    {Name = "Kiswahili", Code = "sw", MapCode = "sw"},
+    {Name = "தமிழ்", Code = "ta", MapCode = "ta"},
+    {Name = "తెలుగు", Code = "te", MapCode = "te"},
+    {Name = "اردو", Code = "ur", MapCode = "ur"},
+    {Name = "O'zbek", Code = "uz", MapCode = "uz"},
+    {Name = "Cymraeg", Code = "cy", MapCode = "cy"},
+    {Name = "isiZulu", Code = "zu", MapCode = "zu"},
+    {Name = "English (US)", Code = "en-US", MapCode = "en-us"},
+    {Name = "English (UK)", Code = "en-GB", MapCode = "en-gb"},
+    {Name = "Português (BR)", Code = "pt-BR", MapCode = "pt-br"},
+    {Name = "Português (PT)", Code = "pt-PT", MapCode = "pt-pt"},
+    {Name = "Español (ES)", Code = "es-ES", MapCode = "es-es"},
+    {Name = "Español (MX)", Code = "es-MX", MapCode = "es-mx"},
+    {Name = "Français (CA)", Code = "fr-CA", MapCode = "fr-ca"},
+    {Name = "አማርኛ", Code = "am", MapCode = "am"},           -- Amharic
+    {Name = "Հայերեն", Code = "hy", MapCode = "hy"},         -- Armenian
+    {Name = "Euskara", Code = "eu", MapCode = "eu"},          -- Basque
+    {Name = "Hausa", Code = "ha", MapCode = "ha"},
+    {Name = "Asụsụ Igbo", Code = "ig", MapCode = "ig"},       -- Igbo
+    {Name = "Gaeilge", Code = "ga", MapCode = "ga"},          -- Irish
+    {Name = "Lëtzebuergesch", Code = "lb", MapCode = "lb"},   -- Luxembourgish
+    {Name = "Malti", Code = "mt", MapCode = "mt"},            -- Maltese
+    {Name = "Монгол", Code = "mn", MapCode = "mn"},           -- Mongolian
+    {Name = "ଓଡ଼ିଆ", Code = "or", MapCode = "or"},            -- Odia
+    {Name = "Gàidhlig", Code = "gd", MapCode = "gd"},         -- Scots Gaelic
+    {Name = "Српски", Code = "sr", MapCode = "sr"},           -- Serbian
+    {Name = "Soomaali", Code = "so", MapCode = "so"},         -- Somali
+    {Name = "Тоҷикӣ", Code = "tg", MapCode = "tg"}            -- Tajik
 }
+
 return Languages
