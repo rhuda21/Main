@@ -30,7 +30,7 @@ local function prettyPrintJson(jsonString)
     return result
 end
 local baits = {}
-local itemsFolder = ReplicatedStorage:FindFirstChild("Items")
+local itemsFolder = ReplicatedStorage:FindFirstChild("Baits")
 if not itemsFolder then
     warn("Items folder not found in ReplicatedStorage!")
     return baits
