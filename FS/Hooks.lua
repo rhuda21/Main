@@ -1,6 +1,7 @@
 local ForgeHooks = {}
 local Originals = {}
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Players = game:GetService("Players")
 
 function ForgeHooks.EnableAutoMelt()
     local MeltMinigame = require(ReplicatedStorage.Controllers.ForgeController.MeltMinigame)
