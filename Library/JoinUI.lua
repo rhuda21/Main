@@ -1,4 +1,4 @@
-if not _G.LoadedUBJoiner then _G.LoadedUBJoiner = true end
+if not getgenv().LoadedUBJoiner then getgenv().LoadedUBJoiner = true end
 
 local gui = Instance.new("ScreenGui")
 local frame = Instance.new("Frame")
