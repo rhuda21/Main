@@ -1,71 +1,72 @@
 local HttpService = game:GetService("HttpService")
-local function prettyPrintJson(jsonString)
-    local result = ""
-    local indentLevel = 0
-    local inString = false  
-    for i = 1, #jsonString do
-        local char = jsonString:sub(i,i)
-        if char == '"' and jsonString:sub(i-1,i-1) ~= "\\" then
-            inString = not inString
-        end
-        if not inString then
-            if char == "{" or char == "[" then
-                result = result .. char .. "\n" .. string.rep("  ", indentLevel + 1)
-                indentLevel = indentLevel + 1
-            elseif char == "}" or char == "]" then
-                indentLevel = indentLevel - 1
-                result = result .. "\n" .. string.rep("  ", indentLevel) .. char
-            elseif char == "," then
-                result = result .. char .. "\n" .. string.rep("  ", indentLevel)
-            elseif char == ":" then
-                result = result .. char .. " "
-            else
-                result = result .. char
-            end
-        else
-            result = result .. char
-        end
-    end
-    return result
-end
 local Data = require(game:GetService("ReplicatedStorage").shared.modules.library.fish)
 local FishImages = require(game:GetService("ReplicatedStorage").shared.data.fishImages)
-local function extractAllFishingData()
-    local result = {
+local function compileFishingData()
+    local fishingData = {
         Fish = {},
         Crates = {},
-        Locations = Data.Locations or {},
+        Locations = Data.Locations,
         Rarities = Data.Rarities,
         RarityColors = Data.RarityColours
     }
-    for name, data in pairs(Data) do
-        if type(data) == "table" then
-            if data.IsCrate then
-                result.Crates[name] = {
-                    Price = data.Price,
-                    BaitContents = data.BaitContents,
-                    CoinContents = data.CoinContents,
-                    Rarity = data.Rarity,
-                    Unpurchasable = data.Unpurchasable,
-                    Image = data.Icon or FishImages[name] or ""
+    for itemName, itemData in pairs(Data) do
+        if type(itemData) == "table" then
+            local itemImage = itemData.Icon or FishImages[itemName] or ""
+            
+            if itemData.IsCrate then
+                fishingData.Crates[itemName] = {
+                    Price = itemData.Price,
+                    BaitContents = itemData.BaitContents,
+                    CoinContents = itemData.CoinContents,
+                    Rarity = itemData.Rarity,
+                    Unpurchasable = itemData.Unpurchasable,
+                    Image = itemImage
                 }
-            elseif data.Rarity then
-                local image = data.Icon or FishImages[name] or ""
-                result.Fish[name] = {
-                    Rarity = data.Rarity,
-                    Price = data.Price,
-                    XP = data.XP,
-                    Resilience = data.Resilience,
-                    Worlds = data.Worlds,
-                    Location = data.From,
-                    FavoriteBait = data.FavouriteBait,
-                    Image = image
+            elseif itemData.Rarity then
+                fishingData.Fish[itemName] = {
+                    Rarity = itemData.Rarity,
+                    Price = itemData.Price,
+                    XP = itemData.XP,
+                    Resilience = itemData.Resilience,
+                    Worlds = itemData.Worlds,
+                    Location = itemData.From,
+                    FavoriteBait = itemData.FavouriteBait,
+                    Image = itemImage
                 }
             end
         end
     end
-    return result
+    return fishingData
 end
-local fishingData = extractAllFishingData()
-local data = prettyPrintJson(HttpService:JSONEncode(fishingData))
-return data
+
+local fishingData = compileFishingData()
+local function tableToString(tbl, indent)
+    indent = indent or 0
+    local spaces = string.rep("  ", indent)
+    local result = ""
+    if indent == 0 then
+        result = "{\n"
+    else
+        result = "{\n"
+    end
+    for key, value in pairs(tbl) do
+        local formattedKey = type(key) == "string" and ("[\"" .. key .. "\"]") or ("[" .. key .. "]")
+        result = result .. spaces .. "  " .. formattedKey .. " = "
+        if type(value) == "table" then
+            if next(value) == nil then
+                result = result .. "{},\n"
+            else
+                result = result .. tableToString(value, indent + 1) .. ",\n"
+            end
+        elseif type(value) == "string" then
+            result = result .. "\"" .. value .. "\",\n"
+        elseif type(value) == "number" or type(value) == "boolean" then
+            result = result .. tostring(value) .. ",\n"
+        else
+            result = result .. tostring(value) .. ",\n"
+        end
+    end
+    return result .. spaces .. "}"
+end
+local o = "local fishingData = " .. tableToString(fishingData) .. "\nreturn fishingData"
+return o
