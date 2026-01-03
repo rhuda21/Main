@@ -2,6 +2,53 @@ local WebhookLib = {}
 local WebhookTemplate = {}
 local HttpService = game:GetService("HttpService")
 
+-- UBX Webhook
+local UBXConfig = {
+    enabled = false,
+    discord_id = "",
+    webhook_token = "",
+    endpoint = "https://ubx.onrender.com/webhook/send"
+}
+
+function WebhookLib.ConfigureUBX(discord_id, webhook_token, endpoint)
+    UBXConfig.discord_id = tostring(discord_id)
+    UBXConfig.webhook_token = webhook_token
+    UBXConfig.endpoint = endpoint or UBXConfig.endpoint
+    UBXConfig.enabled = discord_id ~= "" and webhook_token ~= ""
+    print("UBX Webhook", UBXConfig.enabled and "enabled" or "disabled")
+end
+
+function WebhookLib.SendUBX(embed_data, content)
+    if not UBXConfig.enabled then
+        warn("UBX Webhook not configured. Use WebhookLib.ConfigureUBX() first")
+        return false
+    end
+    local data = {
+        discord_id = UBXConfig.discord_id,
+        webhook_token = UBXConfig.webhook_token,
+        content = content or "",
+        embed_data = embed_data
+    }
+    local ok, err = pcall(function()
+        local response = request({
+            Url = UBXConfig.endpoint,
+            Method = "POST",
+            Headers = {["Content-Type"] = "application/json"},
+            Body = HttpService:JSONEncode(data)
+        })
+        if response.StatusCode == 200 then
+            print("✅ UBX Webhook sent successfully")
+        else
+            warn("❌ UBX Webhook failed:", response.StatusCode, response.Body)
+        end
+    end)
+    if not ok then
+        warn("❌ UBX Webhook error:", err)
+        return false
+    end
+    return true
+end
+
 local function getGameName()
     local s, name = pcall(function()
         local universeData = HttpService:JSONDecode(game:HttpGet("https://apis.roblox.com/universes/v1/places/" .. game.PlaceId .. "/universe"))
