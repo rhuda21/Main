@@ -87,5 +87,5 @@ for _, rarity in ipairs(BrainrotModule.ClassNames) do
     end
 end
 local HttpService = game:GetService("HttpService")
-local jsonString = HttpService:JSONEncode(extractedData)
-return extractedData
+local json = HttpService:JSONEncode(extractedData)
+return json
