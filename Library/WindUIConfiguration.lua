@@ -50,39 +50,6 @@ Saver.Load = function()
         savedData = game:GetService("HttpService"):JSONDecode(content) or {}
     end)
 end
-Saver.RegisterDropdown = function(dropdown,UI)
-    local dropdownName = dropdown.Title or "NO NAME"
-    local options = dropdown.Values or {}
-    local multi = dropdown.Multi == true
-    local savedValue = GetSavedVal(dropdownName, dropdown.Value)
-    if multi then
-        if type(savedValue) ~= "table" then
-            savedValue = {tostring(savedValue)}
-        end
-        if not dropdown.AllowNone and #savedValue == 0 and #options > 0 then
-            savedValue = {options[1]}
-        end
-    else
-        savedValue = tostring(savedValue)
-    end
-    dropdown.Value = savedValue
-    local originalCallback = dropdown.Callback
-    dropdown.Callback = function(selected)
-        savedData[dropdownName] = selected
-        pcall(function()
-            local json = game:GetService("HttpService"):JSONEncode(savedData)
-            writefile(Path, json)
-        end)
-        if originalCallback then
-            originalCallback(selected)
-        end
-    end
-    if UI then
-        return UI:Dropdown(dropdown)
-    else
-        return Tab:Dropdown(dropdown)
-    end
-end
 Saver.PatchElement = function(elementType, UI, originalMethod)
     local original = originalMethod or UI[elementType]
     UI[elementType] = function(self, config)
@@ -124,27 +91,5 @@ end
 Saver.PatchAll = function(UI)
     Saver.PatchElement("Toggle", UI)
     Saver.PatchElement("Dropdown", UI)
-end
--- Alterative Methods
-Saver.RegisterToggle = function(toggle, UI)
-    local toggleName = toggle.Title or "NO NAME"
-    local savedValue = GetSavedVal(toggleName, toggle.Value)
-    toggle.Value = savedValue
-    local originalCallback = toggle.Callback
-    toggle.Callback = function(state)
-        savedData[toggleName] = state
-        pcall(function()
-            local json = game:GetService("HttpService"):JSONEncode(savedData)
-            writefile(Path, json)
-        end)
-        if originalCallback then
-            originalCallback(state)
-        end
-    end
-    if UI then
-        return UI:Toggle(toggle)
-    else
-        return Tab:Toggle(toggle)
-    end
 end
 return Saver
