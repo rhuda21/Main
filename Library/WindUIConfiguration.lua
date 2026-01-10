@@ -76,7 +76,10 @@ Saver.RegisterToggle = function(toggle, UI)
 end
 Saver.InitSaver = function(Folder, File)
     local success, error = pcall(function()
-        Path = Folder .. File .. ".json"
+        if not isfolder(Folder) then
+            makefolder(Folder)
+        end
+        Path = Folder .. "/" .. File .. ".json"
         if not isfile(Path) then 
             writefile(Path, "{}") 
         end
@@ -101,3 +104,4 @@ Saver.Load = function()
         savedData = game:GetService("HttpService"):JSONDecode(content) or {}
     end)
 end
+return Saver
