@@ -1,29 +1,30 @@
 local BrainrotModule = require(game:GetService("ReplicatedStorage").SharedModules.BrainrotModule)
-local function toJSON(data, indent)
-    indent = indent or 0
-    local spaces = string.rep("  ", indent)
+local function prettyPrintJson(jsonString)
     local result = ""
-    if type(data) == "table" then
-        result = result .. "{\n"
-        local first = true
-        for k, v in pairs(data) do
-            if not first then
-                result = result .. ",\n"
-            end
-            first = false
-            result = result .. spaces .. "  \"" .. tostring(k) .. "\": " .. toJSON(v, indent + 1)
+    local indentLevel = 0
+    local inString = false  
+    for i = 1, #jsonString do
+        local char = jsonString:sub(i,i)
+        if char == '"' and jsonString:sub(i-1,i-1) ~= "\\" then
+            inString = not inString
         end
-        result = result .. "\n" .. spaces .. "}"
-    elseif type(data) == "string" then
-        result = result .. "\"" .. data .. "\""
-    elseif type(data) == "number" then
-        result = result .. tostring(data)
-    elseif type(data) == "boolean" then
-        result = result .. tostring(data)
-    elseif data == nil then
-        result = result .. "null"
-    else
-        result = result .. "\"" .. tostring(data) .. "\""
+        if not inString then
+            if char == "{" or char == "[" then
+                result = result .. char .. "\n" .. string.rep("  ", indentLevel + 1)
+                indentLevel = indentLevel + 1
+            elseif char == "}" or char == "]" then
+                indentLevel = indentLevel - 1
+                result = result .. "\n" .. string.rep("  ", indentLevel) .. char
+            elseif char == "," then
+                result = result .. char .. "\n" .. string.rep("  ", indentLevel)
+            elseif char == ":" then
+                result = result .. char .. " "
+            else
+                result = result .. char
+            end
+        else
+            result = result .. char
+        end
     end
     return result
 end
@@ -87,5 +88,5 @@ for _, rarity in ipairs(BrainrotModule.ClassNames) do
     end
 end
 local HttpService = game:GetService("HttpService")
-local json = HttpService:JSONEncode(extractedData)
+local json = prettyPrintJson(HttpService:JSONEncode(extractedData))
 return json
