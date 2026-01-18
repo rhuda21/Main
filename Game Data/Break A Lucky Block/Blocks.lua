@@ -48,4 +48,4 @@ local function prepareTableForJson(tbl)
 end
 local serializableTable = prepareTableForJson(v1)
 local jsonString = HttpService:JSONEncode(serializableTable)
-local prettyJson = prettyPrintJson(jsonString)
+return prettyPrintJson(jsonString)
