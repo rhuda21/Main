@@ -28,5 +28,9 @@
     },
     "9363735110": {
         "Data": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Escape%20Tsunami%20For%20Brainrots/GetData.lua"
+    },
+    "9344307274": {
+        "Blocks": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Break%20A%20Lucky%20Block/Blocks.lua",
+        "Brainrot": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Break%20A%20Lucky%20Block/Brainrot.lua",
     }
 }
