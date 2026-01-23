@@ -85,12 +85,11 @@ Saver.PatchElement = function(elementType, UI, originalMethod)
                 if originalCallback then originalCallback(selected) end
             end
         elseif elementType == "Slider" then
-            local defaultValue = config.Value.Default
-            local savedValue = GetSavedVal(elementName, defaultValue)
-            config.Value.Default = savedValue
+            local savedValue = GetSavedVal(elementName, config.Value.Default)
+            config.Value.Default = tonumber(savedValue) or config.Value.Default
             local originalCallback = config.Callback
             config.Callback = function(value)
-                savedData[elementName] = value
+                savedData[elementName] = tonumber(value)
                 Saver.Save()
                 if originalCallback then originalCallback(value) end
             end
