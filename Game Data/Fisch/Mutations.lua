@@ -1,5 +1,4 @@
 local HttpService = game:GetService("HttpService")
-
 local function prettyPrintJson(jsonString)
     local result = ""
     local indentLevel = 0
@@ -29,7 +28,6 @@ local function prettyPrintJson(jsonString)
     end
     return result
 end
-
 local MutationsModule = require(game:GetService("ReplicatedStorage").shared.modules.fishing.mutations)
 local mutationsTable = nil
 for key, value in pairs(MutationsModule) do
@@ -38,7 +36,37 @@ for key, value in pairs(MutationsModule) do
         break
     end
 end
-
+local function extractColor(colorValue)
+    if not colorValue then
+        return nil
+    end
+    if typeof(colorValue) == "Color3" then
+        return {
+            R = math.floor(colorValue.R * 255),
+            G = math.floor(colorValue.G * 255),
+            B = math.floor(colorValue.B * 255)
+        }
+    end
+    if typeof(colorValue) == "ColorSequence" then
+        local keypoints = colorValue.Keypoints
+        local colorInfo = {
+            Type = "ColorSequence",
+            Keypoints = {}
+        }
+        for i, keypoint in ipairs(keypoints) do
+            colorInfo.Keypoints[i] = {
+                Time = keypoint.Time,
+                Color = {
+                    R = math.floor(keypoint.Value.R * 255),
+                    G = math.floor(keypoint.Value.G * 255),
+                    B = math.floor(keypoint.Value.B * 255)
+                }
+            }
+        end
+        return colorInfo
+    end 
+    return nil
+end
 local function extractAllMutationsData()
     local result = {
         Mutations = {}
@@ -51,23 +79,18 @@ local function extractAllMutationsData()
                     PriceMultiply = mutationData.PriceMultiply,
                     Chance = mutationData.Chance
                 }
-                
-                if mutationData.Color then
-                    mutationInfo.Color = {
-                        R = math.floor(mutationData.Color.R * 255),
-                        G = math.floor(mutationData.Color.G * 255),
-                        B = math.floor(mutationData.Color.B * 255)
-                    }
+                if mutationData.Priority then
+                    mutationInfo.Priority = mutationData.Priority
                 end
-                
+                if mutationData.Color then
+                    mutationInfo.Color = extractColor(mutationData.Color)
+                end      
                 result.Mutations[mutationName] = mutationInfo
             end
         end
     end
     return result
 end
-
 local mutationsData = extractAllMutationsData()
 local data = prettyPrintJson(HttpService:JSONEncode(mutationsData))
-setclipboard(data)
 return data
