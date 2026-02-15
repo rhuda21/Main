@@ -1,5 +1,5 @@
 local Config = {
-    RamadanEnabled = false,
+    RamadanEnabled = true,
     Theme = {
         Primary = Color3.fromRGB(15, 8, 25),
         Secondary = Color3.fromRGB(10, 5, 15),
