@@ -18,7 +18,6 @@ local Languages = {
     {Name = "हिन्दी", Code = "hi", MapCode = "hi"},
     {Name = "اردو", Code = "ur", MapCode = "ur"},
     {Name = "বাংলা", Code = "bn", MapCode = "bn"},
-    {Name = "ਪੰਜਾਬੀ", Code = "pa", MapCode = "pa"},
     {Name = "मराठी", Code = "mr", MapCode = "mr"}, 
     {Name = "العربية", Code = "ar", MapCode = "ar"},
     {Name = "Svenska", Code = "sv", MapCode = "sv"},
