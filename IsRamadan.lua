@@ -1,5 +1,5 @@
 local Config = {
-    RamadanEnabled =  true,
+    RamadanEnabled = true,
     AssetId = "138563654068249",
     Theme = {
         Primary = Color3.fromRGB(15, 8, 25),
@@ -8,9 +8,12 @@ local Config = {
         ThemeHighlight = Color3.fromRGB(255, 190, 60),
         Text = Color3.fromRGB(180, 170, 190),         
         Background = Color3.fromRGB(5, 2, 10),        
-        Stroke = Color3.fromRGB(255, 190, 60), 
+        Stroke = Color3.fromRGB(255, 190, 60),
+        Border = Color3.fromRGB(255, 190, 60),
+        Hover = Color3.fromRGB(255, 215, 100)
     },
 }
+
 return function(LibraryCfg)
     if Config.RamadanEnabled then
         LibraryCfg.Themes.UB = Config.Theme
