@@ -29,5 +29,20 @@ local function prettyPrintJson(jsonString)
     end
     return result
 end
-local a = HttpService:JSONEncode(e)
-return a
+local function convertToJsonFriendly(tbl)
+    local newTbl = {}
+    for key, value in pairs(tbl) do
+        if type(value) == "table" then
+            newTbl[key] = convertToJsonFriendly(value)
+        elseif typeof(value) == "Color3" then
+            newTbl[key] = string.format("Color3(%f, %f, %f)", value.R, value.G, value.B)
+        else
+            newTbl[key] = value
+        end
+    end
+    return newTbl
+end
+local friendlyTable = convertToJsonFriendly(e) 
+local jsonString = HttpService:JSONEncode(friendlyTable)
+local prettyJson = prettyPrintJson(jsonString) 
+return prettyJson
