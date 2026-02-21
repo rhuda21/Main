@@ -33,7 +33,8 @@
     "maatch": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Abyss/match.lua"
   },
   "9649298941": {
-    "mutations": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Escape%20Lava%20For%20Brainrots/Mutation.lua"
+    "mutations": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Escape%20Lava%20For%20Brainrots/Mutation.lua",
+    "rarity": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Escape%20Lava%20For%20Brainrots/Rarity.lua"
   },
   "9344307274": {
     "Blocks": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Break%20A%20Lucky%20Block/Blocks.lua",
