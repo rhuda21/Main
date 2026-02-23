@@ -59,25 +59,18 @@ end
 local allData = {
     Seeds = safeRequire(game:GetService("ReplicatedStorage").Shop.ShopData.SeedShopData)
 }
-if mutationModule and mutationModule.MutationNames then
+local mutationModule = require(game:GetService("ReplicatedStorage").Plants.Definitions.MutationDataDefinitions)
+if mutationModule then
     local mutations = {}
-    for name, _ in pairs(mutationModule.MutationNames) do
-        local data = mutationModule:GetMutations()[name]
-        if data then
-            mutations[name] = {
-                Name = data.Name,
-                Id = data.Id,
-                Color = {
-                    R = math.floor(data.Color.R * 255),
-                    G = math.floor(data.Color.G * 255),
-                    B = math.floor(data.Color.B * 255)
-                }
-            }
-        end
+    for name, data in pairs(mutationModule) do
+        mutations[name] = {
+            Id = data.id,
+            Color = data.color,
+            PriceMultiplier = data.priceMultiplier
+        }
     end
     allData.Mutations = mutations
 end
-
 local cosmeticCrates = {}
 local crateItems = {}
 for _, data in pairs(cosmeticCrates) do
