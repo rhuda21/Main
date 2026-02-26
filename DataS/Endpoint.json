@@ -30,7 +30,9 @@
     "Data": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Escape%20Tsunami%20For%20Brainrots/GetData.lua"
   },
   "9509842868": {
-    "Data": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Garden%20Horizons/Data.lua"
+    "Data": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Garden%20Horizons/Data.lua",
+    "Plant": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Garden%20Horizons/PlantDef.lua",
+    "Variant": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Garden%20Horizons/Variant.lua"
   },
   "8144728961": {
     "maatch": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Abyss/match.lua"
