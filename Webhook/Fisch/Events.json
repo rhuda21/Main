@@ -1,0 +1,46 @@
+{
+  "event_categories": {
+    "Exotic": [
+      { "name": "Blue Whale", "matched_id": null },
+      { "name": "Ancient Depth serpent", "matched_id": null },
+      { "name": "Ancient Megalodon", "matched_id": "ancient-megalodon" },
+      { "name": "Megalodon", "matched_id": "megalodon" },
+      { "name": "Baby Bloop Fish", "matched_id": "-baby-bloop-fish" },
+      { "name": "Cathulid", "matched_id": null },
+      { "name": "Cathulith", "matched_id": null },
+      { "name": "Colossal Ancient Dragon", "matched_id": null },
+      { "name": "Colossal blue Dragon", "matched_id": null },
+      { "name": "Frostwyrm", "matched_id": "frostwyrm" },
+      { "name": "Goldwraith", "matched_id": "goldwraith" },
+      { "name": "Mossjaw", "matched_id": "mossjaw" },
+      { "name": "Omnithal", "matched_id": "omnithal" },
+      { "name": "Orca", "matched_id": null },
+      { "name": "Plesiosaur", "matched_id": "plesiosaur" },
+      { "name": "Pliosaur", "matched_id": "pliosaur" },
+      { "name": "Reef Titan", "matched_id": "reef-titan" },
+      { "name": "The Kraken", "matched_id": "kraken" },
+      { "name": "Skeletal Leviathan", "matched_id": "skeletal-leviathan" }
+    ],
+    "Secret": [
+      { "name": "Ancestral Pliosaur", "matched_id": "ancestral-pliosaur" },
+      { "name": "Ancient Goldwraith", "matched_id": "ancient-goldwraith" },
+      { "name": "Ancient Kraken", "matched_id": null },
+      { "name": "Ancient Orca", "matched_id": null },
+      { "name": "Awakened Omnithal", "matched_id": "awakened-omnithal" },
+      { "name": "Colossal Ethereal Dragon", "matched_id": null },
+      { "name": "Colossus Reef Titan", "matched_id": "colossus-reef-titan" },
+      { "name": "Elder mossjaw", "matched_id": "elder-mossjaw" },
+      { "name": "Moon Idol", "matched_id": null },
+      { "name": "Profane Levithan", "matched_id": "profane-leviathan" },
+      { "name": "Scylla", "matched_id": "scylla" }
+    ],
+    "Apex": [
+      { "name": "Ashclaw", "matched_id": null },
+      { "name": "Beluga", "matched_id": null },
+      { "name": "Bloop fish", "matched_id": "-bloop-fish" },
+      { "name": "Magician Narwhal", "matched_id": null },
+      { "name": "Mosslurker", "matched_id": null },
+      { "name": "Narwhal", "matched_id": null }
+    ]
+  }
+}
