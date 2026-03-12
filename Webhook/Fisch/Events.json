@@ -19,7 +19,8 @@
       { "name": "Pliosaur", "matched_id": "pliosaur" },
       { "name": "Reef Titan", "matched_id": "reef-titan" },
       { "name": "The Kraken", "matched_id": "kraken" },
-      { "name": "Skeletal Leviathan", "matched_id": "skeletal-leviathan" }
+      { "name": "Skeletal Leviathan", "matched_id": "skeletal-leviathan" },
+      { "name": "Rot Bloom", "matched_id": "rotbloom" }
     ],
     "Secret": [
       { "name": "Ancestral Pliosaur", "matched_id": "ancestral-pliosaur" },
