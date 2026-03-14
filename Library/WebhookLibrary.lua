@@ -2,23 +2,25 @@ local WebhookLib = {}
 local WebhookTemplate = {}
 local HttpService = game:GetService("HttpService")
 
--- UBX Webhook
-local UBXConfig = {
-    enabled = false,
-    discord_id = "",
-    webhook_token = "",
-    endpoint = "https://ubx.onrender.com/webhook/send"
-}
+if not getgenv().UBXConfig then
+    getgenv().UBXConfig = {
+        enabled = false,
+        discord_id = "",
+        webhook_token = "",
+        endpoint = "https://ubx.onrender.com/webhook/send"
+    }
+end
 
 function WebhookLib.ConfigureUBX(discord_id, webhook_token, endpoint)
-    UBXConfig.discord_id = tostring(discord_id)
-    UBXConfig.webhook_token = webhook_token
-    UBXConfig.endpoint = endpoint or UBXConfig.endpoint
-    UBXConfig.enabled = discord_id ~= "" and webhook_token ~= ""
-    print("UBX Webhook", UBXConfig.enabled and "enabled" or "disabled")
+    getgenv().UBXConfig.discord_id = tostring(discord_id)
+    getgenv().UBXConfig.webhook_token = webhook_token
+    getgenv().UBXConfig.endpoint = endpoint or getgenv().UBXConfig.endpoint
+    getgenv().UBXConfig.enabled = discord_id ~= "" and webhook_token ~= ""
+    print("UBX Webhook", getgenv().UBXConfig.enabled and "enabled" or "disabled")
 end
 
 function WebhookLib.SendUBX(embed_data, content)
+    local UBXConfig = getgenv().UBXConfig
     if not UBXConfig.enabled then
         warn("UBX Webhook not configured. Use WebhookLib.ConfigureUBX() first")
         return false
@@ -57,6 +59,7 @@ local function getGameName()
     end)
     return s and name or "Unknown Game"
 end
+
 local success, GameName = pcall(function() return getGameName() end)
 local cfg = {
     color = 14893841,
@@ -64,7 +67,11 @@ local cfg = {
     thumbnail = "",
     author = "UB Hub | " .. (success and GameName or "Failed to get game")
 }
+
 function WebhookLib.SendMessageEMBED(url, embed, mention)
+    if getgenv().UBXConfig and getgenv().UBXConfig.enabled then
+        return WebhookLib.SendUBX(embed, mention and ("<@" .. mention .. ">") or nil)
+    end
     local data = {
         content = mention and ("<@" .. mention .. ">") or "",
         embeds = {{
@@ -101,6 +108,7 @@ function WebhookTemplate:CreateEmbed()
         timestamp = os.date("!%Y-%m-%dT%H:%M:%SZ")
     }
 end
+
 function WebhookTemplate:AddField(embed, name, value, inline)
     table.insert(embed.fields, {
         name = name or "",
@@ -109,6 +117,7 @@ function WebhookTemplate:AddField(embed, name, value, inline)
     })
     return embed
 end
+
 function WebhookTemplate:SetColor(embed, color)
     if type(color) == "string" then
         color = color:gsub("#", "")
@@ -118,6 +127,7 @@ function WebhookTemplate:SetColor(embed, color)
     end
     return embed
 end
+
 function WebhookTemplate:CreateStatsEmbed(stats, opts)
     opts = opts or {}
     local embed = self:CreateEmbed()
@@ -129,8 +139,8 @@ function WebhookTemplate:CreateStatsEmbed(stats, opts)
         for _, field in ipairs(opts.fields) do
             if field.custom and type(field.custom) == "function" then
                 local custom = field.custom()
-                if custom then 
-                    self:AddField(embed, custom.name, custom.value, custom.inline) 
+                if custom then
+                    self:AddField(embed, custom.name, custom.value, custom.inline)
                 end
             else
                 local val = stats[field.key]
@@ -144,15 +154,17 @@ function WebhookTemplate:CreateStatsEmbed(stats, opts)
     end
     if opts.showTimestamp ~= false then
         local time = opts.timestamp or os.time()
-        local timeStr = opts.timestampFormat == "discord" 
-            and ("<t:%d:R>"):format(time)  or os.date(opts.timestampFormat or "%c", time)
+        local timeStr = opts.timestampFormat == "discord"
+            and ("<t:%d:R>"):format(time) or os.date(opts.timestampFormat or "%c", time)
         self:AddField(embed, "🕒 Last Updated", timeStr, false)
     end
     return embed
 end
+
 function WebhookTemplate:Configure(newCfg)
     for k, v in pairs(newCfg) do
         if cfg[k] then cfg[k] = v end
     end
 end
+
 return WebhookLib, WebhookTemplate
