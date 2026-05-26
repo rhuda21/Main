@@ -2,55 +2,6 @@ local WebhookLib = {}
 local WebhookTemplate = {}
 local HttpService = game:GetService("HttpService")
 
-if not getgenv().UBXConfig then
-    getgenv().UBXConfig = {
-        enabled = false,
-        discord_id = "",
-        webhook_token = "",
-        endpoint = "https://ubx.onrender.com/webhook/send"
-    }
-end
-
-function WebhookLib.ConfigureUBX(discord_id, webhook_token, endpoint)
-    getgenv().UBXConfig.discord_id = tostring(discord_id)
-    getgenv().UBXConfig.webhook_token = webhook_token
-    getgenv().UBXConfig.endpoint = endpoint or getgenv().UBXConfig.endpoint
-    getgenv().UBXConfig.enabled = discord_id ~= "" and webhook_token ~= ""
-    print("UBX Webhook", getgenv().UBXConfig.enabled and "enabled" or "disabled")
-end
-
-function WebhookLib.SendUBX(embed_data, content)
-    local UBXConfig = getgenv().UBXConfig
-    if not UBXConfig.enabled then
-        warn("UBX Webhook not configured. Use WebhookLib.ConfigureUBX() first")
-        return false
-    end
-    local data = {
-        discord_id = UBXConfig.discord_id,
-        webhook_token = UBXConfig.webhook_token,
-        content = content or "",
-        embed_data = embed_data
-    }
-    local ok, err = pcall(function()
-        local response = request({
-            Url = UBXConfig.endpoint,
-            Method = "POST",
-            Headers = {["Content-Type"] = "application/json"},
-            Body = HttpService:JSONEncode(data)
-        })
-        if response.StatusCode == 200 then
-            print("✅ UBX Webhook sent successfully")
-        else
-            warn("❌ UBX Webhook failed:", response.StatusCode, response.Body)
-        end
-    end)
-    if not ok then
-        warn("❌ UBX Webhook error:", err)
-        return false
-    end
-    return true
-end
-
 local function getGameName()
     local s, name = pcall(function()
         local universeData = HttpService:JSONDecode(game:HttpGet("https://apis.roblox.com/universes/v1/places/" .. game.PlaceId .. "/universe"))
@@ -69,9 +20,6 @@ local cfg = {
 }
 
 function WebhookLib.SendMessageEMBED(url, embed, mention)
-    if getgenv().UBXConfig and getgenv().UBXConfig.enabled then
-        return WebhookLib.SendUBX(embed, mention and ("<@" .. mention .. ">") or nil)
-    end
     local data = {
         content = mention and ("<@" .. mention .. ">") or "",
         embeds = {{
