@@ -102,7 +102,9 @@ Funcs.GatherSeedData = function()
                 extractedSeeds[config.SeedName] = {
                     IsSingleHarvest = config.IsSingleHarvest == true,
                     GrowTime = config.GrowTime or 0,
-                    HarvestAmount = config.HarvestAmount or 1
+                    HarvestAmount = config.HarvestAmount or 1,
+                    Rarity = config.Rarity or "Common",
+                    RestockChance = config.RestockChance or 0
                 }
             end
         end
@@ -114,7 +116,6 @@ AllData.Mutations = Funcs.GatherMutationData()
 AllData.Rarities = Funcs.GatherRarityData()
 AllData.BasePrices = Funcs.GatherSellValueData()
 AllData.Seeds = Funcs.GatherSeedData()
-
 local jsonLines = {"{"}
 local first = true
 for categoryName, categoryData in pairs(AllData) do
@@ -130,5 +131,4 @@ table.insert(jsonLines, "\n}")
 
 local data = table.concat(jsonLines)
 setclipboard(data)
-
 return data
