@@ -1,14 +1,34 @@
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local HttpService = game:GetService("HttpService")
-
 local MutationDataScript = ReplicatedStorage:WaitForChild("SharedModules"):WaitForChild("MutationData")
 local RarityDataScript = ReplicatedStorage.SharedModules.RarityVisuals
 local SellValueScript = ReplicatedStorage.SharedModules:WaitForChild("SellValueData")
 local SeedDataScript = ReplicatedStorage.SharedModules:WaitForChild("SeedData")
-
+local FruitsFolder = ReplicatedStorage.PlantGenerationModules.Fruits
 local Funcs = {}
 local AllData = {}
-
+Funcs.GatherFruitWeights = function()
+    local fruitWeights = {}
+    for _, module in ipairs(FruitsFolder:GetChildren()) do
+        if module:IsA("ModuleScript") then
+            local success, fruitModule = pcall(require, module)
+            if success and typeof(fruitModule) == "table" then
+                local fruitName = module.Name
+                local baseWeight = fruitModule.GrowData and fruitModule.GrowData.BaseWeight
+                if baseWeight and typeof(baseWeight) == "number" then
+                    fruitWeights[fruitName] = {
+                        BaseWeight = baseWeight,
+                        GrowRate = fruitModule.GrowData and fruitModule.GrowData.GrowRate or nil,
+                        FruitType = fruitModule.Extras and fruitModule.Extras.FruitType or nil,
+                        Harvestable = fruitModule.Extras and fruitModule.Extras.Harvestable or false
+                    }
+                end
+            end
+        end
+    end
+    
+    return fruitWeights
+end
 Funcs.GatherMutationData = function()
     local MutationDataModule = require(MutationDataScript)
     local extractedMutations = {}
@@ -40,7 +60,6 @@ Funcs.GatherMutationData = function()
     end
     return extractedMutations
 end
-
 Funcs.GatherRarityData = function()
     local RarityModule = require(RarityDataScript)
     local extractedRarities = {}
@@ -77,7 +96,6 @@ Funcs.GatherRarityData = function()
     end
     return extractedRarities
 end
-
 Funcs.GatherSellValueData = function()
     local success, SellValueModule = pcall(require, SellValueScript)
     local extractedValues = {}
@@ -92,7 +110,6 @@ Funcs.GatherSellValueData = function()
     end
     return extractedValues
 end
-
 Funcs.GatherSeedData = function()
     local success, SeedDataModule = pcall(require, SeedDataScript)
     local extractedSeeds = {}
@@ -111,7 +128,7 @@ Funcs.GatherSeedData = function()
     end
     return extractedSeeds
 end
-
+AllData.FruitWeights = Funcs.GatherFruitWeights()
 AllData.Mutations = Funcs.GatherMutationData()
 AllData.Rarities = Funcs.GatherRarityData()
 AllData.BasePrices = Funcs.GatherSellValueData()
@@ -128,7 +145,6 @@ for categoryName, categoryData in pairs(AllData) do
     table.insert(jsonLines, categoryJson)
 end
 table.insert(jsonLines, "\n}")
-
 local data = table.concat(jsonLines)
 setclipboard(data)
 return data
