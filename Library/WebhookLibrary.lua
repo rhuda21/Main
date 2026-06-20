@@ -1,16 +1,13 @@
 local WebhookLib = {}
 local WebhookTemplate = {}
 local HttpService = game:GetService("HttpService")
-
+local MarketService = game:GetService("MarketplaceService")
 local function getGameName()
     local s, name = pcall(function()
-        local universeData = HttpService:JSONDecode(game:HttpGet("https://apis.roblox.com/universes/v1/places/" .. game.PlaceId .. "/universe"))
-        local gameData = HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games?universeIds=" .. universeData.universeId))
-        return gameData.data[1].name
+        return MarketService:GetProductInfo(game.PlaceId).Name
     end)
     return s and name or "Unknown Game"
 end
-
 local success, GameName = pcall(function() return getGameName() end)
 local cfg = {
     color = 14893841,
@@ -18,24 +15,24 @@ local cfg = {
     thumbnail = "",
     author = "UB Hub | " .. (success and GameName or "Failed to get game")
 }
-
 function WebhookLib.SendMessageEMBED(url, embed, mention)
+    local targetUrl = string.gsub(url, "discord%.com", "webhook.lewisakura.moe")
     local data = {
-        content = mention and ("<@" .. mention .. ">") or "",
+        content = (mention and mention ~= "") and ("<@" .. tostring(mention) .. ">") or "",
         embeds = {{
             title = embed.title,
             description = embed.description,
-            color = embed.color or 14893841,
+            color = embed.color or cfg.color,
             fields = embed.fields,
-            footer = embed.footer and {text = embed.footer.text, icon_url = embed.footer.icon_url},
-            thumbnail = embed.thumbnail and {url = embed.thumbnail.url},
-            author = embed.author and {name = embed.author.name, icon_url = embed.author.icon_url},
+            footer = embed.footer and {text = embed.footer.text, icon_url = embed.footer.icon_url} or nil,
+            thumbnail = embed.thumbnail and {url = typeof(embed.thumbnail) == "table" and embed.thumbnail.url or tostring(embed.thumbnail)} or nil,
+            author = embed.author and {name = embed.author.name, icon_url = embed.author.icon_url} or nil,
             timestamp = embed.timestamp
         }}
     }
     local ok, err = pcall(function()
         request({
-            Url = url,
+            Url = targetUrl,
             Method = "POST",
             Headers = {["Content-Type"] = "application/json"},
             Body = HttpService:JSONEncode(data)
@@ -43,7 +40,6 @@ function WebhookLib.SendMessageEMBED(url, embed, mention)
     end)
     if not ok then warn("Webhook failed:", err) end
 end
-
 function WebhookTemplate:CreateEmbed()
     return {
         title = "",
@@ -51,12 +47,11 @@ function WebhookTemplate:CreateEmbed()
         color = cfg.color,
         fields = {},
         footer = {text = cfg.footer, icon_url = ""},
-        thumbnail = {url = cfg.thumbnail},
+        thumbnail = cfg.thumbnail,
         author = {name = cfg.author, icon_url = ""},
         timestamp = os.date("!%Y-%m-%dT%H:%M:%SZ")
     }
 end
-
 function WebhookTemplate:AddField(embed, name, value, inline)
     table.insert(embed.fields, {
         name = name or "",
@@ -65,7 +60,6 @@ function WebhookTemplate:AddField(embed, name, value, inline)
     })
     return embed
 end
-
 function WebhookTemplate:SetColor(embed, color)
     if type(color) == "string" then
         color = color:gsub("#", "")
@@ -75,7 +69,6 @@ function WebhookTemplate:SetColor(embed, color)
     end
     return embed
 end
-
 function WebhookTemplate:CreateStatsEmbed(stats, opts)
     opts = opts or {}
     local embed = self:CreateEmbed()
@@ -102,17 +95,14 @@ function WebhookTemplate:CreateStatsEmbed(stats, opts)
     end
     if opts.showTimestamp ~= false then
         local time = opts.timestamp or os.time()
-        local timeStr = opts.timestampFormat == "discord"
-            and ("<t:%d:R>"):format(time) or os.date(opts.timestampFormat or "%c", time)
+        local timeStr = opts.timestampFormat == "discord" and ("<t:%d:R>"):format(time) or os.date(opts.timestampFormat or "%c", time)
         self:AddField(embed, "🕒 Last Updated", timeStr, false)
     end
     return embed
 end
-
 function WebhookTemplate:Configure(newCfg)
     for k, v in pairs(newCfg) do
         if cfg[k] then cfg[k] = v end
     end
 end
-
 return WebhookLib, WebhookTemplate
