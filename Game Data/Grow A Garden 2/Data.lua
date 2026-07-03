@@ -4,7 +4,10 @@ local MutationDataScript = ReplicatedStorage:WaitForChild("SharedModules"):WaitF
 local RarityDataScript = ReplicatedStorage.SharedModules.RarityVisuals
 local SellValueScript = ReplicatedStorage.SharedModules:WaitForChild("SellValueData")
 local SeedDataScript = ReplicatedStorage.SharedModules:WaitForChild("SeedData")
+
 local FruitsFolder = ReplicatedStorage.PlantGenerationModules.Fruits
+local PlantsFolder = ReplicatedStorage.PlantGenerationModules.Plants
+
 local Funcs = {}
 local AllData = {}
 
@@ -27,8 +30,29 @@ Funcs.GatherFruitWeights = function()
             end
         end
     end
-    
     return fruitWeights
+end
+
+Funcs.GatherPlantWeights = function()
+    local plantWeights = {}
+    for _, module in ipairs(PlantsFolder:GetChildren()) do
+        if module:IsA("ModuleScript") then
+            local success, plantModule = pcall(require, module)
+            if success and typeof(plantModule) == "table" then
+                local plantName = module.Name
+                local baseWeight = plantModule.GrowData and plantModule.GrowData.BaseWeight
+                if baseWeight and typeof(baseWeight) == "number" then
+                    plantWeights[plantName] = {
+                        BaseWeight = baseWeight,
+                        GrowRate = plantModule.GrowData and plantModule.GrowData.GrowRate or nil,
+                        FruitType = plantModule.Extras and plantModule.Extras.FruitType or nil,
+                        Harvestable = plantModule.Extras and plantModule.Extras.Harvestable or false
+                    }
+                end
+            end
+        end
+    end
+    return plantWeights
 end
 
 Funcs.GatherMutationData = function()
@@ -133,24 +157,14 @@ Funcs.GatherSeedData = function()
     end
     return extractedSeeds
 end
+
 AllData.FruitWeights = Funcs.GatherFruitWeights()
-local CarrotModulePath = ReplicatedStorage.PlantGenerationModules.Plants.Carrot
-local success, carrotModule = pcall(require, CarrotModulePath)
-if success and typeof(carrotModule) == "table" then
-    local baseWeight = carrotModule.GrowData and carrotModule.GrowData.BaseWeight
-    if baseWeight and typeof(baseWeight) == "number" then
-        AllData.FruitWeights["Carrot"] = {
-            BaseWeight = baseWeight,
-            GrowRate = carrotModule.GrowData and carrotModule.GrowData.GrowRate or nil,
-            FruitType = carrotModule.Extras and carrotModule.Extras.FruitType or nil,
-            Harvestable = carrotModule.Extras and carrotModule.Extras.Harvestable or false
-        }
-    end
-end
+AllData.PlantWeights = Funcs.GatherPlantWeights()
 AllData.Mutations = Funcs.GatherMutationData()
 AllData.Rarities = Funcs.GatherRarityData()
 AllData.BasePrices = Funcs.GatherSellValueData()
 AllData.Seeds = Funcs.GatherSeedData()
+
 local jsonLines = {"{"}
 local first = true
 for categoryName, categoryData in pairs(AllData) do
@@ -163,6 +177,7 @@ for categoryName, categoryData in pairs(AllData) do
     table.insert(jsonLines, categoryJson)
 end
 table.insert(jsonLines, "\n}")
+
 local data = table.concat(jsonLines)
 setclipboard(data)
 return data
