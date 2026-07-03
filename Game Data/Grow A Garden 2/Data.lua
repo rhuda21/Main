@@ -7,6 +7,7 @@ local SeedDataScript = ReplicatedStorage.SharedModules:WaitForChild("SeedData")
 local FruitsFolder = ReplicatedStorage.PlantGenerationModules.Fruits
 local Funcs = {}
 local AllData = {}
+
 Funcs.GatherFruitWeights = function()
     local fruitWeights = {}
     for _, module in ipairs(FruitsFolder:GetChildren()) do
@@ -29,6 +30,7 @@ Funcs.GatherFruitWeights = function()
     
     return fruitWeights
 end
+
 Funcs.GatherMutationData = function()
     local MutationDataModule = require(MutationDataScript)
     local extractedMutations = {}
@@ -60,6 +62,7 @@ Funcs.GatherMutationData = function()
     end
     return extractedMutations
 end
+
 Funcs.GatherRarityData = function()
     local RarityModule = require(RarityDataScript)
     local extractedRarities = {}
@@ -96,6 +99,7 @@ Funcs.GatherRarityData = function()
     end
     return extractedRarities
 end
+
 Funcs.GatherSellValueData = function()
     local success, SellValueModule = pcall(require, SellValueScript)
     local extractedValues = {}
@@ -110,6 +114,7 @@ Funcs.GatherSellValueData = function()
     end
     return extractedValues
 end
+
 Funcs.GatherSeedData = function()
     local success, SeedDataModule = pcall(require, SeedDataScript)
     local extractedSeeds = {}
@@ -129,6 +134,19 @@ Funcs.GatherSeedData = function()
     return extractedSeeds
 end
 AllData.FruitWeights = Funcs.GatherFruitWeights()
+local CarrotModulePath = ReplicatedStorage.PlantGenerationModules.Plants.Carrot
+local success, carrotModule = pcall(require, CarrotModulePath)
+if success and typeof(carrotModule) == "table" then
+    local baseWeight = carrotModule.GrowData and carrotModule.GrowData.BaseWeight
+    if baseWeight and typeof(baseWeight) == "number" then
+        AllData.FruitWeights["Carrot"] = {
+            BaseWeight = baseWeight,
+            GrowRate = carrotModule.GrowData and carrotModule.GrowData.GrowRate or nil,
+            FruitType = carrotModule.Extras and carrotModule.Extras.FruitType or nil,
+            Harvestable = carrotModule.Extras and carrotModule.Extras.Harvestable or false
+        }
+    end
+end
 AllData.Mutations = Funcs.GatherMutationData()
 AllData.Rarities = Funcs.GatherRarityData()
 AllData.BasePrices = Funcs.GatherSellValueData()
