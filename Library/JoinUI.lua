@@ -1,148 +1,153 @@
 if not getgenv().LoadedUBJoiner then getgenv().LoadedUBJoiner = true end
 
+local TweenService = game:GetService("TweenService")
+local CoreGui = gethui() or cloneref(game:GetService("CoreGui")) or game:GetService("CoreGui")
+
 local gui = Instance.new("ScreenGui")
 local frame = Instance.new("Frame")
 local corner = Instance.new("UICorner")
-local titlebar = Instance.new("Frame")
-local corner2 = Instance.new("UICorner")
+local stroke = Instance.new("UIStroke")
 local label = Instance.new("TextLabel")
-local divider = Instance.new("Frame")
 local btnContainer = Instance.new("Frame")
+local layout = Instance.new("UIListLayout")
 local copyBtn = Instance.new("TextButton")
-local corner3 = Instance.new("UICorner")
+local cornerCopy = Instance.new("UICorner")
 local exitBtn = Instance.new("TextButton")
-local corner4 = Instance.new("UICorner")
+local cornerExit = Instance.new("UICorner")
 
 gui.Name = "DiscordJoiner"
-gui.Parent = (gethui() or cloneref(game:GetService("CoreGui")) or game:GetService("CoreGui"))
+gui.Parent = CoreGui
 gui.ResetOnSpawn = false
 
 frame.Name = "JoinerFrame"
 frame.Parent = gui
-frame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+frame.BackgroundColor3 = Color3.fromRGB(24, 25, 28)
 frame.BorderSizePixel = 0
-frame.Position = UDim2.new(0.5, -175, 0.5, -125)
-frame.Size = UDim2.new(0, 350, 0, 250)
+frame.Position = UDim2.new(0.5, -160, 0.5, -100)
+frame.Size = UDim2.new(0, 320, 0, 200)
 frame.Draggable = true
 frame.Active = true
 
 corner.Parent = frame
-corner.CornerRadius = UDim.new(0, 8)
+corner.CornerRadius = UDim.new(0, 12)
 
-titlebar.Name = "TitleBar"
-titlebar.Parent = frame
-titlebar.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
-titlebar.BorderSizePixel = 0
-titlebar.Size = UDim2.new(1, 0, 0, 40)
-
-corner2.Parent = titlebar
-corner2.CornerRadius = UDim.new(0, 8)
+stroke.Parent = frame
+stroke.Color = Color3.fromRGB(47, 49, 54)
+stroke.Thickness = 1.5
 
 label.Name = "DiscordLabel"
 label.Parent = frame
 label.BackgroundTransparency = 1
-label.Position = UDim2.new(0.5, 0, 0.3, 0)
-label.Size = UDim2.new(0.8, 0, 0, 70)
-label.Font = Enum.Font.GothamSemibold
+label.Position = UDim2.new(0.5, 0, 0.15, 0)
+label.Size = UDim2.new(0.85, 0, 0, 60)
+label.Font = Enum.Font.GothamMedium
 label.Text = "Join our community to make suggestions and help us become the #1 keyless script! We support OVER 15 games"
-label.TextColor3 = Color3.fromRGB(220, 220, 220)
-label.TextSize = 16
+label.TextColor3 = Color3.fromRGB(220, 221, 222)
+label.TextSize = 14
 label.TextWrapped = true
 label.AnchorPoint = Vector2.new(0.5, 0)
-
-divider.Name = "Divider"
-divider.Parent = frame
-divider.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
-divider.BorderSizePixel = 0
-divider.Position = UDim2.new(0, 0, 0.6, 0)
-divider.Size = UDim2.new(1, 0, 0, 1)
 
 btnContainer.Name = "ButtonContainer"
 btnContainer.Parent = frame
 btnContainer.BackgroundTransparency = 1
-btnContainer.Position = UDim2.new(0, 0, 0.65, 0)
-btnContainer.Size = UDim2.new(1, 0, 0, 80)
+btnContainer.Position = UDim2.new(0.075, 0, 0.65, 0)
+btnContainer.Size = UDim2.new(0.85, 0, 0, 40)
+
+layout.Parent = btnContainer
+layout.FillDirection = Enum.FillDirection.Horizontal
+layout.SortOrder = Enum.SortOrder.LayoutOrder
+layout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+layout.Padding = UDim.new(0, 12)
 
 copyBtn.Name = "CopyButton"
 copyBtn.Parent = btnContainer
 copyBtn.BackgroundColor3 = Color3.fromRGB(88, 101, 242)
-copyBtn.Position = UDim2.new(0.1, 0, 0.1, 0)
-copyBtn.Size = UDim2.new(0.35, 0, 0.8, 0)
-copyBtn.Font = Enum.Font.Gotham
+copyBtn.Size = UDim2.new(0.48, 0, 1, 0)
+copyBtn.Font = Enum.Font.GothamBold
 copyBtn.Text = "Copy Invite"
 copyBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-copyBtn.TextSize = 14
+copyBtn.TextSize = 13
 copyBtn.AutoButtonColor = false
 
-corner3.Parent = copyBtn
-corner3.CornerRadius = UDim.new(0, 4)
+cornerCopy.Parent = copyBtn
+cornerCopy.CornerRadius = UDim.new(0, 8)
 
 exitBtn.Name = "ExitButton"
 exitBtn.Parent = btnContainer
-exitBtn.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
-exitBtn.Position = UDim2.new(0.55, 0, 0.1, 0)
-exitBtn.Size = UDim2.new(0.35, 0, 0.8, 0)
-exitBtn.Font = Enum.Font.Gotham
+exitBtn.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
+exitBtn.Size = UDim2.new(0.48, 0, 1, 0)
+exitBtn.Font = Enum.Font.GothamBold
 exitBtn.Text = "Close"
-exitBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-exitBtn.TextSize = 14
+exitBtn.TextColor3 = Color3.fromRGB(242, 243, 245)
+exitBtn.TextSize = 13
 exitBtn.AutoButtonColor = false
 
-corner4.Parent = exitBtn
-corner4.CornerRadius = UDim.new(0, 4)
+cornerExit.Parent = exitBtn
+cornerExit.CornerRadius = UDim.new(0, 8)
+
+local function tweenColor(object, property, targetColor, duration)
+    TweenService:Create(object, TweenInfo.new(duration or 0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {[property] = targetColor}):Play()
+end
 
 local function copyInvite()
     local link = "https://discord.gg/pn8xyhuSeV"
     copyBtn.Text = "Copying..."
-    copyBtn.BackgroundColor3 = Color3.fromRGB(66, 77, 181)
-    wait(0.3)
+    tweenColor(copyBtn, "BackgroundColor3", Color3.fromRGB(71, 82, 196))
+    task.wait(0.3)
     setclipboard(link)
     copyBtn.Text = "Copied!"
-    copyBtn.BackgroundColor3 = Color3.fromRGB(59, 165, 92)
+    tweenColor(copyBtn, "BackgroundColor3", Color3.fromRGB(35, 165, 90))
     task.delay(2, function()
         copyBtn.Text = "Copy Invite"
-        copyBtn.BackgroundColor3 = Color3.fromRGB(88, 101, 242)
+        tweenColor(copyBtn, "BackgroundColor3", Color3.fromRGB(88, 101, 242))
     end)
 end
 
 local function closeGui()
-    for i = 1, 0, -0.05 do
-        frame.BackgroundTransparency = 1 - i
-        titlebar.BackgroundTransparency = 1 - i
-        label.TextTransparency = 1 - i
-        copyBtn.TextTransparency = 1 - i
-        exitBtn.TextTransparency = 1 - i
-        wait(0.01)
-    end
+    local fadeTime = 0.25
+    local info = TweenInfo.new(fadeTime, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+    
+    TweenService:Create(frame, info, {BackgroundTransparency = 1}):Play()
+    TweenService:Create(stroke, info, {Transparency = 1}):Play()
+    TweenService:Create(label, info, {TextTransparency = 1}):Play()
+    TweenService:Create(copyBtn, info, {BackgroundTransparency = 1, TextTransparency = 1}):Play()
+    TweenService:Create(exitBtn, info, {BackgroundTransparency = 1, TextTransparency = 1}):Play()
+    
+    task.wait(fadeTime)
     gui:Destroy()
 end
 
-local function hoverEffect(btn, color)
-    local orig = btn.BackgroundColor3
-    btn.MouseEnter:Connect(function() btn.BackgroundColor3 = color end) 
-    btn.MouseLeave:Connect(function() btn.BackgroundColor3 = orig end)
+local function setupHover(btn, normalColor, hoverColor)
+    btn.MouseEnter:Connect(function()
+        tweenColor(btn, "BackgroundColor3", hoverColor)
+    end)
+    btn.MouseLeave:Connect(function()
+        tweenColor(btn, "BackgroundColor3", normalColor)
+    end)
 end
 
-hoverEffect(copyBtn, Color3.fromRGB(71, 82, 196))
-hoverEffect(exitBtn, Color3.fromRGB(66, 69, 74))
+setupHover(copyBtn, Color3.fromRGB(88, 101, 242), Color3.fromRGB(71, 82, 196))
+setupHover(exitBtn, Color3.fromRGB(47, 49, 54), Color3.fromRGB(53, 55, 60))
 
 copyBtn.MouseButton1Click:Connect(copyInvite)
 exitBtn.MouseButton1Click:Connect(closeGui)
 
 frame.BackgroundTransparency = 1
-titlebar.BackgroundTransparency = 1
+stroke.Transparency = 1
 label.TextTransparency = 1
+copyBtn.BackgroundTransparency = 1
 copyBtn.TextTransparency = 1
+exitBtn.BackgroundTransparency = 1
 exitBtn.TextTransparency = 1
 
-for i = 0, 1, 0.05 do
-    frame.BackgroundTransparency = 1 - i
-    titlebar.BackgroundTransparency = 1 - i
-    label.TextTransparency = 1 - i
-    copyBtn.TextTransparency = 1 - i
-    exitBtn.TextTransparency = 1 - i
-    wait(0.01)
-end
+local fadeTime = 0.3
+local info = TweenInfo.new(fadeTime, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+
+TweenService:Create(frame, info, {BackgroundTransparency = 0}):Play()
+TweenService:Create(stroke, info, {Transparency = 0}):Play()
+TweenService:Create(label, info, {TextTransparency = 0}):Play()
+TweenService:Create(copyBtn, info, {BackgroundTransparency = 0, TextTransparency = 0}):Play()
+TweenService:Create(exitBtn, info, {BackgroundTransparency = 0, TextTransparency = 0}):Play()
 
 task.spawn(function()
     pcall(function()
