@@ -60,7 +60,6 @@ local Languages = {
     {Name = "Cymraeg", Code = "cy", MapCode = "cy"},
     {Name = "မြန်မာ", Code = "my", MapCode = "my"},
     {Name = "ខ្មែរ", Code = "km", MapCode = "km"},
-    {Name = "ລາວ", Code = "lo", MapCode = "lo"},
     {Name = "नेपाली", Code = "ne", MapCode = "ne"},
     {Name = "සිංහල", Code = "si", MapCode = "si"},
     {Name = "Türkmen", Code = "tk", MapCode = "tk"},
