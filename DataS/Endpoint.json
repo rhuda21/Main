@@ -43,6 +43,9 @@
   "10267363348": {
     "Skills": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Drain%20A%20Lake/Skills.lua"
   },
+  "7613921865": {
+    "Data": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Anime%20Expeditions/Data.lua"
+  },
   "9649298941": {
     "mutations": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Escape%20Lava%20For%20Brainrots/Mutation.lua",
     "traits": "https://raw.githubusercontent.com/rhuda21/Main/refs/heads/main/Game%20Data/Escape%20Lava%20For%20Brainrots/Traits.lua",
