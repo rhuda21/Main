@@ -13,8 +13,3 @@ local ExtractedData = {
 local success, jsonString = pcall(function()
     return HttpService:JSONEncode(ExtractedData)
 end)
-if success then
-  return setclipboard(jsonString)
-else
-    warn("Failed to encode data to JSON:", jsonString)
-end
