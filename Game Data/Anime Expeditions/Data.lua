@@ -10,6 +10,4 @@ local ExtractedData = {
     AllGamemodesList = MapsModule:GetAllGamemodes(),
     MapData = MapsModule.MapData
 }
-local success, jsonString = pcall(function()
-    return HttpService:JSONEncode(ExtractedData)
-end)
+return HttpService:JSONEncode(ExtractedData)
