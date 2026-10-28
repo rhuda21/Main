@@ -18,3 +18,4 @@ local function IsLowEnd()
     end
     return false
 end
+local isLowEnd = IsLowEnd() 
